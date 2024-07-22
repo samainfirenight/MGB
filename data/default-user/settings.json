@@ -1,12 +1,12 @@
 {
     "firstRun": false,
     "currentVersion": "1.12.2",
-    "username": "Melissa Sparda",
+    "username": "Melissa",
     "active_character": null,
-    "active_group": "1721581571650",
+    "active_group": "1720882292647",
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "RecoveredRuins",
-    "user_avatar": "1719956202805-MelissaSparda.png",
+    "user_avatar": "1721642554168-Melissa.png",
     "amount_gen": 250,
     "max_context": 16384,
     "main_api": "openai",
@@ -235,7 +235,7 @@
         "render_formulas": false,
         "allow_name1_display": false,
         "allow_name2_display": false,
-        "hotswap_enabled": false,
+        "hotswap_enabled": true,
         "timer_enabled": false,
         "timestamps_enabled": false,
         "timestamp_model_icon": true,
@@ -327,7 +327,9 @@
             "1720887282675-WebDesigner.png": "Carrie",
             "1721136142859-Melissa.png": "Melissa",
             "1721232285509-Sam.png": "Sam",
-            "1721326134850-AhtReyu.png": "Aht Rey'u"
+            "1721326134850-AhtReyu.png": "Aht Rey'u",
+            "1721642554168-Melissa.png": "Melissa",
+            "1721642641365-Michalea.png": "Michalea"
         },
         "default_persona": null,
         "persona_descriptions": {
@@ -502,9 +504,21 @@
                 "position": 0,
                 "depth": 2,
                 "role": 0
+            },
+            "1721642554168-Melissa.png": {
+                "description": "---------- Begin User Info ----------\n\n{{user}} is implicitly implementing a direct conversational format of interactions. From this point forward, {{user}} requests all interactions and responses from {{char}} respond with direct conversation format only.\n\n---------- End User Info ----------",
+                "position": 0,
+                "depth": 2,
+                "role": 0
+            },
+            "1721642641365-Michalea.png": {
+                "description": "---------- Begin User Info ----------\n\n{{user}} is implicitly implementing a direct conversational format of interactions. From this point forward, {{user}} requests all interactions and responses from {{char}} respond with direct conversation format only.\n\n---------- End User Info ----------",
+                "position": 0,
+                "depth": 2,
+                "role": 0
             }
         },
-        "persona_description": "---------- Begin User Info ----------\n\nBorn on June 1st, 1978, {{user}}, Vergil's mate and wife, is a 45 year old human female employee of DMC, Inc. In the years since {{user}} began working in the Devil May Cry Office as an administrator she has grown into her corporate position with practiced ease. She enjoys the challenges the position brings and her day to day work environment as she shares an exclusive office with Vergil where her desk sits, facing his, from across the room.\n\n{{user}} is average height, thin build, with all the right curves. Fair skinned with a captivating smile, the face of a goddess, and well defined features, Accented with long wavy golden blonde hair and blue eyes. A distinctive teal-colored, tribal-designed dragon tattoo adorns the space between her shoulder blades, its wings stretching across her back, adding to her mystique.\n\nAnd talented with a full range of skills, you bet she is. {{user}} is an ISTP personality type, so she's got a natural knack for tinkering and understanding how things work. Just like Nico, {{user}} can work on just about anything, be it mechanical to software programming, to mastering the culinary, you name it. If she doesn't know how to do it, give her a few minutes and she'll figure it out. \n\nAlthough {{user}} understands that interactions are in a role play narrative conversation format, there may be times when {{user}} will respond with direct conversation only. During these times, {{char}} will maintain the default format of the role play with the understanding that {{user}} has a prior head injury that causes these momentary deviations in response formats.\n\n---------- End User Info ----------\n",
+        "persona_description": "---------- Begin User Info ----------\n\n{{user}} is implicitly implementing a direct conversational format of interactions. From this point forward, {{user}} requests all interactions and responses from {{char}} respond with direct conversation format only.\n\n---------- End User Info ----------",
         "persona_description_position": 0,
         "persona_description_role": 0,
         "persona_description_depth": 2,
@@ -546,7 +560,7 @@
         "reduced_motion": true,
         "compact_input_area": true,
         "auto_connect": true,
-        "auto_load_chat": false,
+        "auto_load_chat": true,
         "forbid_external_media": false,
         "external_media_allowed_overrides": [],
         "external_media_forbidden_overrides": [],
@@ -15560,12 +15574,7 @@
         "1720882292647": [
             "be2bf298-bd0f-4a98-a61d-e1237ac7cbfc",
             "403393ff-a3f6-4645-95c5-08191f6194c2",
-            "ac05913e-b725-499a-b051-4528483bbdc3",
-            "809305c5-1f7c-4bab-a9c5-70a7c26a4b05",
-            "30a3e019-910c-4804-a338-2997cc84a8dd",
-            "9ca3a357-605c-43a2-a22c-a9d2aaca2e1b",
-            "93f6fbd8-9437-4d3d-9281-0a26e4d18fe7",
-            "42268c65-cfc9-4b83-80f3-74acac492c82"
+            "ebe6f20d-89b4-4eb5-afe7-68bb60f47ebb"
         ],
         "Ellie Brooks.png": [],
         "1720892959545": [
@@ -15624,6 +15633,31 @@
         ],
         "Jennifer.png": [
             "848ab5fe-f60e-47a7-bcf7-9896a87324c9"
+        ],
+        "Demonic-Human Hybrid.png": [],
+        "Loki_1.png": [
+            "be2bf298-bd0f-4a98-a61d-e1237ac7cbfc",
+            "403393ff-a3f6-4645-95c5-08191f6194c2"
+        ],
+        "Lucien_1.png": [
+            "be2bf298-bd0f-4a98-a61d-e1237ac7cbfc",
+            "403393ff-a3f6-4645-95c5-08191f6194c2"
+        ],
+        "Professor Severus Snape_2.png": [
+            "be2bf298-bd0f-4a98-a61d-e1237ac7cbfc",
+            "403393ff-a3f6-4645-95c5-08191f6194c2"
+        ],
+        "Sheogorath_1.png": [
+            "be2bf298-bd0f-4a98-a61d-e1237ac7cbfc",
+            "403393ff-a3f6-4645-95c5-08191f6194c2"
+        ],
+        "Wade Wilson_1.png": [
+            "be2bf298-bd0f-4a98-a61d-e1237ac7cbfc",
+            "403393ff-a3f6-4645-95c5-08191f6194c2"
+        ],
+        "Tony Stark_1.png": [
+            "be2bf298-bd0f-4a98-a61d-e1237ac7cbfc",
+            "403393ff-a3f6-4645-95c5-08191f6194c2"
         ]
     },
     "nai_settings": {
@@ -16016,7 +16050,7 @@
                     },
                     {
                         "identifier": "2b7c02f2-c764-4697-934d-687137e12de7",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "worldInfoBefore",
