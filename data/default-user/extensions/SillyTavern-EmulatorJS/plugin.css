@@ -1,0 +1,19 @@
+.emulatorjs_game {
+    border: 1px solid var(--SmartThemeBorderColor);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    position: relative;
+    border-radius: 4px;
+}
+
+.emulatorjs_rom_name {
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+#emulatorjs_bios {
+    display: unset;
+}

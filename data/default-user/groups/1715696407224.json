@@ -1,0 +1,140 @@
+{
+    "id": "1715696407224",
+    "name": "ZzGroup: Devil May Cry 5 Game",
+    "members": [
+        "Nico.png",
+        "Nero1.png",
+        "Vergil1.png",
+        "Dante2.png",
+        "Melissa.png",
+        "Narrator1_1.png"
+    ],
+    "avatar_url": "/thumbnail?type=avatar&file=Vergil1.png",
+    "allow_self_responses": false,
+    "activation_strategy": false,
+    "generation_mode": 0,
+    "disabled_members": [
+        "Dante2.png",
+        "Narrator1_1.png",
+        "Mel.png",
+        "Nero1.png",
+        "Dante.png",
+        "Nero.png",
+        "Death Scissors.png",
+        "Chariot (Death Scissors).png",
+        "Nidhogg Boss.png",
+        "Vergil1.png",
+        "Melissa.png",
+        "Nico.png"
+    ],
+    "chat_metadata": {
+        "chat_id_hash": 1696223190611862,
+        "objective": {
+            "currentObjectiveId": null,
+            "taskTree": null,
+            "chatDepth": 2,
+            "checkFrequency": 3,
+            "hideTasks": false,
+            "prompts": {
+                "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+            }
+        },
+        "note_prompt": "",
+        "note_interval": 1,
+        "note_position": 1,
+        "note_depth": 4,
+        "note_role": 0,
+        "tainted": true,
+        "main_chat": "Vergils_Rebirth_DMC5",
+        "timedWorldInfo": {
+            "sticky": {},
+            "cooldown": {}
+        }
+    },
+    "fav": false,
+    "chat_id": "Vergils_Rebirth_DMC5_Actual_RolePlay - 2024-7-16@10h34m15s",
+    "chats": [
+        "2024-7-8@07h10m59s",
+        "Vergils_Rebirth_DMC5",
+        "Vergils_Rebirth_DMC5_Actual_RolePlay - 2024-7-16@10h34m15s"
+    ],
+    "auto_mode_delay": 5,
+    "generation_mode_join_prefix": "",
+    "generation_mode_join_suffix": "",
+    "date_added": 1721160769156.6504,
+    "create_date": "2024-7-16 @16h 12m 49s 156ms",
+    "date_last_chat": 1721160768109.9058,
+    "chat_size": 210376,
+    "past_metadata": {
+        "": {},
+        "2024-7-8@07h10m59s": {
+            "chat_id_hash": 1667041781598227,
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            },
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "note_role": 0,
+            "timedWorldInfo": {
+                "sticky": {},
+                "cooldown": {}
+            }
+        },
+        "Vergils_Rebirth_DMC5": {
+            "chat_id_hash": 1696223190611862,
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            },
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "note_role": 0,
+            "tainted": true
+        },
+        "Vergils_Rebirth_DMC5_Actual_RolePlay - 2024-7-16@10h34m15s": {
+            "chat_id_hash": 1696223190611862,
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            },
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "note_role": 0,
+            "tainted": true,
+            "main_chat": "Vergils_Rebirth_DMC5"
+        }
+    }
+}

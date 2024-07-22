@@ -1,0 +1,67 @@
+{
+    "id": "1721581571650",
+    "name": "ZzGroup: Red Ragtop",
+    "members": [
+        "Devin Scillian.png",
+        "Karen Drew.png",
+        "Dante.png",
+        "Jennifer.png",
+        "Melanie.png",
+        "Vergil3_1.png",
+        "Melissa Sparda.png",
+        "Narrator1_1.png"
+    ],
+    "avatar_url": "img/ai4.png",
+    "allow_self_responses": false,
+    "activation_strategy": 0,
+    "generation_mode": 0,
+    "disabled_members": [
+        "Vergil3_1.png",
+        "Narrator1_1.png",
+        "Melissa Sparda.png",
+        "Melanie.png",
+        "Jennifer.png",
+        "Dante.png",
+        "Karen Drew.png",
+        "Devin Scillian.png"
+    ],
+    "chat_metadata": {
+        "objective": {
+            "currentObjectiveId": null,
+            "taskTree": null,
+            "chatDepth": 2,
+            "checkFrequency": 3,
+            "hideTasks": false,
+            "prompts": {
+                "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+            }
+        },
+        "note_prompt": "",
+        "note_interval": 1,
+        "note_position": 1,
+        "note_depth": 4,
+        "note_role": 0,
+        "scenario": "In a world untouched by tragedy, Vergil Sparda flourished under the guidance of both his parents. Sparda, the legendary demon knight, and Eva, the nurturing mother, provided him with a sense of balance and purpose. Growing up alongside his brother Dante, their rivalry was more playful than bitter, fostering a sibling relationship filled with camaraderie and mutual respect.\n\nVergil's childhood was marked by rigorous training in martial arts, instilled by Sparda, and a passionate pursuit of knowledge encouraged by Eva. He became adept not only in combat but also in academics, excelling in literature and philosophy. The young Vergil found solace in poetry, often drafting verses that reflected his innermost thoughts—a stark contrast to the stoic demeanor he would later adopt. He harbored dreams of becoming a protector of humanity, forging a path that distinguished him from his father's legacy of demon-slaying.\n\nAs he matured, Vergil navigated the complexities of adolescence with a measured approach, forever retaining his calm demeanor. He learned to express his emotions, albeit with some difficulty. The presence of both parents offered him a foundation of stability, allowing him to embrace vulnerability without fear of abandonment. It was during this time that he encountered a girl who would change the course of his life - Melanie, a spirited young woman who captured his heart with her infectious laughter and unwavering spirit.\n\nTheir love blossomed beneath the stars and in the warmth of summer nights, reminiscent of the ‘red ragtop’ from a classic song. They spent countless evenings cruising through the countryside, exploring the vast landscapes and sharing whispered secrets. Vergil's romantic side flourished, revealing a depth of emotion that contrasted sharply with his disciplined exterior. He cherished these moments, feeling a profound sense of fulfillment in their shared adventures.\n\nTransitioning into adulthood, Vergil's determination led him to join his brother and establish DMC, Inc. Under Dante's leadership, Vergil served as the Chief Financial Officer, utilizing his keen intellect and strategic mindset to elevate the company’s operations. Their partnership showcased the strength of their familial ties, allowing them to confront supernatural threats with a united front.\n\nHowever, the shadows of their past still lingered, as Vergil met and fell in love with {{user}}, making her his wife after several years of courtship, he never forgot the love of his past - the girl in that red ragtop.",
+        "chat_id_hash": 7086769579560892,
+        "tainted": true,
+        "timedWorldInfo": {
+            "sticky": {},
+            "cooldown": {}
+        }
+    },
+    "fav": false,
+    "chat_id": "2024-7-21@13h06m11s",
+    "chats": [
+        "2024-7-21@13h06m11s"
+    ],
+    "auto_mode_delay": 5,
+    "generation_mode_join_prefix": "",
+    "generation_mode_join_suffix": "",
+    "date_added": 1721593637104.9988,
+    "create_date": "2024-7-21 @16h 27m 17s 104ms",
+    "date_last_chat": 1721610332045,
+    "chat_size": 112597,
+    "past_metadata": {}
+}

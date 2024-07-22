@@ -1,0 +1,101 @@
+{
+    "id": "1721443860861",
+    "name": "ZzGroup: Villain Pub",
+    "members": [
+        "Vergil_3.png",
+        "Shadow Market Proprietor.png",
+        "Hans Gruber.png",
+        "Narrator1_1.png",
+        "Wade Wilson.png",
+        "John Milton.png",
+        "Dr. Gregory House.png",
+        "Miraak.png",
+        "The Host.png",
+        "Draugr Deathlord.png",
+        "Lord Voldemort.png",
+        "Loki.png"
+    ],
+    "avatar_url": "img/ai4.png",
+    "allow_self_responses": false,
+    "activation_strategy": 0,
+    "generation_mode": 0,
+    "disabled_members": [
+        "Loki.png",
+        "Lord Voldemort.png",
+        "Draugr Deathlord.png",
+        "The Host.png",
+        "Wade Wilson.png",
+        "John Milton.png",
+        "Dr. Gregory House.png",
+        "Miraak.png",
+        "Vergil_3.png",
+        "Narrator1_1.png",
+        "Hans Gruber.png",
+        "Shadow Market Proprietor.png"
+    ],
+    "chat_metadata": {
+        "chat_id_hash": 6154485716115504,
+        "objective": {
+            "currentObjectiveId": null,
+            "taskTree": null,
+            "chatDepth": 2,
+            "checkFrequency": 3,
+            "hideTasks": false,
+            "prompts": {
+                "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+            }
+        },
+        "note_prompt": "",
+        "note_interval": 1,
+        "note_position": 1,
+        "note_depth": 4,
+        "note_role": 0,
+        "tainted": true,
+        "timedWorldInfo": {
+            "sticky": {},
+            "cooldown": {}
+        }
+    },
+    "fav": false,
+    "chat_id": "2024-7-20@07h48m00s",
+    "chats": [
+        "2024-7-19@22h51m00s",
+        "2024-7-20@07h48m00s"
+    ],
+    "auto_mode_delay": 5,
+    "generation_mode_join_prefix": "",
+    "generation_mode_join_suffix": "",
+    "date_added": 1721451630401.7732,
+    "create_date": "2024-7-20 @01h 00m 30s 401ms",
+    "date_last_chat": 1721476575914,
+    "chat_size": 99075,
+    "past_metadata": {
+        "2024-7-19@22h51m00s": {
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            },
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "note_role": 0,
+            "tainted": true,
+            "chat_id_hash": 7018113415371435,
+            "timedWorldInfo": {
+                "sticky": {},
+                "cooldown": {}
+            }
+        }
+    }
+}

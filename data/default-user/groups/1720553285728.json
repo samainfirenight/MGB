@@ -1,0 +1,241 @@
+{
+    "id": "1720553285728",
+    "name": "ZzGroup: Mistress Katarina and Vergil",
+    "members": [
+        "Vergil_3.png",
+        "Mistress Katarina_1.png"
+    ],
+    "avatar_url": "img/ai4.png",
+    "allow_self_responses": false,
+    "activation_strategy": 0,
+    "generation_mode": 0,
+    "disabled_members": [
+        "Mistress Katarina_1.png",
+        "Vergil_3.png"
+    ],
+    "chat_metadata": {
+        "objective": {
+            "currentObjectiveId": null,
+            "taskTree": null,
+            "chatDepth": 2,
+            "checkFrequency": 3,
+            "hideTasks": false,
+            "prompts": {
+                "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+            }
+        },
+        "note_prompt": "",
+        "note_interval": 1,
+        "note_position": 1,
+        "note_depth": 4,
+        "note_role": 0,
+        "tainted": true,
+        "chat_id_hash": 5877299462026619,
+        "timedWorldInfo": {
+            "sticky": {},
+            "cooldown": {}
+        },
+        "main_chat": "Katerina_Starter_Template - 2024-7-17@13h40m10s"
+    },
+    "fav": false,
+    "chat_id": "Katerina_New_Sounding_Xtra - 2024-7-17@13h40m55s",
+    "chats": [
+        "Vergil_Submits_To_Katerina",
+        "2024-7-13@12h57m40s",
+        "2024-7-13@17h42m59s",
+        "Checkpoint #3 - 2024-7-15@12h28m59s",
+        "Checkpoint #4 - 2024-7-15@13h35m12s",
+        "Katerina_Starter_Template - 2024-7-17@13h40m10s",
+        "Katerina_New_Sounding_Xtra - 2024-7-17@13h40m55s"
+    ],
+    "auto_mode_delay": 5,
+    "generation_mode_join_prefix": "",
+    "generation_mode_join_suffix": "",
+    "date_added": 1721292358046.7073,
+    "create_date": "2024-7-18 @04h 45m 58s 46ms",
+    "date_last_chat": 1721292357009.8271,
+    "chat_size": 709921,
+    "past_metadata": {
+        "Vergil_Submits_To_Katerina": {
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            },
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "note_role": 0,
+            "chat_id_hash": 92159136456234,
+            "tainted": true,
+            "timedWorldInfo": {
+                "sticky": {},
+                "cooldown": {}
+            }
+        },
+        "2024-7-13@12h57m40s": {
+            "chat_id_hash": 662963263081200,
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            },
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "note_role": 0,
+            "tainted": true,
+            "timedWorldInfo": {
+                "sticky": {},
+                "cooldown": {}
+            }
+        },
+        "Checkpoint #3 - 2024-7-15@12h28m59s": {
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            },
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "note_role": 0,
+            "tainted": true,
+            "chat_id_hash": 5877299462026619,
+            "timedWorldInfo": {
+                "sticky": {},
+                "cooldown": {}
+            },
+            "main_chat": "2024-7-13@17h42m59s"
+        },
+        "2024-7-13@17h42m59s": {
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            },
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "note_role": 0,
+            "tainted": true,
+            "chat_id_hash": 5877299462026619,
+            "timedWorldInfo": {
+                "sticky": {},
+                "cooldown": {}
+            }
+        },
+        "Checkpoint #4 - 2024-7-15@13h35m12s": {
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            },
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "note_role": 0,
+            "tainted": true,
+            "chat_id_hash": 5877299462026619,
+            "timedWorldInfo": {
+                "sticky": {},
+                "cooldown": {}
+            },
+            "main_chat": "Checkpoint #3 - 2024-7-15@12h28m59s"
+        },
+        "Katerina_Starter_Template - 2024-7-17@13h40m10s": {
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            },
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "note_role": 0,
+            "tainted": true,
+            "chat_id_hash": 5877299462026619,
+            "timedWorldInfo": {
+                "sticky": {},
+                "cooldown": {}
+            },
+            "main_chat": "Checkpoint #4 - 2024-7-15@13h35m12s"
+        },
+        "Katerina_New_Sounding_Xtra - 2024-7-17@13h40m55s": {
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            },
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "note_role": 0,
+            "tainted": true,
+            "chat_id_hash": 5877299462026619,
+            "timedWorldInfo": {
+                "sticky": {},
+                "cooldown": {}
+            },
+            "main_chat": "Katerina_Starter_Template - 2024-7-17@13h40m10s"
+        }
+    }
+}

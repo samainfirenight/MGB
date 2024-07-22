@@ -1,0 +1,807 @@
+Scriptname HerikaExtComServer extends Quest  
+
+import apiHerika
+import SPGPapFunctions
+import SkyrimHugStandAloneNPCs
+
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+;			INITALIZE
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Event OnInit()
+	Debug.Notification("[HerikaAI ext plugin HerikaExtComServer] activated")
+	RegisterForModEvent("SPG_CommandReceived", "HerikaExtComServer")
+EndEvent
+
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+;			MAIN EVENT TRIGGER
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Event HerikaExtComServer(String  command, String parameter)
+Debug.Notification("[SPG] External command "+command+ "received")
+PopulateVariables()
+	If !VergilRef.IsDoingFavor()
+		If !VergilRef.IsInCombat() || !player.IsInCombat()
+			If !Alias_LightFireplaces.GetReference() == VergilObjRef
+				If !BallToss01.GetReference() == VergilObjRef
+					If !Alias_ChopWood.GetReference() == VergilObjRef
+						If !VergilRef.IsOnMount()
+							If !isVergilInCart()
+								if !aaaShipUtility.IsShipSailing()
+									if !sslHerikaSex.isInIntimateScene()
+										; -------------- CONDITIONS MET TO ALLOW COMMAND
+										CommandActivate(command, parameter)
+									else	
+										SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" is having an intimate moment with " +player.GetDisplayName()+ ". " +herikaActor.GetDisplayName()+ " can try again when they have finished making love.","funcret")
+									endif
+								else
+									SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" is traveling with " +player.GetDisplayName()+ " on a longship. " +herikaActor.GetDisplayName()+ " can try again when the ship has reached destination.","funcret")
+								endIf
+							else
+								SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" is traveling with " +player.GetDisplayName()+ " in a carriage. " +herikaActor.GetDisplayName()+ " can try again when carriage has reached destination.","funcret")
+							endIf
+						else
+							SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" is traveling with " +player.GetDisplayName()+ " on horseback. " +herikaActor.GetDisplayName()+ " can try again when they have reached their destination.","funcret")
+						endif
+					else
+						If parameter == "End"
+							CommandActivate(command, parameter)
+						else
+							SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" is chopping wood for the fireplaces. " +herikaActor.GetDisplayName()+ " can try again when he has finished chopping wood.","funcret")
+						endIf
+					endIf
+				else
+					If parameter == "End"
+						CommandActivate(command, parameter)
+					else
+						SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" is playing ball toss game with his family. " +herikaActor.GetDisplayName()+ " can try again when he has finished the game.","funcret")
+					endIf
+				endIf
+			else
+				If parameter == "End"
+					CommandActivate(command, parameter)
+				else
+					SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" is adding wood to the fireplaces and lighting them. " +herikaActor.GetDisplayName()+ " can try again when he has finished lighting the fireplaces.","funcret")
+				endIf
+			endIf
+		else
+			If command == "ExtCmdSinDevilTrigger"
+			CommandActivate(command, parameter)
+				else
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" is being pursued by a hostile entity. " +command+ " is temporarily disabled.","funcret")
+			endIf
+		endIf
+	else
+		SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" is busy doing something else. Try " +command+ " at a later time.","funcret")
+	endif
+CleanUpVariables()	
+EndEvent
+
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+;			ACTIVATE COMMANDS
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+function CommandActivate(string command, String parameter)
+;--------------------------------------------------------------------------------------------------
+	if (command=="ExtCmdEngagement")
+		armor MGBVergilEngagementRing = Game.GetFormFromFile(0x00000927, "VergilSparda.esp") as armor
+		glbGameDayGotEngaged.Value = GameDaysPassed.Value
+		glbAnimsType.Value = 8.00
+		VergilRef.PathToReference(Game.Getplayer() as ObjectReference, 2)
+		AnimsSpell.Cast(player as ObjectReference, VergilRef)
+		player.equipitem(MGBVergilEngagementRing)
+		SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" kneels in front of "+player.GetDisplayName()+ " and places his Engagement Ring on her finger.","funcret");	// Pass return function to LLM
+	endif
+;--------------------------------------------------------------------------------------------------
+	if (command == "ExtCmdAnimation")
+		if parameter == "SurprisePassionateKiss" || parameter == "ApologeticHugKiss" || parameter == "KissMotherToBeTummy" || parameter == "ScoopHug" || parameter == "ComfortingLovingEmbrace" || parameter == "KissHands"
+			SelectAnimationType(parameter)
+			VergilRef.PathToReference(player as ObjectReference,2)
+			AnimsSpell.Cast(player as ObjectReference, VergilRef)
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" engages "+player.GetDisplayName()+ " in a loving embrace. " + animDescription, "funcret")
+		elseIf parameter == "HugFreya"
+			SkyrimHugStandAloneNPCs.Embrace(VergilRef, FreaRef, true, false,0)
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" engages his daughter in a loving embrace.", "funcret")
+		else
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ " There was a problem completing request. It appears no valid parameter was chosen. Please, try again.","funcret")
+		endif
+	endif
+;--------------------------------------------------------------------------------------------------
+	if (command == "ExtCmdMakeLove")
+		if parameter == "VergilSelfPleasure"
+			MGBStartSex(VergilRef, VergilRef, parameter)
+			;MakeLoveSpell.Cast(VergilRef as ObjectReference, VergilRef)
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+"  releases his hardness from the confines of his clothing and prepares himself for the sensual art of self love and tenderness.","funcret")
+		elseIf parameter == "VergilDoggyStyle" || parameter == "VergilMissionaryMatingPress" || parameter == "VergilCrabMissionary" || parameter == "VergilReverseLotus" || parameter == "VergilSquattingBlowjob" || parameter == "VergilCunnilingus"
+			MGBStartSex(VergilRef, player, parameter)
+			;MakeLoveSpell.Cast(player as ObjectReference, VergilRef)
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" approaches "+player.GetDisplayName()+ " with the flames of desire in his eyes.","funcret")	
+		elseIf parameter == "VergilAgressive"
+			MGBStartSex(VergilRef, player, "Agressive")
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" approaches "+player.GetDisplayName()+ " with the flames of desire in his eyes.","funcret")	
+		else
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ " There was a problem completing request. It appears no valid parameter was chosen. Please, try again.","funcret")
+		endif
+	endif
+;--------------------------------------------------------------------------------------------------
+	if (command == "ExtCmdPlayBall")
+		if parameter == "Begin"
+			; put commands alaises to start playing ball
+			;add some combat taunts to them
+			BallToss01.ForceRefTo(VergilRef)
+			BallToss02.ForceRefTo(FreaRef)
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" and Frea begin playing ball toss game.","funcret")	
+		elseif parameter == "End"
+			;stop ball toss
+			BallToss01.Clear()
+			BallToss02.Clear()
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" and Frea have ended the ball toss game.","funcret")	
+		else
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ " There was a problem completing request. It appears no valid parameter was chosen. Please, try again.","funcret")
+		endif
+	endIf
+;--------------------------------------------------------------------------------------------------
+;ExtCmdChangeOutfit
+;["TraditionalStyleNavyTealColor", "TraditionalStyleAllBlackColor", "DevilHunterSuit", "Nude"]
+	if (command == "ExtCmdChangeOutfit")
+		if parameter == "TraditionalStyleNavyTealColor"
+			VergilRef.setoutfit(VergilDefaultOutfit)
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" changes into his traditional style outfit in navy coloring with teal accents.","funcret")	
+		elseIf parameter == "TraditionalStyleAllBlackColor"
+			VergilRef.setoutfit(VergilDefaultOutfitBlack)
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" changes into his traditional style outfit in solid black coloring.","funcret")	
+		elseIf parameter == "DevilHunterSuit"
+			VergilRef.setoutfit(VergilDevilHunterOutfit)
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" changes into his devil hunter suit. Complete with a longcoat in his signature teal color. He rolls up his sleeves to proudly display his tattoos, left behind as reminders of his time as V.","funcret")	
+		elseIf parameter == "Nude"
+			VergilRef.setoutfit(VergilNude)
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" removes his clothing to bask in the nude.","funcret")	
+		else
+			;error
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ " There was a problem completing request. It appears no valid outfit was selected. Please, try again.","funcret")
+		endif
+	endIf
+;--------------------------------------------------------------------------------------------------	
+	if (command == "ExtCmdChopWood")
+		If parameter == "Begin"
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" makes his way to the wood chopping block to chop wood for the fireplaces.","funcret")
+			Alias_ChopWood.ForceRefTo(VergilRef)
+		elseif parameter == "End"
+			WoodChoppingPackage.UnregisterForUpdate()
+			Alias_ChopWood.Clear()
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ " has interrupted his task, and is no longer chopping wood. He may restart this task at a later time.","funcret")
+		else
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ " There was a problem completing request. It appears no valid parameter was chosen. Please, try again.","funcret")
+		endIf
+	endIf
+;--------------------------------------------------------------------------------------------------			
+	if (command == "ExtCmdLightFireplaces")
+		If parameter == "Begin"
+		VergilObjRef.AddItem(FireWood,8)	
+			If VergilObjRef.GetItemCount(FireWood) >= 8 || VergilObjRef.GetItemCount(FireWood) == 8
+				glbVergilLightFireplaces.value = 2.00
+				SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+" makes his way to light the fireplaces.","funcret")
+				Alias_LightFireplaces.ForceRefTo(VergilRef)
+			else
+				SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ " does not have enough firewood. Please, chop wood first and then try again.","funcret")
+			endIf
+		elseIf parameter == "End"
+			glbVergilLightFireplaces.value = 0.00
+			Alias_LightFireplaces.Clear()
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ " has interrupted his task, and is no longer lighting fireplaces. He may restart this task at a later time.","funcret")
+		else
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ " There was a problem completing request. It appears no valid parameter was chosen. Please, try again.","funcret")
+		endIf
+	endIf
+;--------------------------------------------------------------------------------------------------		
+	if (command == "ExtCmdInventoryOptions")
+		If parameter == "ViewItems"
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ "'s Inventory Items - " +strVergilInventory+ " .","funcret")
+		elseif parameter == "ExchangeItems"
+				SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ " opens his inventory to exchange items with " +player.GetDisplayName()+ ".","funcret")
+				VergilRef.OpenInventory(true)
+		else
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ " There was a problem completing request. It appears no valid parameter was chosen. Please, try again.","funcret")
+		endif
+	endif	
+;--------------------------------------------------------------------------------------------------		
+	if (command == "ExtCmdCheckVampirism")
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+ GetVampStage(),"funcret")
+	endif	
+	
+;--------------------------------------------------------------------------------------------------		
+	if (command == "ExtCmdFindFreya")
+			SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " utilizes his demonic abilities to summon Freya to his side.","funcret")
+			(FreaRef as ObjectReference).moveto(VergilRef as ObjectReference)
+	endif		
+;--------------------------------------------------------------------------------------------------		
+	if (command == "ExtCmdChangeCombatStyle")
+		ChangeFightingStyle(parameter, command)
+	endif
+;--------------------------------------------------------------------------------------------------	
+
+;--------------------------------------------------------------------------------------------------		
+	if (command == "ExtCmdPurchaseItems")
+		PurchaseRequest(command, parameter)
+	endIf
+;--------------------------------------------------------------------------------------------------
+
+;--------------------------------------------------------------------------------------------------		
+	if (command == "ExtCmdJudgementCutEnd")
+		JudgementCutEnd(command, parameter)
+	endIf
+;--------------------------------------------------------------------------------------------------
+
+;--------------------------------------------------------------------------------------------------		
+	if (command == "ExtCmdCombatAggression")
+		WhenToFight(command, parameter)
+	endIf
+;--------------------------------------------------------------------------------------------------
+
+;--------------------------------------------------------------------------------------------------		
+	if (command == "ExtCmdSinDevilTrigger")
+		VergilSinDevilTrigger(command, parameter)
+	endIf
+;--------------------------------------------------------------------------------------------------
+
+;--------------------------------------------------------------------------------------------------		
+	;Next Function
+;--------------------------------------------------------------------------------------------------
+
+endFunction
+
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+;			DYNAMIC CHECKS AND DESCRIPTIONS
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+function SelectAnimationType(string strType)
+If strType == "SurprisePassionateKiss"
+glbAnimsType.Value = 7.00
+animDescription = "He lifts her chin, bending slightly to meet her at her level. Their lips touch in a tender, exploratory kiss. Taken aback by the sudden intensity of emotion, her arms slowly wrap around him. He pauses, searching her eyes for a reaction, before pulling her close for a deeper, more passionate embrace. Cradling her head in one hand and wrapping his other arm around her, he holds her tight, their kiss a symphony of shared affection. As they part, he places a loving kiss on her forehead, a silent affirmation of their bond."
+elseIf strType == "ApologeticHugKiss"
+glbAnimsType.Value = 18.00
+animDescription = "He approaches her cautiously and reaches to caress her cheek as she slightly turns the other direction. He shifts to meet ger gaze and touches his forehead to hers as he wraps her in his embrace. He meets her gaze, his expression pleading for her forgiveness, and then relief as a gentle smile crosses her features and she reciprocates his affection."
+elseIf strType == "KissMotherToBeTummy"
+glbAnimsType.Value = 46.00
+animDescription = "He kneels down in front of her and places his hands on her growing belly. He closes his eyes, overcome by the notion that this miracle of life is a manifestation of his love for " +player.GetDisplayName()+ ", he softly places his lips to her belly, and then turns his head to lean against her as she reaches to gently comb her fingers through his hair." 
+elseIf strType == "ScoopHug"
+glbAnimsType.Value = 5.00
+animDescription = "He lifts her effortlessly, cradling her above him with gentle strength. She drapes an arm around his shoulder, her fingers tenderly combing through his hair. A serene expression adorns his face as he closes his eyes, lost in the moment. She leans down, sealing their love with a gentle kiss. As he sets her back on her feet, he leans in once more, their lips meeting in a soft, lingering kiss that speaks of their deep bond."
+elseIf strType == "ComfortingLovingEmbrace"
+glbAnimsType.Value = 3.00
+animDescription = "He pulls her close, wrapping his arms around her in a warm embrace. She rests her head on his shoulder, a gesture of trust and affection. As they stand in this cocoon of love, he closes his eyes, savoring the closeness, his head resting near hers. When the moment comes to part, he gently lifts her head and places a tender kiss on her forehead, a silent promise of unending love and protection."
+elseIf strType == "KissHands"
+glbAnimsType.Value = 4.00
+animDescription = "Reaching for her hand, he brings it to his chest, holding it there as a testament to the heart beating beneath. She rises on her toes, their lips meeting in a loving kiss. With his free hand, he caresses her cheek, a soft touch that speaks volumes of his adoration. Their connection in this moment is a delicate dance of love and intimacy."
+else
+endif
+endFunction
+
+bool function isVergilInCart()
+	Actor AliasRef01 = Rider01.GetReference() as Actor
+	Actor AliasRef02 = Rider02.GetReference() as Actor
+	Actor AliasRef03 = Rider03.GetReference() as Actor
+	string strToMatch = VergilRef.GetDisplayName() as String
+
+	If AliasRef01.GetDisplayName() == strToMatch
+		return true
+	elseIf AliasRef02.GetDisplayName() == strToMatch
+		return true
+	elseIf AliasRef03.GetDisplayName() == strToMatch
+		return true
+	elseIf VergilRef.HasKeyword(RidingInCarriage)
+		return true
+	else
+		return false
+	endIf
+endFunction
+
+function DoDbg(string strmessage)
+	if blDebugging == true
+		debug.notification(strmessage)
+	endif
+endFunction
+
+string function GetVampStage()
+	if (player as ObjectReference).HasEffectKeyword(MGBVampireStageOne)
+		return " " +player.GetDisplayName() + " is Stage One Vampirisim and is not in danger of succumbing to full transformation, nor detection."
+	elseif (player as ObjectReference).HasEffectKeyword(MGBVampireStageTwo)
+		return " " +player.GetDisplayName() + " is Stage Two Vampirisim. Although Vampiric traits are enhanced, is not in danger of succumbing to full transformation, nor detection. As effects progress, necessity to feed is recommended soon."
+	elseif (player as ObjectReference).HasEffectKeyword(MGBVampireStageThree)
+		return " " +player.GetDisplayName() + " is Stage Three Vampirisim. Vampiric traits are notably enhanced, risk of succumbing to full transformation is becoming apparent, and detection is plausable by those with keen awareness. Necessity to feed is becoming urgent to quell the effects."
+	elseif (player as ObjectReference).HasEffectKeyword(MGBVampireStageFour)	
+		return " " +player.GetDisplayName() + " is Stage Four Vampirisim. Vampiric traits are fully enhanced, risk of succumbing to full transformation is Imminent, and detection is highly probable. Immediate feeding is required to quell the effects."
+	else
+		return "Error in translation"
+	endif
+endFunction
+
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+;			SEXLAB FUNCTIONS AND CONTROLS
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+Function MGBStartSex(Actor akMale, Actor akFemale, string strTag)
+bool blAgressive = false
+	blIsSolo = false
+	sexActors = new actor[2]
+	sexSolo = new actor[1]
+	sexSolo[0] = akMale
+    sexActors[0] = akMale
+	sexActors[1] = akFemale
+	sexActors = Sexlab.SortActors(sexActors)
+	aVictim = none
+	suppress = "Fisting"
+	
+	string anmTags = strTag
+	
+	if strTag == "VergilSelfPleasure"
+		blIsSolo = true
+	elseIf strTag == "Agressive"
+		blAgressive = true
+		aVictim = akFemale
+	endif
+		
+	    ; Pick animations
+    sslBaseAnimation[] anims
+	if blIsSolo == true
+		anims = SexLab.GetAnimationsByTags(1, anmTags, suppress, false)
+	else
+		anims = SexLab.GetAnimationsByTags(2, anmTags, suppress, false)
+	endIf
+
+	
+    if anims.length > 0
+		if blIsSolo == true
+			SexLab.StartSex(sexSolo, anims, victim=aVictim, allowBed=false, hook="")    
+		elseif blAgressive == true
+			SexLab.StartSex(sexActors, anims, victim=aVictim, allowBed=true, hook="")
+		else
+			SexLab.StartSex(sexActors, anims, victim=aVictim, allowBed=true, hook="")   
+		endif
+    else
+		Debug.notification("No animation found with the tags (" + strTag + ")")
+    endif
+	
+
+endFunction
+
+string function PopulateTags(string strCurrentTag, actor akFemale, actor akMale)
+string tags = ""
+
+	if strCurrentTag == "Aggressive" ; rape
+		tags = "Aggressive" ; Needs "Male" role for rape
+		suppress = "Blowjob, Oral, Boobjob, Breast, Cowgirl, Foreplay, Loving, Cuddling, Cunnilingus, Standing, Kissing, Fisting"
+		aVictim = akFemale
+		;  bAllowbed = false
+	elseif strCurrentTag == "VergilSelfPleasure" ; joyless duty sex
+		tags = "VergilSelfPleasure"
+		suppress = "Fisting"
+		aVictim = none     
+		;  bAllowbed = true
+	elseif strCurrentTag == "VergilDoggyStyle" ; normal sex
+		tags = "VergilDoggyStyle"
+		suppress = "Fisting"
+		aVictim = none
+		;  bAllowbed = true
+	elseif strCurrentTag == "VergilMissionaryMatingPress" ; loving sex
+		tags = "VergilMissionaryMatingPress"
+		suppress = "Fisting"
+		aVictim = none
+		; bAllowbed = true     
+	elseif strCurrentTag == "VergilCrabMissionary" ; passionate sex
+		tags = "VergilCrabMissionary"
+		suppress = "Fisting"
+		aVictim = none
+		;  bAllowbed = true    
+	elseif strCurrentTag == "VergilReverseLotus"
+		tags = "VergilReverseLotus"
+		suppress = "Fisting"
+		aVictim = none
+	elseif strCurrentTag == "VergilSquattingBlowjob"
+		tags = "VergilSquattingBlowjob"
+		suppress = "Fisting"
+		aVictim = none
+	elseif strCurrentTag == "VergilCunnilingus"
+		tags = "VergilCunnilingus"
+		suppress = "Fisting"
+		aVictim = none
+	endif
+	debug.notification("Tags are: " +tags)
+	return tags
+endFunction
+
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+;			FIGHTING STYLES SETUP
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Function ChangeFightingStyle(string strFightStyleToSet, string command)
+If strFightStyleToSet == "MixedBowAndSwordinAccord"
+	VergilRef.SetFactionRank(VergilFightingStyleFaction, 0)
+	glbVergilJudgementCut.value=0.00
+	SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " changes his combat style to MixedBowAndSwordinAccord.","funcret")
+elseIf strFightStyleToSet == "CloseCombatYamato"
+	VergilRef.SetFactionRank(VergilFightingStyleFaction, 1)
+	SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " changes his combat style to CloseCombatYamato.","funcret")
+elseIf strFightStyleToSet == "RangedMarksman"
+	VergilRef.SetFactionRank(VergilFightingStyleFaction, 2)
+	glbVergilJudgementCut.value=0.00
+	SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " changes his combat style to RangedMarksman.","funcret")
+elseIf strFightStyleToSet == "RangedFireAndIceMagic"
+	VergilRef.SetFactionRank(VergilFightingStyleFaction, 3)
+	glbVergilJudgementCut.value=0.00
+	SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " changes his combat style to RangedFireAndIceMagic.","funcret")
+else
+	SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " no valid parameter was received, please try again.","funcret")
+endIf	
+endFunction
+
+;----------------------------------------------------------------------------------------------------
+
+Function WhenToFight(string command, string parameter)
+If parameter == "MildlyAggressive"
+	VergilRef.SetActorVAlue("Aggression", 0)
+	SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ "'s combat aggression is Mildly Aggressive.","funcret")
+	elseIf parameter == "ModeratelyAggressive"
+	VergilRef.SetActorVAlue("Aggression", 1)
+	SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ "'s combat aggression is Moderately Aggressive.","funcret")
+	elseIf parameter == "HighlyAggressive"
+	VergilRef.SetActorVAlue("Aggression", 2)
+	SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ "'s combat aggression is Highly Aggressive.","funcret")
+	elseIf parameter == "VeryHighlyAggressive"
+	VergilRef.SetActorVAlue("Aggression", 3)
+	SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ "'s combat aggression is Very Highly Aggressive.","funcret")
+	else
+	SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " no valid parameter was received, please try again.","funcret")
+EndIf
+EndFunction
+
+;----------------------------------------------------------------------------------------------------
+
+Function JudgementCutEnd(string command, string strTogggleJCE)
+If strTogggleJCE == "Begin"
+	VergilRef.SetFactionRank(VergilFightingStyleFaction, 1)
+	glbVergilJudgementCut.value=1.00
+	SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " Activates Judgement Cut End ability.","funcret")
+elseIf strTogggleJCE == "End"
+	glbVergilJudgementCut.value=0.00
+	SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " De-activates Judgement Cut End ability.","funcret")
+else
+	SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " no valid parameter was received, please try again.","funcret")
+endIf	
+EndFunction
+;----------------------------------------------------------------------------------------------------
+
+Function VergilSinDevilTrigger(string command, string parameter)
+Float sdtTrigger = sdtVergilCooldown.GetValue() as Float
+If parameter == "Begin"
+	If sdtTrigger == 0.00
+		SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " is transforming into Sin Devil Trigger.","funcret")
+		MGBvsdtransformSP.Cast(VergilRef,VergilRef)
+	elseIf sdtTrigger == 1.00
+		SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " is already transformed in Sin Devil Trigger.","funcret")
+	elseIf sdtTrigger == 2.00
+		SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " is in the process of transforming back to human form.","funcret")
+	elseIf sdtTrigger == 3.00
+		SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " is in cooldown from a recent SDT. Try again when cooldown has processed.","funcret")
+	else
+		SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " no valid parameter was received, please try again.","funcret")
+	endIf
+elseIf parameter == "End"
+; stop transformation
+SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " is transforming back to human form.","funcret")
+MGBvsdtransformSP.Cast(VergilRef,VergilRef)
+sdtVergilCooldown.Value = 0.00
+else
+SPGPapFunctions.requestMessage("command@"+command+"@"+herikaActor.GetDisplayName()+ " no valid parameter was received, please try again.","funcret")
+EndIf
+	
+EndFunction
+
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+;			PURCHASING SUPPLIES
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+function PurchaseRequest(string command, string parameter)
+	PurchaseTheItems(GetPurchaseItemsForms(parameter), command, parameter)
+endFunction
+
+form function GetPurchaseItemsForms(string strItemsToPurchase)
+	If strItemsToPurchase == "Arrows"
+		return SteelArrow as form
+	elseIf strItemsToPurchase == "FortifyOneHandSkillPotion"
+		return FortifySkillOneHanded02  as form
+	elseIf strItemsToPurchase == "HealthPotion"
+		return RestoreHealth05 as form
+	elseIf strItemsToPurchase == "MagickaPotion"
+		return RestoreMagicka05 as form
+	elseIf strItemsToPurchase == "InvisibilityPotion"
+		return Invisibility04 as form
+	elseIf strItemsToPurchase == "HonningbrewMead"
+		return FoodHonningbrewMead as form
+	elseIf strItemsToPurchase == "BlackBriarMead"
+		return FoodBlackBriarMead as form
+	elseIf strItemsToPurchase == "ColovianBrandy"
+		return MQ201Drink as form
+	else
+		;not valid
+	endIf
+endFunction
+
+
+bool function PurchaseTheItems(form frmItemToPurchase, string command, string parameter)
+Int GoldAmt = GetGoldAmountForPurchase(frmItemToPurchase)
+Int VergilGold = VergilObjRef.GetItemCount(Gold)
+	If CheckNearbyMerchants(VergilRef, 500.00)
+		If VergilGold >= GoldAmt || VergilGold == GoldAmt
+			If frmItemToPurchase == (SteelArrow as Form)
+				VergilObjRef.AddItem(frmItemToPurchase, 50)
+			else
+				VergilObjRef.AddItem(frmItemToPurchase, 3)
+			endIf
+			VergilObjRef.RemoveItem(Gold, GoldAmt)
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ "'s purchased " +parameter+ "(s) have been added to his inventory.","funcret")
+		else
+			SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ " Not enough gold to purchase " +parameter+ ". You need at least " +GoldAmt+ " to purchase.","funcret")
+		endIf
+	else	
+		SPGPapFunctions.requestMessage("command@"+command+"@"+parameter+"@"+herikaActor.GetDisplayName()+ " Must be within range of a valid merchant. Please try again when closer to a valid merchant.","funcret")
+	endIf
+endFunction
+
+int function GetGoldAmountForPurchase(form frmItemToPurchase)
+int intHold = 0
+	If frmItemToPurchase == (SteelArrow as Form)
+		intHold = frmItemToPurchase.GetGoldValue() * 50
+	else
+		intHold = frmItemToPurchase.GetGoldValue() * 3
+	endIf
+return intHold
+endFunction
+
+Bool Function CheckNearbyMerchants(Actor akTarget, Float afRadius)
+    ; Ensure the target actor is valid
+    If akTarget == None
+        Debug.Trace("CheckNearbyMerchants - Target actor is None.")
+        Return False
+    EndIf
+
+    ; Get the player's current location
+    Location playerLocation = akTarget.GetCurrentLocation()
+    If playerLocation != None
+        ; Check if the location is an inn
+        If playerLocation.HasKeyword(LocTypeInn) || playerLocation.HasKeyword(LocTypeStore)
+            Return True
+        EndIf
+    EndIf
+    ; Player is not in an inn or a store
+    Return False
+EndFunction
+
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+;			VARIABLES POPULATE AND CLEAR
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+;Form[] Function GetContainerForms() native
+
+string function GetContainterItems(ObjectReference skActor)
+	skActor.GetAllForms(flstVergilInventory)
+	int i = flstVergilInventory.GetSize() - 1
+	string itemsListed = ""
+;	debug.notification("List Size: " +i)
+	While i >= 0
+		string currentItemName = flstVergilInventory.GetAt(i).GetName()
+	;	Debug.Notification("Item Name: " +currentItemName)
+		If !ExcludeFromItemsList(currentItemName)
+			itemsListed += currentItemName + "(" +skActor.GetItemCount(flstVergilInventory.GetAt(i))+ "), "
+		endif
+		i -= 1
+	endWhile
+
+	return itemsListed
+endFunction
+
+bool function ExcludeFromItemsList(string strItemToCheck)
+	If strItemToCheck == "Kissable Anytime Token [Do not remove]"
+		return true
+	elseIf strItemToCheck == "Kissable Anytime Token [Dovah Kiss only whomever has this token]"
+		return true
+	else
+		return false
+	endif
+endFunction
+;GetAllForms(FormList toFill)
+;-------------------------------------------------------------------------------------------------------
+
+function PopulateVariables()
+Firewood = Game.GetFormFromFile(0x0006F993, "Skyrim.esm") as MiscObject
+glbGameDayGotEngaged = Game.GetFormFromFile(0x00000817, "HerikaDialogueInfos.esp") as GlobalVariable
+glbVergilLightFireplaces = Game.GetFormFromFile(0x0000081A, "HerikaDialogueInfos.esp") as GlobalVariable
+GameDaysPassed = Game.GetFormFromFile(0x00000039, "Skyrim.esm") as GlobalVariable
+TourCartFollowersQuest = Game.GetFormFromFile(0x000008ff, "TouringCarriages.esp") as Quest
+qstHerikaRelationshipAutoLogTracker = Game.GetFormFromFile(0x00000806, "HerikaDialogueInfos.esp") as Quest
+RidingInCarriage = Game.GetFormFromFile(0x000DD631, "Skyrim.esm") as Keyword
+player=Game.GetPlayer() as Actor
+herikaActor = Game.getFormEx(SPGPapFunctions.getHerikaFormId()) as Actor
+ACL_Quest_YarnBallVS = Game.GetFormFromFile(0x00000809, "TestBallToss.esp") as Quest
+VergilRef = Game.GetFormFromFile(0x000008F4, "VergilSparda.esp") as Actor
+VergilObjRef = VergilRef as ObjectReference
+glbAnimsType = Game.GetFormFromFile(0x00000801, "HSFNewAnims.esp") as GlobalVariable
+AnimsSpell = Game.GetFormFromFile(0x0000DB7B, "SimpleOutfitManager.esp") as Spell
+MakeLoveSpell = Game.GetFormFromFile(0x000073CC, "SexLab.esm") as Spell
+FreaRef = Game.GetFormFromFile(0x0000080D, "VergilSpardaRSChildrenPT.esp") as actor
+flstVergilInventory = Game.GetFormFromFile(0x00000822, "HerikaDialogueInfos.esp") as FormList
+Alias_ChopWood = qstHerikaRelationshipAutoLogTracker.GetAlias(1) as ReferenceAlias
+Alias_LightFireplaces = qstHerikaRelationshipAutoLogTracker.GetAlias(2) as ReferenceAlias
+Rider01 = TourCartFollowersQuest.GetAlias(0) as ReferenceAlias
+Rider02 = TourCartFollowersQuest.GetAlias(1) as ReferenceAlias
+Rider03 = TourCartFollowersQuest.GetAlias(2) as ReferenceAlias
+BallToss01 = ACL_Quest_YarnBallVS.GetAlias(1) as ReferenceAlias
+BallToss02 = ACL_Quest_YarnBallVS.GetAlias(2) as ReferenceAlias
+VergilDefaultOutfit = Game.GetFormFromFile(0x000008F0, "VergilSparda.esp") as outfit ;OTFT:FE0388F0
+VergilDevilHunterOutfit = Game.GetFormFromFile(0x000008F1, "VergilSparda.esp") as outfit ;OTFT:FE0388F1
+VergilDefaultOutfitBlack = Game.GetFormFromFile(0x00000979, "VergilSparda.esp") as outfit ;OTFT:FE038979
+VergilNude = Game.GetFormFromFile(0x00000959, "VergilSparda.esp") as outfit ;OTFT:FE038959
+WoodChoppingPackage = Game.GetFormFromFile(0x00000820, "HerikaDialogueInfos.esp") as Package 
+strVergilInventory = GetContainterItems(VergilObjRef)
+MGBVampireStageOne = game.GetFormFromFile(0x001D2D4E, "MGBsMods.esp") as Keyword
+MGBVampireStageTwo = game.GetFormFromFile(0x001D2D4F, "MGBsMods.esp") as Keyword
+MGBVampireStageThree = game.GetFormFromFile(0x001D2D50, "MGBsMods.esp") as Keyword
+MGBVampireStageFour = game.GetFormFromFile(0x001D2D51, "MGBsMods.esp") as Keyword
+VergilFightingStyleFaction = game.GetFormFromFile(0x00000901, "VergilSparda.esp") as Faction
+glbVergilJudgementCut = game.GetFormFromFile(0x00000806, "VergilFollowerJCE.esp") as GlobalVariable
+SteelArrow = game.GetFormFromFile(0x0001397F, "Skyrim.esm") as Ammo ;2.00
+FortifySkillOneHanded02 = game.GetFormFromFile(0x00039954, "Skyrim.esm") as Ingredient ;302.00
+RestoreHealth05 = game.GetFormFromFile(0x00039BE4, "Skyrim.esm") as Ingredient;123.00
+RestoreMagicka05 = game.GetFormFromFile(0x00039BE6, "Skyrim.esm") as Ingredient ;247.00
+Invisibility04 = game.GetFormFromFile (0x00003EB41, "Skyrim.esm") as Ingredient ;587.00
+FoodHonningbrewMead = game.GetFormFromFile (0x000508CA, "Skyrim.esm") as Ingredient ; 20.00
+FoodBlackBriarMead = game.GetFormFromFile (0x0002C35A, "Skyrim.esm") as Ingredient ; 25.00
+MQ201Drink = game.GetFormFromFile (0x00036D53, "Skyrim.esm") as Ingredient ; 100.00
+JobMerchantFaction = game.GetFormFromFile (0x00051596, "Skyrim.esm") as Faction
+Gold = Game.GetFormFromFile(0x0000000F, "Skyrim.esm") as MiscObject
+LocTypeInn = Game.GetFormFromFile(0x0001CB87, "Skyrim.esm") as Keyword
+LocTypeStore = Game.GetFormFromFile(0x0001CB86, "Skyrim.esm") as Keyword
+MGBvsdtransformSP = Game.GetFormFromFile(0x00000D66, "OmecaOneVergilSDT.esp") as Spell
+sdtVergilCooldown = Game.GetFormFromFile(0x00000D6D, "OmecaOneVergilSDT.esp") as GlobalVariable
+endFunction
+
+function CleanUpVariables()
+player=none
+herikaActor=none
+VergilRef=none
+glbAnimsType=none
+MakeLoveSpell=none
+FreaRef=none
+BallToss01=none
+BallToss02=none
+ACL_Quest_YarnBallVS=none
+TourCartFollowersQuest=none
+RidingInCarriage=none
+Rider01=none
+Rider02=none
+Rider03=none
+VergilDefaultOutfit=none
+VergilDevilHunterOutfit=none
+VergilDefaultOutfitBlack=none
+VergilNude=none
+GameDaysPassed=none
+glbGameDayGotEngaged=none
+Alias_ChopWood=none
+Alias_LightFireplaces=none
+qstHerikaRelationshipAutoLogTracker=none
+glbVergilLightFireplaces=none
+VergilObjRef=none
+FireWood=none
+WoodChoppingPackage=none
+flstVergilInventory=none
+MGBVampireStageFour=none
+MGBVampireStageOne=none
+MGBVampireStageThree=none
+MGBVampireStageTwo=none
+VergilFightingStyleFaction=none
+glbVergilJudgementCut=none
+SteelArrow=none
+FortifySkillOneHanded02=none
+RestoreHealth05=none
+RestoreMagicka05=none
+Invisibility04=none
+FoodHonningbrewMead=none
+FoodBlackBriarMead=none
+MQ201Drink=none
+JobMerchantFaction=none
+Gold=none
+LocTypeInn=none
+LocTypeStore=none
+MGBvsdtransformSP = none
+sdtVergilCooldown = none
+endFunction
+
+
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+;			VARIABLES DEFINED
+;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+SexLabFramework property SexLab auto
+aaashiputilityscript property aaaShipUtility auto
+sslHerika property sslHerikaSex auto
+
+actor property aVictim auto
+actor[] sexActors
+actor[] sexSolo
+actor property player auto
+actor property herikaActor auto
+Actor Property VergilRef Auto
+actor property FreaRef auto
+
+Ammo Property SteelArrow auto
+
+bool property blDebugging auto
+bool property blIsSolo auto
+
+Faction Property JobMerchantFaction Auto
+Faction Property VergilFightingStyleFaction auto 
+
+FormList property flstVergilInventory auto
+
+GlobalVariable Property glbAnimsType auto
+GlobalVariable Property glbGameDayGotEngaged auto
+GlobalVariable Property GameDaysPassed auto
+GlobalVariable Property glbVergilLightFireplaces auto 
+GlobalVariable Property glbVergilJudgementCut auto
+GlobalVariable Property sdtVergilCooldown Auto
+
+Idle property HealAnimation auto
+
+Ingredient Property FortifySkillOneHanded02 auto
+Ingredient Property RestoreHealth05 auto
+Ingredient Property RestoreMagicka05 auto
+Ingredient Property Invisibility04 auto
+Ingredient Property FoodHonningbrewMead auto
+Ingredient Property FoodBlackBriarMead auto
+Ingredient Property MQ201Drink auto
+
+Keyword Property RidingInCarriage Auto
+Keyword property MGBVampireStageOne auto
+Keyword property MGBVampireStageTwo auto
+Keyword property MGBVampireStageThree auto
+Keyword property MGBVampireStageFour auto
+Keyword Property LocTypeInn auto
+Keyword Property LocTypeStore auto
+
+MiscObject Property Firewood auto
+MiscObject Property Gold auto
+
+ObjectReference Property VergilObjRef auto
+
+outfit property VergilDefaultOutfit auto
+outfit property VergilDefaultOutfitBlack auto
+outfit property VergilDevilHunterOutfit auto
+outfit property VergilNude auto
+
+Package Property WoodChoppingPackage auto
+
+Quest Property ACL_Quest_YarnBallVS Auto
+quest Property TourCartFollowersQuest Auto
+quest Property qstHerikaRelationshipAutoLogTracker Auto
+
+
+
+ReferenceAlias property BallToss01 auto
+ReferenceAlias property BallToss02 auto
+ReferenceAlias Property Rider01 Auto
+ReferenceAlias Property Rider02 Auto
+ReferenceAlias Property Rider03 Auto
+ReferenceAlias Property Alias_ChopWood Auto
+ReferenceAlias Property Alias_LightFireplaces Auto
+
+Spell property AnimsSpell auto
+Spell property MakeLoveSpell auto
+Spell property MGBvsdtransformSP auto
+
+string property animDescription auto
+String property strVergilInventory auto
+string property suppress auto
+
+
+
+

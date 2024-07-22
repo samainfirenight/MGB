@@ -1,0 +1,8 @@
+{
+    "display_name": "Code Runner",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "js": "dist/index.js",
+    "css": ""
+}

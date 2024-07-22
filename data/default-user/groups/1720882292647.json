@@ -1,0 +1,50 @@
+{
+    "id": "1720882292647",
+    "name": "ZzGroup: Conversational Real Life Vergil",
+    "members": [
+        "Vergil3_2.png"
+    ],
+    "avatar_url": "img/ai4.png",
+    "allow_self_responses": false,
+    "activation_strategy": 0,
+    "generation_mode": 0,
+    "disabled_members": [],
+    "chat_metadata": {
+        "objective": {
+            "currentObjectiveId": null,
+            "taskTree": null,
+            "chatDepth": 2,
+            "checkFrequency": 3,
+            "hideTasks": false,
+            "prompts": {
+                "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+            }
+        },
+        "note_prompt": "",
+        "note_interval": 1,
+        "note_position": 1,
+        "note_depth": 4,
+        "note_role": 0,
+        "chat_id_hash": 6913819268656847,
+        "tainted": true,
+        "timedWorldInfo": {
+            "sticky": {},
+            "cooldown": {}
+        }
+    },
+    "fav": false,
+    "chat_id": "2024-7-13@10h51m32s",
+    "chats": [
+        "2024-7-13@10h51m32s"
+    ],
+    "auto_mode_delay": 5,
+    "generation_mode_join_prefix": "",
+    "generation_mode_join_suffix": "",
+    "date_added": 1721442229955.833,
+    "create_date": "2024-7-19 @22h 23m 49s 955ms",
+    "date_last_chat": 1721580962739,
+    "chat_size": 4418,
+    "past_metadata": {}
+}

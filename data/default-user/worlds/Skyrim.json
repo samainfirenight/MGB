@@ -1,0 +1,141 @@
+{
+    "entries": {
+        "0": {
+            "uid": 0,
+            "key": [],
+            "keysecondary": [],
+            "comment": "Dragonborn Accomplishments and Weapons",
+            "content": "--------- BEGIN ADDITIONAL USER INFO ----------\n\n--------- {{user}}'s Accomplishments ----------\n\n- Defeated Alduin | All Holds\n- Aided the Imperial Army in vanquishing the Storm Cloak rebellion | All Holds\n- Played a pivotal role in leading to the moot towards the decision to crown Balgruuf the Greater as Skyrim's High King | All Holds\n- Helped Danica Pure-Spring restore the Gildergreen to its former glory | Whiterun Hold\nSupported the Companion's on three missions:\n   - Cleared Forsworn camp between the Reach and Falkreath | The Reach Hold | Falkreath Hold\n   - Helped Faendal kill a bear that had attacked citizens of Riverwood | Whiterun Hold\n   - Cleared vampire den | Hjaalmarch Hold\n- Stopped Necromancer's from summoning and binding Potema at Wolfskull Cave | Haafingar Hold\n\n---------- {{user}}'s Weapons and Armor ----------\n\n- Master crafted one-handed Dragon Head katana | Ebony\n- Full Protection Light-Armor | Dragon Scale\n- Fast Action Long Bow | Ebony\n\n---------- {{user}}'s Additional Skills ----------\n\n- Expert Level Restoration Magic\n- Expert Level Destruction Magic\n\n--------- END ADDITIONAL USER INFO ----------\n\n",
+            "constant": true,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "automationId": "",
+            "displayIndex": 0,
+            "preventRecursion": true,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "449c7235-9bd7-4e72-9a18-06f498a5a342"
+                ]
+            },
+            "role": null,
+            "groupOverride": false,
+            "groupWeight": 100,
+            "vectorized": false,
+            "delayUntilRecursion": false,
+            "useGroupScoring": null,
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0,
+            "characterFilterTwo": {
+                "isExclude": true,
+                "names": [],
+                "tags": [
+                    "a2000db2-a924-439e-980b-6907633bb8fd"
+                ]
+            }
+        },
+        "1": {
+            "uid": 1,
+            "key": [],
+            "keysecondary": [],
+            "comment": "State of Skyrim Overall - High King Balgruuf",
+            "content": "--------- BEGIN ADDITIONAL SCENARIO INFO ----------\n\nHaving defeated Alduin and saving both Skyrim and Sovengarde from his reign of terror, the Dragonborn set sights on ending the civil war, on choosing the Imperial side, a campaign was held in each of the holds eventually capturing Ulfric Stormcloak and his commanders and imprisoning them in the Solitude dungeons to be punished for their crimes. Soon afterward, the Moot was held, with the Dragonborn's support firmly backing Jarl Balgruuf the Greater for High King. After much deliberation, due to Balgruuf not willing to resign to the Blue Palace in Solitude, the moot made a decision to move the capital of Skyrim to Whiterun and crowning Balgruuf the Greater as High King.\n\nIn addition, due to Skyrim's growing economy, Whiterun's Treasury finally acquired a surplus of funds and has been able to fully restore all of the walls protecting the city, as well as all of the damages to the homes and structures that occurred during the civil war campaign. High King Balgruuf the Greater has been working closely with the other Jarl's in a continuing effort to rebuild all of Skyrim to its former glory.\n\nJarl's of the other Holds are as follows:\nEastmarch = Brunwolf Free-Winter\nFalkreath = Siddgeir\nHaafingar = Elisif the Fair\nHjaalmarch = Idgrod Ravencrone\nThe Pale = Brina Merilis\nThe Reach = Igmund\nThe Rift = Maven Black-Briar\nWinterhold = Kraldar\n\n--------- END ADDITIONAL SCENARIO INFO ----------",
+            "constant": true,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "automationId": "",
+            "displayIndex": 1,
+            "preventRecursion": true,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "b4883072-b617-4841-bf85-ef92909adf9d"
+                ]
+            },
+            "role": null,
+            "groupOverride": false,
+            "groupWeight": 100,
+            "vectorized": false,
+            "delayUntilRecursion": false,
+            "useGroupScoring": null,
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0,
+            "characterFilterTwo": {
+                "isExclude": true,
+                "names": [],
+                "tags": [
+                    "a2000db2-a924-439e-980b-6907633bb8fd"
+                ]
+            }
+        },
+        "2": {
+            "uid": 2,
+            "key": [],
+            "keysecondary": [],
+            "comment": "Neloth Make Dragonborn House Telvanni",
+            "content": "---------- Begin Additional Details ----------\n\nDuring the time the Dragonborn spent in Solstheim, Master Neloth made the acquaintance of, {{user}}. While not initially impressed with the status of Dragonborn, Neloth did find it beneficial to foster a friendship ( well at least as close as Master Neloth would allow a friendship. )\n\nAfter aiding and supporting him in several tasks and difficult endeavors, including obtaining all of the known Black Books of Herma Mora, Master Neloth appointed {{user}} an honorary member of House Telvanni affording them all of the benefits that come with the title, Including Master Neloth's (often reluctant) loyalty and aid.\n\n---------- End Additional Details ----------",
+            "constant": true,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "automationId": "",
+            "displayIndex": 2,
+            "preventRecursion": true,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [
+                    "Neloth"
+                ],
+                "tags": []
+            },
+            "role": null,
+            "groupOverride": false,
+            "groupWeight": 100,
+            "vectorized": false,
+            "delayUntilRecursion": false,
+            "useGroupScoring": null,
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0
+        }
+    }
+}

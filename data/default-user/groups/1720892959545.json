@@ -1,0 +1,60 @@
+{
+    "id": "1720892959545",
+    "name": "ZzGroup: Serena Gale is Born",
+    "members": [
+        "Vergil3_1.png",
+        "Melissa Sparda.png",
+        "Serena Gale.png",
+        "Narrator1_1.png"
+    ],
+    "avatar_url": "img/ai4.png",
+    "allow_self_responses": false,
+    "activation_strategy": 0,
+    "generation_mode": 0,
+    "disabled_members": [
+        "Vergil3_1.png",
+        "Serena Gale.png",
+        "Melissa Sparda.png",
+        "Narrator1_1.png",
+        "Ellen Wise.png",
+        "Pamela Noela.png"
+    ],
+    "chat_metadata": {
+        "objective": {
+            "currentObjectiveId": null,
+            "taskTree": null,
+            "chatDepth": 2,
+            "checkFrequency": 3,
+            "hideTasks": false,
+            "prompts": {
+                "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+            }
+        },
+        "note_prompt": "",
+        "note_interval": 1,
+        "note_position": 1,
+        "note_depth": 4,
+        "note_role": 0,
+        "chat_id_hash": 2949434878976529,
+        "tainted": true,
+        "timedWorldInfo": {
+            "sticky": {},
+            "cooldown": {}
+        }
+    },
+    "fav": false,
+    "chat_id": "2024-7-13@13h49m19s",
+    "chats": [
+        "2024-7-13@13h49m19s"
+    ],
+    "auto_mode_delay": 5,
+    "generation_mode_join_prefix": "",
+    "generation_mode_join_suffix": "",
+    "date_added": 1720904443312.16,
+    "create_date": "2024-7-13 @17h 00m 43s 312ms",
+    "date_last_chat": 1720898971531.2063,
+    "chat_size": 56201,
+    "past_metadata": {}
+}

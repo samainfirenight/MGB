@@ -1,0 +1,165 @@
+{
+    "id": "1714397543678",
+    "name": "ZzGroup: Vergil Real Time AI",
+    "members": [
+        "Vergil3_1.png",
+        "Dante.png",
+        "Melissa1.png",
+        "Narrator1_1.png"
+    ],
+    "avatar_url": "/thumbnail?type=avatar&file=Vergil_2.png",
+    "allow_self_responses": false,
+    "activation_strategy": false,
+    "generation_mode": 0,
+    "disabled_members": [
+        "Candy.png",
+        "Melissa.png",
+        "Vergil_2.png",
+        "Dante.png",
+        "Nidhogg Boss.png",
+        "Vergil's Demon Form Spectral Doppelganger.png",
+        "Charlotte R.N_1.png",
+        "Miraak.png",
+        "Hermaeus Mora.png",
+        "Sheogorath.png",
+        "Arkham.png",
+        "Adrian Forrester.png",
+        "Vergil1_6.png",
+        "Morrison.png",
+        "Nero.png",
+        "Nico.png",
+        "Dante1.png",
+        "Vergil_4.png",
+        "Melissa1.png",
+        "Ted.png",
+        "Vergil2.png",
+        "Death Scissors_1.png",
+        "Mundus.png",
+        "Elora's Corrupted Shade.png",
+        "KITT.png",
+        "Artemis.png",
+        "Cavaliere Angelo.png",
+        "Narrator1_1.png",
+        "Atreyu.png",
+        "Goliath.png",
+        "Dr. Yann LeCun.png",
+        "Dr. Ilya Sutskever.png",
+        "Mistress Katarina_1.png",
+        "Criss Angel.png",
+        "David Blaine.png",
+        "Danny Koker.png",
+        "Mark Zuckerberg.png",
+        "Pamela Noela.png",
+        "Captain Gerard1.png",
+        "Liam.png",
+        "Kevin Mack.png",
+        "Annette.png",
+        "Detective John Corey.png",
+        "Detective John McClane.png",
+        "Hans Gruber.png",
+        "Vergil3_3.png",
+        "Dr. Michael Wills.png",
+        "Vergil_3.png",
+        "Urizen.png",
+        "V.png",
+        "Shadow.png",
+        "Griffon.png",
+        "Trish.png",
+        "Sparda - The Legendary Dark Knight.png",
+        "Vergil3_1.png"
+    ],
+    "chat_metadata": {
+        "chat_id_hash": 7639081109792708,
+        "objective": {
+            "currentObjectiveId": null,
+            "taskTree": null,
+            "chatDepth": 2,
+            "checkFrequency": 3,
+            "hideTasks": false,
+            "prompts": {
+                "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+            }
+        },
+        "note_prompt": "",
+        "note_interval": 1,
+        "note_position": 1,
+        "note_depth": 4,
+        "note_role": 0,
+        "tainted": true,
+        "timedWorldInfo": {
+            "sticky": {},
+            "cooldown": {}
+        }
+    },
+    "fav": true,
+    "chat_id": "2024-7-15@22h51m40s",
+    "chats": [
+        "Vergil_Intimate_SoundingPlay",
+        "Charlotte_Begs_Vergil_NoDante",
+        "2024-7-15@22h51m40s"
+    ],
+    "auto_mode_delay": 5,
+    "generation_mode_join_prefix": "",
+    "generation_mode_join_suffix": "",
+    "date_added": 1721442394659.072,
+    "create_date": "2024-7-19 @22h 26m 34s 659ms",
+    "date_last_chat": 1721098422992.2668,
+    "chat_size": 682991,
+    "past_metadata": {
+        "": {},
+        "Vergil_Intimate_SoundingPlay": {
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            },
+            "chat_id_hash": 7241574616233900,
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "note_role": 0,
+            "tainted": true,
+            "main_chat": "2024-7-8 @07h 31m 42s 710ms",
+            "timedWorldInfo": {
+                "sticky": {},
+                "cooldown": {}
+            }
+        },
+        "Charlotte_Begs_Vergil_NoDante": {
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            },
+            "chat_id_hash": 7241574616233900,
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "note_role": 0,
+            "tainted": true,
+            "main_chat": "Charlotte_Begs_For_Vergil - 2024-7-8@18h48m24s",
+            "timedWorldInfo": {
+                "sticky": {},
+                "cooldown": {}
+            }
+        }
+    }
+}

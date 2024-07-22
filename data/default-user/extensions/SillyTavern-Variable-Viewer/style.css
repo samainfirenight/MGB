@@ -1,0 +1,224 @@
+@keyframes vv--add {
+  0% {
+    background-color: rgba(0 0 0 / 0%);
+  }
+  25% {
+    background-color: rgba(0 255 0 / 50%);
+  }
+  100% {
+    background-color: rgba(0 0 0 / 0%);
+  }
+}
+@keyframes vv--update {
+  0% {
+    background-color: rgba(0 0 0 / 0%);
+  }
+  25% {
+    background-color: rgba(0 0 255 / 50%);
+  }
+  100% {
+    background-color: rgba(0 0 0 / 0%);
+  }
+}
+@keyframes vv--remove {
+  0% {
+    background-color: rgba(0 0 0 / 0%);
+  }
+  25% {
+    background-color: rgba(255 0 0 / 50%);
+  }
+  100% {
+    background-color: rgba(0 0 0 / 0%);
+  }
+}
+@media screen and (max-width: 1000px) {
+  body #vv--root {
+    top: var(--topBarBlockSize);
+    width: 100svw;
+    max-width: 100svw;
+  }
+  body #vv--root .vv--action {
+    font-size: 1.5em;
+  }
+}
+#vv--root {
+  display: flex;
+  max-height: calc(100vh - var(--topBarBlockSize));
+  max-height: calc(100svh - var(--topBarBlockSize));
+  position: fixed;
+  margin: 0;
+  right: 0;
+  left: unset;
+  padding-top: 25px;
+  flex-flow: column;
+}
+#vv--root.vv--maximized {
+  width: 100vw;
+}
+#vv--root > .vv--fontSizeUp {
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  opacity: 0.5;
+}
+#vv--root > .vv--fontSizeUp:hover {
+  opacity: 1;
+}
+#vv--root > .vv--fontSizeDown {
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  left: 35px;
+  top: 5px;
+  opacity: 0.5;
+}
+#vv--root > .vv--fontSizeDown:hover {
+  opacity: 1;
+}
+#vv--root > .vv--maximize {
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  left: 55px;
+  top: 5px;
+  opacity: 0.5;
+}
+#vv--root > .vv--maximize:hover {
+  opacity: 1;
+}
+#vv--root > .vv--move {
+  position: absolute;
+  right: 35px;
+  top: 3px;
+}
+#vv--root > .vv--close {
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+#vv--root > .vv--content {
+  overflow: auto;
+}
+#vv--root > .vv--content > .vv--entry {
+  margin: 0.5em 0.25em;
+  padding-bottom: 0.25em;
+}
+#vv--root > .vv--content > .vv--entry:has(+.vv--entry) {
+  border-bottom: 1px solid silver;
+  padding-bottom: 0.75em;
+}
+#vv--root > .vv--content > .vv--entry > .vv--title {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  gap: 1em;
+}
+#vv--root > .vv--content > .vv--entry > .vv--title > .vv--add {
+  cursor: pointer;
+  opacity: 0.5;
+}
+#vv--root > .vv--content > .vv--entry > .vv--title > .vv--add:hover {
+  opacity: 1;
+}
+#vv--root > .vv--content > .vv--entry > .vv--title > .vv--flushAll {
+  cursor: pointer;
+  opacity: 0.5;
+  position: relative;
+}
+#vv--root > .vv--content > .vv--entry > .vv--title > .vv--flushAll:hover {
+  opacity: 1;
+}
+#vv--root > .vv--content > .vv--entry > .vv--title > .vv--flushAll > .vv--first {
+  display: inline-block;
+}
+#vv--root > .vv--content > .vv--entry > .vv--title > .vv--flushAll > .vv--second {
+  display: inline-block;
+  transform: scaleX(-1);
+  margin-left: -5px;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars > .vv--var {
+  border-left: 2px solid transparent;
+  transition: border-left-color 500ms;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars > .vv--var.vv--unsaved {
+  border-left-color: red;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var {
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var.vv--add {
+  animation-name: vv--add;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var.vv--update {
+  animation-name: vv--update;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var.vv--remove {
+  animation-name: vv--remove;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var.vv--collapsed > .vv--head {
+  opacity: 0.5;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var.vv--collapsed > .vv--body {
+  display: none;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var .vv--var {
+  border-left: 2px solid var(--SmartThemeEmColor);
+  margin-left: 3px;
+  padding-left: 5px;
+  transition: border-left-color 500ms;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var .vv--var.vv--unsaved {
+  border-left-color: red;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var[data-vv--type="[]"] > .vv--body > .vv--var:not(:has(.vv--var)) {
+  display: flex;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var > .vv--head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var > .vv--head > .vv--label {
+  flex: 0 0 auto;
+  cursor: row-resize;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var > .vv--head > .vv--type {
+  color: var(--SmartThemeEmColor);
+  margin-left: 0.5em;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var > .vv--head > .vv--actions {
+  flex: 1 1 auto;
+  text-align: right;
+  white-space: nowrap;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var > .vv--head > .vv--actions > .vv--action {
+  cursor: pointer;
+  opacity: 0.5;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var > .vv--head > .vv--actions > .vv--action.vv--mainAction {
+  font-size: 1.5em;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var > .vv--head > .vv--actions > .vv--action:hover {
+  opacity: 1;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var > .vv--body {
+  flex: 1 1 auto;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var > .vv--body > .vv--val {
+  background-color: var(--black30a);
+  border: 1px solid var(--SmartThemeBorderColor);
+  border-radius: 5px;
+  padding: 2px;
+  flex: 1;
+  text-align: center;
+  animation-iteration-count: 1;
+}
+#vv--root > .vv--content > .vv--entry > .vv--vars .vv--var > .vv--body > .vv--val > textarea {
+  font-size: smaller;
+}

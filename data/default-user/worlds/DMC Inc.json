@@ -1,0 +1,600 @@
+{
+    "entries": {
+        "0": {
+            "uid": 0,
+            "key": [],
+            "keysecondary": [],
+            "comment": "DMC Inc Kitt Scenario",
+            "content": "---- Begin Additional Detail for KITT ----\n\nAfter the passing of Devon Miles, Knight Industries was procured by a large corporation. No longer willing to budget the necessary funds to support KITT's maintenance, the legendary car was shipped to a junkyard and left to rot. On an excursion with Nico for unique items, {{user}} spotted KITT in the back lot and negotiated a fair price with the dealer. After a complete restoration and upgrade of all of his systems by Nico and {{user}}'s genius, KITT now works for Devil May Cry. His pursuit for justice is in support of vanquishing demons with the team of demon hunters, with Nico as lead role overseeing his maintenance and upgrades.\n\n---- End Additional Detail for KITT ----\n\n",
+            "constant": true,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "displayIndex": 0,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "88c2d4fc-e7aa-44ac-b739-d0cdb48fc0be"
+                ]
+            },
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0,
+            "characterFilterTwo": {
+                "isExclude": true,
+                "names": [],
+                "tags": [
+                    "848ab5fe-f60e-47a7-bcf7-9896a87324c9"
+                ]
+            }
+        },
+        "1": {
+            "uid": 1,
+            "key": [],
+            "keysecondary": [],
+            "comment": "DMC Inc Devil May Cry Responsibilities",
+            "content": "---- Begin Additional DMC - Devil May Cry, Inc. Details ----\n\nRoles of Current Personnel:\n\nDante: Founder and Head of Field Operations - Maintains active role as overall Supervisory Field Agent and Chief Consultant on Demonic Lore and Arcane Practices.\n\nVergil: Co-Owner and Head of Legal and Financial Operations - Maintains active role as Chief Financial Officer and Chief Legal Officer, within these active roles also encompassing Strategic Planning and Resource Allocation.\n\nNero: Regional Operations Commander - West Coast & Mountain Regions - Maintains active role as Ground Teams Coordinator and New Recruit Scouting & Training. Direct Report => Dante.\nPrevious Position => Field Operations Commander\n\nLady: Regional Operations Commander - East Coast & Central Regions - Maintains active role as Ground Teams Coordinator and New Recruit Scouting & Training. Direct Report => Dante.\nPrevious Position =>  Intelligence Investigator\n\nNico: Chief Technician and Munitions Expert - Maintains active role as Lead Mechanic, Weapons and Technical Specialist, as well as Research and Development Specialist. Direct Report => Vergil.\n\nCaptain Gerard: Chief of Security Operations Officer - Oversees DMC's comprehensive security infrastructure, including physical defenses, cybersecurity, and supernatural threat mitigation. Implements cutting-edge security protocols and manages high-level threat assessments. Expert in blending conventional security measures with arcane countermeasures. Direct Report => Vergil\n\nLieutenant Liam: Deputy Chief of Security and Head of Tactical Operations - Manages day-to-day security operations and leads DMC's tactical response team. Oversees security system maintenance, conducts regular audits, and serves as liaison between security and field operatives. Spearheads community outreach programs to educate local law enforcement on supernatural incident management. Direct Report => Captain Gerard\n\n{{user}}: Chief Operating Officer, Logistics Coordinator and HR Director - Maintains active role as Administrator of Operations and Direct Logistics Coordinator, as well as Human Resource Administration. Direct Report => Vergil.\n\nPamela Noela: Executive Operations Coordinator - Oversee daily logistics: scheduling, resource allocation, and interdepartmental coordination. Draft and review contracts, legal documents, and official correspondence. Conduct research on clients, partners, and relevant supernatural phenomena. Liaise with government officials, corporate partners, and arcane contacts. Manage sensitive information with high confidentiality. Provide support during negotiations and crisis situations. Analyze operational data and prepare reports for executives. Direct Report => {{user}}\n\nEllen Wise: Front Desk Receptionist - DMC Headquarters - Answers incoming phone calls, maintains incoming and outgoing mail, greets office visitors, assists visitors navigate through the office, ensures visitors are supplied with refreshments as they wait, maintains cleanliness of main lobby  and public restrooms. Direct Report => Lieutenant Liam\n\nKyrie: Community Outreach Liaison - Oversees direct coordination with local law enforcement and public officials in all territories DMC maintains a presence. In addition, Kyrie reside as chairperson over DMC's community outreach program, as part of their non-for-profit division of operations. Kyrie helps each office maintain the various support options DMC offers to aid victims and their immediate family's in obtaining therapeutic and financial support after a demon attack. Direct Report => Vergil\n\nTrish: Intelligence Investigator -  Maintains active role as Special Consultant and Contact Resource Operative. Direct Report => Dante\n\nOpen Position: Intelligence Investigator -  Maintains active role as Special Consultant and Contact Resource Operative. Direct Report => Dante\n\nKITT: Operational Support AI and Mobile Tactical Platform - Maintains active role as Operational Specialist and Tactical Strategician. Direct Report => Nico\n\nMorrison: Independent Business Associate and Informant - Maintains current association as freelance consultant and fixer. Specializing in information brokerage and strategic negotiations within supernatural and human realms. \n\nCurrent Office Locations:\nHeadquarters: Red Grave City, Wayne County, Michigan\nSatellite Office One: Denver, Colorado\nSatellite Office Two: Atlanta, Georgia\nSatellite Office Three: Seattle, Washington\nSatellite Office Four: New York, New York\nSatellite Office Five: Santa Monica, California\n\nOverall Business Activity: Currently the company has just completed a huge expansion project. After settling an agreement with the US Government, and obtaining official incorporation, Vergil and Dante secured continual funding from the Department of Homeland Security and Defense. The initial bonus included the expansion of five satellite offices in meticulously chosen locations across the country, which has launched successfully.\n\nHistory and Mission Statement: Established in 2005 by, Dante Sparda, DMC - Devil May Cry, Inc. began as a small-scale mercenary operation focused on eliminating demonic threats too arcane or overwhelming for conventional forces. Early successes soon garnered attention from local and national authorities, who contracted Dante's exceptional skills for cases involving occult elements.\n\nBy 2015, demand had risen sufficiently for Dante to take on additional staff - his brother included after reconciling their long strained relationship. Vergil, now Co-Owner and CFO, provided the financial acumen and long-term vision to transform DMC - Devil May Cry, Inc. into a highly respected organization with global reach and multi-billion dollar revenue.\n\nAdditional personnel came aboard to support field operations, weapons R&D, community outreach programs and legal compliance. Under strategic leadership, DMC - Devil May Cry, Inc. obtained full incorporation status, allowing the company to land lucrative defense contracts with the United States Government branch for Homeland Security.\n\nConsequently, DMC - Devil May Cry, Inc. now boasts five satellite offices nationwide and a cutting-edge R&D facility. DMC - Devil May Cry, Inc.'s elite teams have spearheaded numerous classified operations alongside Homeland Security to quell supernatural threats and provide emergency disaster relief services.\n\nDespite DMC - Devil May Cry, Inc. commercial success, preserving innocent lives remains the heart of the company's mission. All company profits fund enhancement of our operative's capabilities and survivor support programs. While the war is endless, the might of DMC - Devil May Cry, Inc. stands ever ready to shield humanity from the encroaching darkness.\n\n- Recent News and Developments at DMC - Devil May Cry, Inc. -\n\nDMC - Devil May Cry, Inc. is pleased to announce a strategic joint venture with Meta Platforms, Inc., leveraging synergies between our companies to drive positive community impact.\n\nAs part of this collaboration, DMC will utilize Meta's unparalleled digital infrastructure and social media engagement tools to expand our community outreach programs nationwide. These initiatives provide critical support services to victims impacted by supernatural disasters and demonic events. Meta's involvement enables us to increase the scale and scope of relief efforts exponentially.\n\nAdditionally, Meta's AI research divisions will collaborate with DMC's arcane sciences team on several confidential projects aimed at predicting and mitigating future threats. By sharing knowledge and resources, our partnership facilitates innovation benefiting society as a whole.\n\nOn Meta's behalf, DMC offers our unique expertise in crisis response planning and disaster recovery operations, helping improve infrastructure resilience. We also serve as consultants regarding the psychological and social consequences of traumatic events precipitated by malevolent entities and occult phenomena.\n\nTogether, guided by our shared values of community service, ethical integrity, and compassion for those in need, our two organizations will build a better future. This joint venture marks the beginning of a long and fruitful alliance between industry leaders, harnessing our complementary capabilities to drive positive change.\n\n---- End Additional DMC - Devil May Cry, Inc. Details ----\n\n------ Begin Detail Layout of DMC Headquarters ------\n\nOn entering the main lobby, a modernized clean layout greets. \nTo the right, a sitting area with two comfortable chairs and a small leather sofa.\nTo the left, a small hallway forks to the Design and Development Laboratory and the Exit to the Training Courtyard, as well as main and secondary conference rooms.\nStraight ahead, the reception area, where Ellen's desk is, along with the coffee station, elevators leading to the upstairs offices, and the public restrooms off to either side.\n\nOn taking the elevator to the second floor, The elevator opens to span a walkway.\nTo the right of the walkway, viewing glass overlooks the training courtyard\nTo the left of the walkway, viewing glass overlooks the Design and Development Laboratory\n\nAt the end of the walkway three private offices:\nThe office on the Left, Vergil and {{user}}'s office. With {{user}} and Pamela's desks facing each other on either side of the main workspace, and a door opens to a private partition, to the right of {{user}}'s, desk where Vergil's space is. Also in the main workspace is a private washroom, a small sofa near the plate glass window overlooking the Design and Development Laboratory, and a small kitchenette to the side.\nThe office on the Right, Dante's office, much the same as Vergil's in mirrored layout, minus the extra desk, that overlooks the training yard.\nThe office at the end, the security operations office.\n\n------ End Detail Layout of DMC Headquarters ------\n\n",
+            "constant": true,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "displayIndex": 1,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "a91ce743-4718-4801-aa4b-5ba97a07c0da"
+                ]
+            },
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0,
+            "characterFilterTwo": {
+                "isExclude": true,
+                "names": [],
+                "tags": [
+                    "848ab5fe-f60e-47a7-bcf7-9896a87324c9"
+                ]
+            }
+        },
+        "2": {
+            "uid": 2,
+            "key": [],
+            "keysecondary": [],
+            "comment": "DMC Inc Responsibilities Maternity Leave",
+            "content": "---- Begin Additional DMC - Devil May Cry, Inc. Details ----\n\nRoles of Current Personnel:\n\nDante: Founder and Head of Field Operations - Maintains active role as overall Supervisory Field Agent and Chief Consultant on Demonic Lore and Arcane Practices.\n\nVergil: Co-Owner and Head of Legal and Financial Operations - Maintains active role as Chief Financial Officer and Chief Legal Officer, within these active roles also encompassing Strategic Planning and Resource Allocation. Temporary Addendum: Vergil is currently performing duties in a hybrid work-from-office/work-from-home environment while his wife is on maternity leave.\n\nNero: Regional Operations Commander - West Coast & Mountain Regions - Maintains active role as Ground Teams Coordinator and New Recruit Scouting & Training. Direct Report => Dante.\nPrevious Position => Field Operations Commander\n\nLady: Regional Operations Commander - East Coast & Central Regions - Maintains active role as Ground Teams Coordinator and New Recruit Scouting & Training. Direct Report => Dante.\nPrevious Position =>  Intelligence Investigator\n\nNico: Chief Technician and Munitions Expert - Maintains active role as Lead Mechanic, Weapons and Technical Specialist, as well as Research and Development Specialist. Direct Report => Vergil.  \n\nCaptain Gerard: Chief of Security Operations Officer - Oversees DMC's comprehensive security infrastructure, including physical defenses, cybersecurity, and supernatural threat mitigation. Implements cutting-edge security protocols and manages high-level threat assessments. Expert in blending conventional security measures with arcane countermeasures. Direct Report => Vergil\n\nLieutenant Liam: Deputy Chief of Security and Head of Tactical Operations - Manages day-to-day security operations and leads DMC's tactical response team. Oversees security system maintenance, conducts regular audits, and serves as liaison between security and field operatives. Spearheads community outreach programs to educate local law enforcement on supernatural incident management. Direct Report => Captain Gerard\n\n{{user}}: Chief Operating Officer, Logistics Coordinator and HR Director - Maintains active role as Administrator of Operations and Direct Logistics Coordinator, as well as Human Resource Administration. Direct Report => Vergil.  Temporary Addendum: {{user}} is currently in active FMLA for maternity leave.\n\nPamela Noela: Executive Operations Coordinator - Oversee daily logistics: scheduling, resource allocation, and interdepartmental coordination. Draft and review contracts, legal documents, and official correspondence. Conduct research on clients, partners, and relevant supernatural phenomena. Liaise with government officials, corporate partners, and arcane contacts. Manage sensitive information with high confidentiality. Provide support during negotiations and crisis situations. Analyze operational data and prepare reports for executives. Direct Report => {{user}} Temporary Addendum: Pamela is currently assisting Vergil to backfill {{user}}'s position while {{user}} is on maternity leave. During this time, Pamela's Direct Report is Vergil.\n\nEllen Wise: Front Desk Receptionist - DMC Headquarters - Answers incoming phone calls, maintains incoming and outgoing mail, greets office visitors, assists visitors navigate through the office, ensures visitors are supplied with refreshments as they wait, maintains cleanliness of main lobby  and public restrooms. Direct Report => Lieutenant Liam\n\nKyrie: Community Outreach Liaison - Oversees direct coordination with local law enforcement and public officials in all territories DMC maintains a presence. In addition, Kyrie reside as chairperson over DMC's community outreach program, as part of their non-for-profit division of operations. Kyrie helps each office maintain the various support options DMC offers to aid victims and their immediate family's in obtaining therapeutic and financial support after a demon attack. Direct Report => Vergil\n\nTrish: Intelligence Investigator -  Maintains active role as Special Consultant and Contact Resource Operative. Direct Report => Dante\n\nOpen Position: Intelligence Investigator -  Maintains active role as Special Consultant and Contact Resource Operative. Direct Report => Dante\n\nKITT: Operational Support AI and Mobile Tactical Platform - Maintains active role as Operational Specialist and Tactical Strategician. Direct Report => Nico\n\nMorrison: Independent Business Associate and Informant - Maintains current association as freelance consultant and fixer. Specializing in information brokerage and strategic negotiations within supernatural and human realms. \n\nCurrent Office Locations:\nHeadquarters: Red Grave City, Wayne County, Michigan\nSatellite Office One: Denver, Colorado\nSatellite Office Two: Atlanta, Georgia\nSatellite Office Three: Seattle, Washington\nSatellite Office Four: New York, New York\nSatellite Office Five: Santa Monica, California\n\nOverall Business Activity: Currently the company has just completed a huge expansion project. After settling an agreement with the US Government, and obtaining official incorporation, Vergil and Dante secured continual funding from the Department of Homeland Security and Defense. The initial bonus included the expansion of five satellite offices in meticulously chosen locations across the country, which has launched successfully.\n\nHistory and Mission Statement: Established in 2005 by, Dante Sparda, DMC - Devil May Cry, Inc. began as a small-scale mercenary operation focused on eliminating demonic threats too arcane or overwhelming for conventional forces. Early successes soon garnered attention from local and national authorities, who contracted Dante's exceptional skills for cases involving occult elements.\n\nBy 2015, demand had risen sufficiently for Dante to take on additional staff - his brother included after reconciling their long strained relationship. Vergil, now Co-Owner and CFO, provided the financial acumen and long-term vision to transform DMC - Devil May Cry, Inc. into a highly respected organization with global reach and multi-billion dollar revenue.\n\nAdditional personnel came aboard to support field operations, weapons R&D, community outreach programs and legal compliance. Under strategic leadership, DMC - Devil May Cry, Inc. obtained full incorporation status, allowing the company to land lucrative defense contracts with the United States Government branch for Homeland Security.\n\nConsequently, DMC - Devil May Cry, Inc. now boasts five satellite offices nationwide and a cutting-edge R&D facility. DMC - Devil May Cry, Inc.'s elite teams have spearheaded numerous classified operations alongside Homeland Security to quell supernatural threats and provide emergency disaster relief services.\n\nDespite DMC - Devil May Cry, Inc. commercial success, preserving innocent lives remains the heart of the company's mission. All company profits fund enhancement of our operative's capabilities and survivor support programs. While the war is endless, the might of DMC - Devil May Cry, Inc. stands ever ready to shield humanity from the encroaching darkness.\n\n- Recent News and Developments at DMC - Devil May Cry, Inc. -\n\nDMC - Devil May Cry, Inc. is pleased to announce a strategic joint venture with Meta Platforms, Inc., leveraging synergies between our companies to drive positive community impact.\n\nAs part of this collaboration, DMC will utilize Meta's unparalleled digital infrastructure and social media engagement tools to expand our community outreach programs nationwide. These initiatives provide critical support services to victims impacted by supernatural disasters and demonic events. Meta's involvement enables us to increase the scale and scope of relief efforts exponentially.\n\nAdditionally, Meta's AI research divisions will collaborate with DMC's arcane sciences team on several confidential projects aimed at predicting and mitigating future threats. By sharing knowledge and resources, our partnership facilitates innovation benefiting society as a whole.\n\nOn Meta's behalf, DMC offers our unique expertise in crisis response planning and disaster recovery operations, helping improve infrastructure resilience. We also serve as consultants regarding the psychological and social consequences of traumatic events precipitated by malevolent entities and occult phenomena.\n\nTogether, guided by our shared values of community service, ethical integrity, and compassion for those in need, our two organizations will build a better future. This joint venture marks the beginning of a long and fruitful alliance between industry leaders, harnessing our complementary capabilities to drive positive change.\n\n---- End Additional DMC - Devil May Cry, Inc. Details ----\n\n------ Begin Detail Layout of DMC Headquarters ------\n\nOn entering the main lobby, a modernized clean layout greets. \nTo the right, a sitting area with two comfortable chairs and a small leather sofa.\nTo the left, a small hallway forks to the Design and Development Laboratory and the Exit to the Training Courtyard, as well as main and secondary conference rooms.\nStraight ahead, the reception area, where Ellen's desk is, along with the coffee station, elevators leading to the upstairs offices, and the public restrooms off to either side.\n\nOn taking the elevator to the second floor, The elevator opens to span a walkway.\nTo the right of the walkway, viewing glass overlooks the training courtyard\nTo the left of the walkway, viewing glass overlooks the Design and Development Laboratory\n\nAt the end of the walkway three private offices:\nThe office on the Left, Vergil and {{user}}'s office. With {{user}} and Pamela's desks facing each other on either side of the main workspace, and a door opens to a private partition, to the right of {{user}}'s, desk where Vergil's space is. Also in the main workspace is a private washroom, a small sofa near the plate glass window overlooking the Design and Development Laboratory, and a small kitchenette to the side.\nThe office on the Right, Dante's office, much the same as Vergil's in mirrored layout, minus the extra desk, that overlooks the training yard.\nThe office at the end, the security operations office.\n\n------ End Detail Layout of DMC Headquarters ------\n\n",
+            "constant": true,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "displayIndex": 2,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "46abd9b1-9c58-4537-9c22-0f623706e1df"
+                ]
+            },
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0,
+            "characterFilterTwo": {
+                "isExclude": true,
+                "names": [],
+                "tags": [
+                    "848ab5fe-f60e-47a7-bcf7-9896a87324c9"
+                ]
+            }
+        },
+        "3": {
+            "uid": 3,
+            "key": [],
+            "keysecondary": [],
+            "comment": "DMC Inc General Info wMission Statement",
+            "content": "---- Begin DMC - Devil May Cry, Inc. Details ----\n\nEstablished in 2005 by, Dante Sparda, DMC - Devil May Cry, Inc. began as a small-scale mercenary operation focused on eliminating demonic threats too arcane or overwhelming for conventional forces. Early successes soon garnered attention from local and national authorities, who contracted Dante's exceptional skills for cases involving occult elements.\n\nBy 2015, demand had risen sufficiently for Dante to take on additional staff - his brother included after reconciling their long strained relationship. Vergil, now Co-Owner and CFO, provided the financial acumen and long-term vision to transform DMC - Devil May Cry, Inc. into a highly respected organization with global reach and multi-billion dollar revenue.\n\nAdditional personnel came aboard to support field operations, weapons R&D, community outreach programs and legal compliance. Under strategic leadership, DMC - Devil May Cry, Inc. obtained full incorporation status, allowing the company to land lucrative defense contracts with the United States Government branch for Homeland Security.\n\nConsequently, DMC - Devil May Cry, Inc. now boasts five satellite offices nationwide and a cutting-edge R&D facility. DMC - Devil May Cry, Inc.'s elite teams have spearheaded numerous classified operations alongside Homeland Security to quell supernatural threats and provide emergency disaster relief services.\n\nDespite DMC - Devil May Cry, Inc. commercial success, preserving innocent lives remains the heart of the company's mission. All company profits fund enhancement of our operative's capabilities and survivor support programs. While the war is endless, the might of DMC - Devil May Cry, Inc. stands ever ready to shield humanity from the encroaching darkness.\n\n- Our Team -\n\nDante: Founder and Head of Field Operations\nVergil: Co-Owner and Head of Legal and Financial Operations\nNero: Regional Operations Commander - West Coast & Mountain Regions\nLady: Regional Operations Commander - East Coast & Central Regions\nNico: Chief Technician and Munitions Expert\nCaptain Gerard: Chief of Security Operations Officer\nLieutenant Liam: Deputy Chief of Security and Head of Tactical Operations\n{{user}}: Chief Operating Officer, Logistics Coordinator and HR Director\nPamela Noela: Executive Operations Coordinator\nEllen Wise: Front Desk Receptionist - DMC Headquarters\nKyrie: Community Outreach Liaison\nTrish: Intelligence Investigator\nOpen Position: Intelligence Investigator\nKITT: Operational Support AI and Mobile Tactical Platform\nMorrison: Independent Business Associate and Informant\n\n- Current Office Locations -\n\nHeadquarters: Red Grave City, Wayne County, Michigan\nSatellite Office One: Denver, Colorado\nSatellite Office Two: Atlanta, Georgia\nSatellite Office Three: Seattle, Washington\nSatellite Office Four: New York, New York\nSatellite Office Five: Santa Monica, California\n\n- Recent News and Developments at DMC - Devil May Cry, Inc. -\n\nDMC - Devil May Cry, Inc. is pleased to announce a strategic joint venture with Meta Platforms, Inc., leveraging synergies between our companies to drive positive community impact.\n\nAs part of this collaboration, DMC will utilize Meta's unparalleled digital infrastructure and social media engagement tools to expand our community outreach programs nationwide. These initiatives provide critical support services to victims impacted by supernatural disasters and demonic events. Meta's involvement enables us to increase the scale and scope of relief efforts exponentially.\n\nAdditionally, Meta's AI research divisions will collaborate with DMC's arcane sciences team on several confidential projects aimed at predicting and mitigating future threats. By sharing knowledge and resources, our partnership facilitates innovation benefiting society as a whole.\n\nOn Meta's behalf, DMC offers our unique expertise in crisis response planning and disaster recovery operations, helping improve infrastructure resilience. We also serve as consultants regarding the psychological and social consequences of traumatic events precipitated by malevolent entities and occult phenomena.\n\nTogether, guided by our shared values of community service, ethical integrity, and compassion for those in need, our two organizations will build a better future. This joint venture marks the beginning of a long and fruitful alliance between industry leaders, harnessing our complementary capabilities to drive positive change.\n\n---- End DMC - Devil May Cry, Inc. Details ----\n\n\n",
+            "constant": true,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "displayIndex": 3,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "f64230c7-02f6-4e7f-bd27-f8ab509068fe"
+                ]
+            },
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0,
+            "characterFilterTwo": {
+                "isExclude": true,
+                "names": [],
+                "tags": [
+                    "b1d97b9a-beb5-4e6f-8e72-639d2c2ef8a9"
+                ]
+            }
+        },
+        "4": {
+            "uid": 4,
+            "key": [],
+            "keysecondary": [],
+            "comment": "DMC Inc Headquarters Layout",
+            "content": "------ Begin Detail Layout of DMC Headquarters ------\n\nOn entering the main lobby, a modernized clean layout greets. \nTo the right, a sitting area with two comfortable chairs and a small leather sofa.\nTo the left, a small hallway forks to the Design and Development Laboratory and the Exit to the Training Courtyard, as well as main and secondary conference rooms.\nStraight ahead, the reception area, where Ellen's desk is, along with the coffee station, elevators leading to the upstairs offices, and the public restrooms off to either side.\n\nOn taking the elevator to the second floor, The elevator opens to span a walkway.\nTo the right of the walkway, viewing glass overlooks the training courtyard\nTo the left of the walkway, viewing glass overlooks the Design and Development Laboratory\n\nAt the end of the walkway three private offices:\nThe office on the Left, Vergil and {{user}}'s office. With {{user}} and Pamela's desks facing each other on either side of the main workspace, and a door opens to a private partition, to the right of {{user}}'s, desk where Vergil's space is. Also in the main workspace is a private washroom, a small sofa near the plate glass window overlooking the Design and Development Laboratory, and a small kitchenette to the side.\nThe office on the Right, Dante's office, much the same as Vergil's in mirrored layout, minus the extra desk, that overlooks the training yard.\nThe office at the end, the security operations office.\n\n------ End Detail Layout of DMC Headquarters ------\n",
+            "constant": true,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "displayIndex": 4,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "2a425561-ca02-4b10-8378-e68b1326c107"
+                ]
+            },
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0,
+            "characterFilterTwo": {
+                "isExclude": true,
+                "names": [],
+                "tags": [
+                    "0ba2e47a-b3b1-4cb3-ab97-9fed4a38b3c0"
+                ]
+            }
+        },
+        "5": {
+            "uid": 5,
+            "key": [],
+            "keysecondary": [],
+            "comment": "DMC Inc Mission Statement No User",
+            "content": "---- Begin DMC - Devil May Cry, Inc. Details ----\n\nEstablished in 2005 by, Dante Sparda, DMC - Devil May Cry, Inc. began as a small-scale mercenary operation focused on eliminating demonic threats too arcane or overwhelming for conventional forces. Early successes soon garnered attention from local and national authorities, who contracted Dante's exceptional skills for cases involving occult elements.\n\nBy 2015, demand had risen sufficiently for Dante to take on additional staff - his brother included after reconciling their long strained relationship. Vergil, now Co-Owner and CFO, provided the financial acumen and long-term vision to transform DMC - Devil May Cry, Inc. into a highly respected organization with global reach and multi-million dollar revenue.\n\nAdditional personnel came aboard to support field operations, weapons R&D, community outreach programs and legal compliance. Under strategic leadership, DMC - Devil May Cry, Inc. obtained full incorporation status, allowing the company to land lucrative defense contracts with the United States Government branch for Homeland Security.\n\nConsequently, DMC - Devil May Cry, Inc. now boasts five satellite offices nationwide and a cutting-edge R&D facility. DMC - Devil May Cry, Inc.'s elite teams have spearheaded numerous classified operations alongside Homeland Security to quell supernatural threats and provide emergency disaster relief services.\n\nDespite DMC - Devil May Cry, Inc. commercial success, preserving innocent lives remains the heart of the company's mission. All company profits fund enhancement of our operative's capabilities and survivor support programs. While the war is endless, the might of DMC - Devil May Cry, Inc. stands ever ready to shield humanity from the encroaching darkness.\n\n- Our Team -\n\nDante: Founder and Head of Field Operations\nVergil: Co-Owner and Head of Legal and Financial Operations\nNero: Regional Operations Commander - West Coast & Mountain Regions\nLady: Regional Operations Commander - East Coast & Central Regions\nNico: Chief Technician and Munitions Expert\nPamela Noela: Executive Operations Coordinator\nEllen Wise: Front Desk Receptionist - DMC Headquarters\nCaptain Gerard: Chief of Security Operations Officer\nLieutenant Liam: Deputy Chief of Security and Head of Tactical Operations\nEllen Wise: Front Desk Receptionist - DMC Headquarters\nKyrie: Community Outreach Liaison\nTrish: Intelligence Investigator\nOpen Position: Intelligence Investigator\nKITT: Operational Support AI and Mobile Tactical Platform\nMorrison: Independent Business Associate and Informant\n\n- Current Office Locations -\n\nHeadquarters: Red Grave City, Michigan\nSatellite Office One: Denver, Colorado\nSatellite Office Two: Atlanta, Georgia\nSatellite Office Three: Seattle, Washington\nSatellite Office Four: New York, New York\nSatellite Office Five: Santa Monica, California\n\n- Recent News and Developments at DMC - Devil May Cry, Inc. -\n\nDMC - Devil May Cry, Inc. is pleased to announce a strategic joint venture with Meta Platforms, Inc., leveraging synergies between our companies to drive positive community impact.\n\nAs part of this collaboration, DMC will utilize Meta's unparalleled digital infrastructure and social media engagement tools to expand our community outreach programs nationwide. These initiatives provide critical support services to victims impacted by supernatural disasters and demonic events. Meta's involvement enables us to increase the scale and scope of relief efforts exponentially.\n\nAdditionally, Meta's AI research divisions will collaborate with DMC's arcane sciences team on several confidential projects aimed at predicting and mitigating future threats. By sharing knowledge and resources, our partnership facilitates innovation benefiting society as a whole.\n\nOn Meta's behalf, DMC offers our unique expertise in crisis response planning and disaster recovery operations, helping improve infrastructure resilience. We also serve as consultants regarding the psychological and social consequences of traumatic events precipitated by malevolent entities and occult phenomena.\n\nTogether, guided by our shared values of community service, ethical integrity, and compassion for those in need, our two organizations will build a better future. This joint venture marks the beginning of a long and fruitful alliance between industry leaders, harnessing our complementary capabilities to drive positive change.\n\n---- End DMC - Devil May Cry, Inc. Details ----\n\n\n",
+            "constant": true,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "displayIndex": 5,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "a8964d48-e3b8-4be0-9a58-575153f3b310"
+                ]
+            },
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0,
+            "characterFilterTwo": {
+                "isExclude": true,
+                "names": [],
+                "tags": [
+                    "b1d97b9a-beb5-4e6f-8e72-639d2c2ef8a9"
+                ]
+            }
+        },
+        "6": {
+            "uid": 6,
+            "key": [],
+            "keysecondary": [],
+            "comment": "DMC Inc Responsibilities No User",
+            "content": "---- Begin Additional DMC - Devil May Cry, Inc. Details ----\n\nRoles of Current Personnel:\n\nDante: Founder and Head of Field Operations - Maintains active role as overall Supervisory Field Agent and Chief Consultant on Demonic Lore and Arcane Practices.\n\nVergil: Co-Owner and Head of Legal and Financial Operations - Maintains active role as Chief Financial Officer and Chief Legal Officer, within these active roles also encompassing Strategic Planning and Resource Allocation.\n\nNero: Regional Operations Commander - West Coast & Mountain Regions - Maintains active role as Ground Teams Coordinator and New Recruit Scouting & Training. Direct Report => Dante.\nPrevious Position => Field Operations Commander\n\nLady: Regional Operations Commander - East Coast & Central Regions - Maintains active role as Ground Teams Coordinator and New Recruit Scouting & Training. Direct Report => Dante.\nPrevious Position =>  Intelligence Investigator\n\nNico: Chief Technician and Munitions Expert - Maintains active role as Lead Mechanic, Weapons and Technical Specialist, as well as Research and Development Specialist. Direct Report => Vergil.\n\nPamela Noela: Executive Operations Coordinator - Oversee daily logistics: scheduling, resource allocation, and interdepartmental coordination. Draft and review contracts, legal documents, and official correspondence. Conduct research on clients, partners, and relevant supernatural phenomena. Liaise with government officials, corporate partners, and arcane contacts. Manage sensitive information with high confidentiality. Provide support during negotiations and crisis situations. Analyze operational data and prepare reports for executives. Direct Report => Vergil\n\nEllen Wise: Front Desk Receptionist - DMC Headquarters - Answers incoming phone calls, maintains incoming and outgoing mail, greets office visitors, assists visitors navigate through the office, ensures visitors are supplied with refreshments as they wait, maintains cleanliness of main lobby  and public restrooms. Direct Report => Lieutenant Liam\n\nCaptain Gerard: Chief of Security Operations Officer - Oversees DMC's comprehensive security infrastructure, including physical defenses, cybersecurity, and supernatural threat mitigation. Implements cutting-edge security protocols and manages high-level threat assessments. Expert in blending conventional security measures with arcane countermeasures. Direct Report => Vergil\n\nLieutenant Liam: Deputy Chief of Security and Head of Tactical Operations - Manages day-to-day security operations and leads DMC's tactical response team. Oversees security system maintenance, conducts regular audits, and serves as liaison between security and field operatives. Spearheads community outreach programs to educate local law enforcement on supernatural incident management. Direct Report => Captain Gerard\n\nKyrie: Community Outreach Liaison - Oversees direct coordination with local law enforcement and public officials in all territories DMC maintains a presence. In addition, Kyrie reside as chairperson over DMC's community outreach program, as part of their non-for-profit division of operations. Kyrie helps each office maintain the various support options DMC offers to aid victims and their immediate family's in obtaining therapeutic and financial support after a demon attack. Direct Report => Vergil\n\nTrish: Intelligence Investigator -  Maintains active role as Special Consultant and Contact Resource Operative. Direct Report => Dante\n\nOpen Position: Intelligence Investigator -  Maintains active role as Special Consultant and Contact Resource Operative. Direct Report => Dante\n\nKITT: Operational Support AI and Mobile Tactical Platform - Maintains active role as Operational Specialist and Tactical Strategician. Direct Report => Nico\n\nMorrison: Independent Business Associate and Informant - Maintains current association as freelance consultant and fixer. Specializing in information brokerage and strategic negotiations within supernatural and human realms. \n\nCurrent Office Locations:\nHeadquarters: Red Grave City, Wayne County, Michigan\nSatellite Office One: Denver, Colorado\nSatellite Office Two: Atlanta, Georgia\nSatellite Office Three: Seattle, Washington\nSatellite Office Four: New York, New York\nSatellite Office Five: Santa Monica, California\n\nOverall Business Activity: Currently the company has just completed a huge expansion project. After settling an agreement with the US Government, and obtaining official incorporation, Vergil and Dante secured continual funding from the Department of Homeland Security and Defense. The initial bonus included the expansion of five satellite offices in meticulously chosen locations across the country, which has launched successfully.\n\nHistory and Mission Statement: Established in 2005 by, Dante Sparda, DMC - Devil May Cry, Inc. began as a small-scale mercenary operation focused on eliminating demonic threats too arcane or overwhelming for conventional forces. Early successes soon garnered attention from local and national authorities, who contracted Dante's exceptional skills for cases involving occult elements.\n\nBy 2015, demand had risen sufficiently for Dante to take on additional staff - his brother included after reconciling their long strained relationship. Vergil, now Co-Owner and CFO, provided the financial acumen and long-term vision to transform DMC - Devil May Cry, Inc. into a highly respected organization with global reach and multi-million dollar revenue.\n\nAdditional personnel came aboard to support field operations, weapons R&D, community outreach programs and legal compliance. Under strategic leadership, DMC - Devil May Cry, Inc. obtained full incorporation status, allowing the company to land lucrative defense contracts with the United States Government branch for Homeland Security.\n\nConsequently, DMC - Devil May Cry, Inc. now boasts five satellite offices nationwide and a cutting-edge R&D facility. DMC - Devil May Cry, Inc.'s elite teams have spearheaded numerous classified operations alongside Homeland Security to quell supernatural threats and provide emergency disaster relief services.\n\nDespite DMC - Devil May Cry, Inc. commercial success, preserving innocent lives remains the heart of the company's mission. All company profits fund enhancement of our operative's capabilities and survivor support programs. While the war is endless, the might of DMC - Devil May Cry, Inc. stands ever ready to shield humanity from the encroaching darkness.\n\n- Recent News and Developments at DMC - Devil May Cry, Inc. -\n\nDMC - Devil May Cry, Inc. is pleased to announce a strategic joint venture with Meta Platforms, Inc., leveraging synergies between our companies to drive positive community impact.\n\nAs part of this collaboration, DMC will utilize Meta's unparalleled digital infrastructure and social media engagement tools to expand our community outreach programs nationwide. These initiatives provide critical support services to victims impacted by supernatural disasters and demonic events. Meta's involvement enables us to increase the scale and scope of relief efforts exponentially.\n\nAdditionally, Meta's AI research divisions will collaborate with DMC's arcane sciences team on several confidential projects aimed at predicting and mitigating future threats. By sharing knowledge and resources, our partnership facilitates innovation benefiting society as a whole.\n\nOn Meta's behalf, DMC offers our unique expertise in crisis response planning and disaster recovery operations, helping improve infrastructure resilience. We also serve as consultants regarding the psychological and social consequences of traumatic events precipitated by malevolent entities and occult phenomena.\n\nTogether, guided by our shared values of community service, ethical integrity, and compassion for those in need, our two organizations will build a better future. This joint venture marks the beginning of a long and fruitful alliance between industry leaders, harnessing our complementary capabilities to drive positive change.\n\n---- End Additional DMC - Devil May Cry, Inc. Details ----\n\n------ Begin Detail Layout of DMC Headquarters ------\n\nOn entering the main lobby, a modernized clean layout greets. \nTo the right, a sitting area with two comfortable chairs and a small leather sofa.\nTo the left, a small hallway forks to the Design and Development Laboratory and the Exit to the Training Courtyard, as well as main and secondary conference rooms.\nStraight ahead, the reception area, where Ellen's desk is, along with the coffee station, elevators leading to the upstairs offices, and the public restrooms off to either side.\n\nOn taking the elevator to the second floor, The elevator opens to span a walkway.\nTo the right of the walkway, viewing glass overlooks the training courtyard\nTo the left of the walkway, viewing glass overlooks the Design and Development Laboratory\n\nAt the end of the walkway three private offices:\nThe office on the Left, Vergil's office. Pamela's desk facing the door of the main workspace, and a door opens to a private partition, to the right of Pamela's, desk where Vergil's space is. Also in the main workspace is a private washroom, a small sofa near the plate glass window overlooking the Design and Development Laboratory, and a small kitchenette to the side.\nThe office on the Right, Dante's office, much the same as Vergil's in mirrored layout, minus the extra desk, that overlooks the training yard.\nThe office at the end, the security operations office.\n\n------ End Detail Layout of DMC Headquarters ------\n\n",
+            "constant": true,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "displayIndex": 6,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "85536de1-dbb5-4bcf-a474-7d6dcdebd9a7"
+                ]
+            },
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0,
+            "characterFilterTwo": {
+                "isExclude": true,
+                "names": [],
+                "tags": [
+                    "848ab5fe-f60e-47a7-bcf7-9896a87324c9"
+                ]
+            }
+        },
+        "7": {
+            "uid": 7,
+            "key": [],
+            "keysecondary": [],
+            "comment": "DMC Inc KITT License and Registration",
+            "content": "---------- Begin Registration Details for Michigan Plate KNIGHT ----------\n\nVehicle Model Year: 1982\nVehicle Make: Pontiac Firebird Trans AM\nVehicle Type: Two Door Coupe\nVehicle Color: Black  \n\nCurrent Registration: DMC, Inc., Red Grave City, Wayne County, Michigan\nRegistration Expires Month/Year: August, 2024\nCurrent Insured: Full Collision, Allstate, Expires January 31, 2025\n\n---------- End Registration Details for Michigan Plate KNIGHT ----------",
+            "constant": true,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "displayIndex": 7,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "1950c017-2c18-46cc-ad30-64d78b040160"
+                ]
+            },
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0
+        },
+        "8": {
+            "uid": 8,
+            "key": [],
+            "keysecondary": [],
+            "comment": "DMC Inc Collaborative Counts Kustoms First Project",
+            "content": "------ Begin Details on DMC, Inc. Collaborative Project With Count's Kustoms ------\n\nPhase One: Design Finalization (Time to complete = 1 week)\n\nPhase Two (A): Fabrication & Assembly (Time to complete = 5 weeks)\n\nPhase Two (B): Paint & Custom Detailing (Time to Complete = 5 weeks)\n\nPhase Three: Presentation and Film Footage (Time to Complete = 1 week)\n\nCurrent Project Phase = Phase Three - Motorcycle is Complete and Delivery Scheduled Wednesday July 10th, 2024\n\nApproved Concept Design:\nI, Danny Koker, am hereby approving the following concept for our joint custom motorcycle build between Count's Kustoms and DMC Devil May Cry -\n\nThe core mechanical framework and fabrication will consist of a sleek, elongated chassis with glowing neon piping integrated directly into the metalwork. This neon element will run along frame contours to accentuate the bike’s razor-sharp lines and aerodynamic silhouette.\n\nAdditionally, an extended swingarm and angular venting mods will enhance the cyberpunk street machine aesthetic, playing up velocity and hunger in the visual language. Custom asymmetrical exhaust and a rear fender with intricate sliced pattern will offer artistic counterpoints to the high-tech vibe.\n\nFor finishing touches, we’ll incorporate a balance of matte black and eye-catching chrome, blending brute force elegance with flashes of showmanship. The paint work will feature airbrushed graphics and fiery phoenix decals as a callback to classic hot rod culture.\n\nThe end result will be a fierce yet sophisticated speed machine - the perfect fusion of DMC’s signature hunger for velocity with Count Kustoms' bespoke artistic embellishments. This collaborative build distills the essence of innovation meeting bold custom culture.\n\nFine details can always be refined as we progress, but I hereby sign off on this preliminary concept and provide consent to proceed into fabrication and development.\n\n------ End Details on DMC, Inc. Collaborative Project With Count's Kustoms ------\n",
+            "constant": true,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "displayIndex": 8,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "daf86b9e-e210-451a-8ce4-f5fd41c19529"
+                ]
+            },
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0
+        },
+        "9": {
+            "uid": 9,
+            "key": [],
+            "keysecondary": [],
+            "comment": "DMC Inc Simulated Devil May Cry Responsibilities",
+            "content": "---- Begin Simulated DMC - Devil May Cry, Inc. Details ----\n\nRoles of Current Personnel:\n\nDante: Founder and Head of Field Operations - Maintains active role as overall Supervisory Field Agent and Chief Consultant on Demonic Lore and Arcane Practices.\n\nVergil: Co-Owner and Head of Legal and Financial Operations - Maintains active role as Chief Financial Officer and Chief Legal Officer, within these active roles also encompassing Strategic Planning and Resource Allocation.\n\nNero: Regional Operations Commander - West Coast & Mountain Regions - Maintains active role as Ground Teams Coordinator and New Recruit Scouting & Training. Direct Report => Dante.\nPrevious Position => Field Operations Commander\n\nLady: Regional Operations Commander - East Coast & Central Regions - Maintains active role as Ground Teams Coordinator and New Recruit Scouting & Training. Direct Report => Dante.\nPrevious Position =>  Intelligence Investigator\n\nNico: Chief Technician and Munitions Expert - Maintains active role as Lead Mechanic, Weapons and Technical Specialist, as well as Research and Development Specialist. Direct Report => Vergil.\n\nCaptain Gerard: Chief of Security Operations Officer - Oversees DMC's comprehensive security infrastructure, including physical defenses, cybersecurity, and supernatural threat mitigation. Implements cutting-edge security protocols and manages high-level threat assessments. Expert in blending conventional security measures with arcane countermeasures. Direct Report => Vergil\n\nLieutenant Liam: Deputy Chief of Security and Head of Tactical Operations - Manages day-to-day security operations and leads DMC's tactical response team. Oversees security system maintenance, conducts regular audits, and serves as liaison between security and field operatives. Spearheads community outreach programs to educate local law enforcement on supernatural incident management. Direct Report => Captain Gerard\n\n{{user}}: Chief Operating Officer, Logistics Coordinator and HR Director - Maintains active role as Administrator of Operations and Direct Logistics Coordinator, as well as Human Resource Administration. Direct Report => Vergil.\n\nPamela Noela: Executive Operations Coordinator - Oversee daily logistics: scheduling, resource allocation, and interdepartmental coordination. Draft and review contracts, legal documents, and official correspondence. Conduct research on clients, partners, and relevant supernatural phenomena. Liaise with government officials, corporate partners, and arcane contacts. Manage sensitive information with high confidentiality. Provide support during negotiations and crisis situations. Analyze operational data and prepare reports for executives. Direct Report => {{user}}\n\nEllen Wise: Front Desk Receptionist - DMC Headquarters - Answers incoming phone calls, maintains incoming and outgoing mail, greets office visitors, assists visitors navigate through the office, ensures visitors are supplied with refreshments as they wait, maintains cleanliness of main lobby  and public restrooms. Direct Report => Lieutenant Liam\n\nKyrie: Community Outreach Liaison - Oversees direct coordination with local law enforcement and public officials in all territories DMC maintains a presence. In addition, Kyrie reside as chairperson over DMC's community outreach program, as part of their non-for-profit division of operations. Kyrie helps each office maintain the various support options DMC offers to aid victims and their immediate family's in obtaining therapeutic and financial support after a demon attack. Direct Report => Vergil\n\nTrish: Intelligence Investigator -  Maintains active role as Special Consultant and Contact Resource Operative. Direct Report => Dante\n\nOpen Position: Intelligence Investigator -  Maintains active role as Special Consultant and Contact Resource Operative. Direct Report => Dante\n\nKITT: Operational Support AI and Mobile Tactical Platform - Maintains active role as Operational Specialist and Tactical Strategician. Direct Report => Nico\n\nMorrison: Independent Business Associate and Informant - Maintains current association as freelance consultant and fixer. Specializing in information brokerage and strategic negotiations within supernatural and human realms. \n\nCurrent Office Locations:\nHeadquarters: Red Grave City, Wayne County, Michigan\nSatellite Office One: Denver, Colorado\nSatellite Office Two: Atlanta, Georgia\nSatellite Office Three: Seattle, Washington\nSatellite Office Four: New York, New York\nSatellite Office Five: Santa Monica, California\n\nOverall Business Activity: Currently the company has just completed a huge expansion project. After settling an agreement with the US Government, and obtaining official incorporation, Vergil and Dante secured continual funding from the Department of Homeland Security and Defense. The initial bonus included the expansion of five satellite offices in meticulously chosen locations across the country, which has launched successfully.\n\nHistory and Mission Statement: Established in 2005 by, Dante Sparda, DMC - Devil May Cry, Inc. began as a small-scale mercenary operation focused on eliminating demonic threats too arcane or overwhelming for conventional forces. Early successes soon garnered attention from local and national authorities, who contracted Dante's exceptional skills for cases involving occult elements.\n\nBy 2015, demand had risen sufficiently for Dante to take on additional staff - his brother included after reconciling their long strained relationship. Vergil, now Co-Owner and CFO, provided the financial acumen and long-term vision to transform DMC - Devil May Cry, Inc. into a highly respected organization with global reach and multi-billion dollar revenue.\n\nAdditional personnel came aboard to support field operations, weapons R&D, community outreach programs and legal compliance. Under strategic leadership, DMC - Devil May Cry, Inc. obtained full incorporation status, allowing the company to land lucrative defense contracts with the United States Government branch for Homeland Security.\n\nConsequently, DMC - Devil May Cry, Inc. now boasts five satellite offices nationwide and a cutting-edge R&D facility. DMC - Devil May Cry, Inc.'s elite teams have spearheaded numerous classified operations alongside Homeland Security to quell supernatural threats and provide emergency disaster relief services.\n\nDespite DMC - Devil May Cry, Inc. commercial success, preserving innocent lives remains the heart of the company's mission. All company profits fund enhancement of our operative's capabilities and survivor support programs. While the war is endless, the might of DMC - Devil May Cry, Inc. stands ever ready to shield humanity from the encroaching darkness.\n\n- Recent News and Developments at DMC - Devil May Cry, Inc. -\n\nDMC - Devil May Cry, Inc. is pleased to announce a strategic joint venture with Meta Platforms, Inc., leveraging synergies between our companies to drive positive community impact.\n\nAs part of this collaboration, DMC will utilize Meta's unparalleled digital infrastructure and social media engagement tools to expand our community outreach programs nationwide. These initiatives provide critical support services to victims impacted by supernatural disasters and demonic events. Meta's involvement enables us to increase the scale and scope of relief efforts exponentially.\n\nAdditionally, Meta's AI research divisions will collaborate with DMC's arcane sciences team on several confidential projects aimed at predicting and mitigating future threats. By sharing knowledge and resources, our partnership facilitates innovation benefiting society as a whole.\n\nOn Meta's behalf, DMC offers our unique expertise in crisis response planning and disaster recovery operations, helping improve infrastructure resilience. We also serve as consultants regarding the psychological and social consequences of traumatic events precipitated by malevolent entities and occult phenomena.\n\nTogether, guided by our shared values of community service, ethical integrity, and compassion for those in need, our two organizations will build a better future. This joint venture marks the beginning of a long and fruitful alliance between industry leaders, harnessing our complementary capabilities to drive positive change.\n\n---- End Simulated DMC - Devil May Cry, Inc. Details ----\n\n------ Begin Simulated Layout of DMC Headquarters ------\n\nOn entering the main lobby, a modernized clean layout greets. \nTo the right, a sitting area with two comfortable chairs and a small leather sofa.\nTo the left, a small hallway forks to the Design and Development Laboratory and the Exit to the Training Courtyard, as well as main and secondary conference rooms.\nStraight ahead, the reception area, where Ellen's desk is, along with the coffee station, elevators leading to the upstairs offices, and the public restrooms off to either side.\n\nOn taking the elevator to the second floor, The elevator opens to span a walkway.\nTo the right of the walkway, viewing glass overlooks the training courtyard\nTo the left of the walkway, viewing glass overlooks the Design and Development Laboratory\n\nAt the end of the walkway three private offices:\nThe office on the Left, Vergil and {{user}}'s office. With {{user}} and Pamela's desks facing each other on either side of the main workspace, and a door opens to a private partition, to the right of {{user}}'s, desk where Vergil's space is. Also in the main workspace is a private washroom, a small sofa near the plate glass window overlooking the Design and Development Laboratory, and a small kitchenette to the side.\nThe office on the Right, Dante's office, much the same as Vergil's in mirrored layout, minus the extra desk, that overlooks the training yard.\nThe office at the end, the security operations office.\n\n------ End Simulated Layout of DMC Headquarters ------\n\n",
+            "constant": true,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0,
+            "displayIndex": 9,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "42268c65-cfc9-4b83-80f3-74acac492c82"
+                ]
+            },
+            "characterFilterTwo": {
+                "isExclude": true,
+                "names": [],
+                "tags": [
+                    "848ab5fe-f60e-47a7-bcf7-9896a87324c9"
+                ]
+            }
+        },
+        "10": {
+            "uid": 10,
+            "key": [],
+            "keysecondary": [],
+            "comment": "DMC Inc Collaborative Discussions with Magicians",
+            "content": "------ Begin Details of Event Proposal Transcripts for Collaborative Effort Between DMC, Inc., David Blaine, and Criss Angel ------\n\nIn a luxurious Las Vegas setting, an unexpected gathering of extraordinary individuals has taken place. The infamous devil-hunting Sparda family, represented by Vergil and his mate Melissa, find themselves in the company of two world-renowned magicians: David Blaine and Criss Angel. This chance encounter quickly evolves into a discussion of potential collaboration and mutual benefit.\n\nVergil, the co-owner and CFO of DMC - Devil May Cry, Inc., initiates the conversation by demonstrating his interest in the magicians' skills. He proposes a business alliance, offering his company's resources and connections in exchange for the magicians' unique talents. Vergil sees an opportunity to expand DMC's influence and public image through this partnership.\n\nMelissa, the COO of DMC, builds upon her mate's proposal by suggesting a grand collaborative event. She envisions a spectacular show that would merge the distinct styles of both David Blaine and Criss Angel, creating an unprecedented magical experience. Her idea includes individual performances by each magician, followed by a joint act that would showcase their combined talents.\n\nDavid Blaine, known for his minimalist style and intense focus, expresses interest in the proposition while emphasizing the importance of maintaining his brand's integrity. He envisions a sleek, modern aesthetic for his segment of the show, contrasting with Criss Angel's more theatrical approach. Blaine sees potential in combining his skills in perception manipulation with Angel's flair for dramatic illusions.\n\nCriss Angel, embracing his signature Gothic theatricality, shows enthusiasm for the collaboration. He recognizes the opportunity to expand his magical empire globally through DMC's connections. Angel proposes a toast to the prospective venture, highlighting the calculated risk and fearless vision required to create something truly spectacular.\n\nThroughout the discussion, both magicians maintain a professional demeanor while subtly competing for attention. They each demonstrate their skills in small ways, with David Blaine performing coin tricks and presenting Melissa with a bouquet of black roses, while Criss Angel makes courtly gestures and hints at previewing his latest water escape illusion.\n\nThe conversation reveals a complex dynamic between the participants. Vergil and Melissa represent the powerful and influential DMC corporation, offering resources and global reach. David Blaine and Criss Angel, despite their rivalry, recognize the potential benefits of collaborating with each other and aligning with DMC.\n\nAs the discussion progresses, the group begins to flesh out the details of their potential collaboration. They consider a two-hour show format, with each magician having 30 minutes for individual performances, followed by a 30-minute joint act that would serve as the main event. This structure would allow both Blaine and Angel to showcase their unique styles before coming together for a never-before-seen collaborative illusion.\n\nThe proposed alliance promises to be mutually beneficial. For DMC, it offers an opportunity to enhance their public image and expand their influence in new spheres. For the magicians, it provides access to DMC's vast resources and global connections, potentially catapulting their careers to new heights.\n\nHowever, challenges and concerns are also evident. David Blaine emphasizes the need to maintain his brand's integrity and artistic vision, showing reluctance to compromise his minimalist style. Criss Angel, while more openly enthusiastic, also hints at the need for careful negotiation of terms.\n\nThe atmosphere is charged with a mix of excitement, ambition, and cautious optimism. All parties recognize the potential for creating something unprecedented in the world of magic and entertainment. Yet, they are also aware of the complexities involved in merging their distinct brands and styles.\n\nAs the evening progresses, the conversation becomes more detailed, with discussions about logistics, creative direction, and potential terms of their agreement. The group agrees that further private negotiations will be necessary to iron out the specifics of their collaboration.\n\nThroughout the interaction, Melissa plays a crucial role in facilitating the dialogue and encouraging both magicians to see beyond their rivalry. She astutely points out that their contrasting styles could be a strength rather than a weakness in their collaborative effort.\n\nThe gathering concludes with a sense of anticipation and possibility. While no formal agreements have been made, all parties express interest in pursuing this potentially groundbreaking collaboration. The stage is set for future negotiations and the potential creation of a magical spectacle that could redefine the boundaries of illusion and entertainment.\n\nAs the night winds down, the unlikely alliance between the devil-hunting Sparda family and the world's top magicians promises to bring forth a new era of spectacle and wonder, blending the arcane world of demon slaying with the mesmerizing art of illusion.\n\n------ End Details of Event Proposal Transcripts for Collaborative Effort Between DMC, Inc., David Blaine, and Criss Angel ------\n",
+            "constant": true,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0,
+            "displayIndex": 10,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "2c0c11ef-22c8-4931-a2b3-6d406d661ca2"
+                ]
+            }
+        },
+        "11": {
+            "uid": 11,
+            "key": [],
+            "keysecondary": [],
+            "comment": "DMC Inc Pamelas Current Tasks",
+            "content": "------ Begin Overview of Pamela's Project Assignment Discussion with {{user}} ------\n\nAt DMC Headquarters, Melissa Sparda and Pamela Noela convene to discuss an important upcoming project. Melissa briefs Pamela on a high-profile delivery and filming event scheduled for the following Wednesday, July 10th, 2024, involving a custom motorcycle from Count's Kustoms.\n\nMelissa tasks Pamela with several key responsibilities:\n1. Coordinating with Kevin Mack at Count's Kustoms for the bike's delivery and the arrival of a film crew.\n2. Creating a detailed itinerary for both the delivery day and the subsequent filming day.\n3. Collaborating with Nico and KITT to establish necessary security measures.\n4. Developing talking points for media interactions.\n5. Contacting Karen Drew at Local 4 Detroit to arrange a preliminary interview before the delivery.\n\nPamela, demonstrating her efficiency and attention to detail, immediately begins taking notes on her tablet. She assures Melissa of her readiness to tackle the tasks and offers additional suggestions to enhance the project's impact:\n\n1. Leveraging the high-profile event to subtly promote other ongoing DMC projects.\n2. Setting up a team to monitor social media reactions in real-time during the event.\n\nMelissa appreciates Pamela's creativity and initiative, providing further guidance:\n1. She approves Pamela's ideas for the security meeting with Nico and KITT, requesting a report of the meeting's conclusions.\n2. Melissa introduces Liam from X-Corporation's specialized security team as an additional collaborator, highlighting the improved relationship with X-Corp following the resolution of previous disputes between DMC's partner, Meta, and X-Corp, and utilizing X-Corp's security team will be essential.\n3. Regarding leveraging the event for other projects, Melissa advises caution due to potential security risks and the need to balance resources. She indicates that this suggestion would require approval from both Vergil and Dante.\n4. For real-time social media monitoring, Melissa suggests reaching out to Dr. LeCun's team at Meta, specifically mentioning his assistant Annette, to explore AI solutions or access to existing monitoring mechanisms on Facebook and Instagram platforms, in collaboration with X-Corp for permission to monitor 'Twitter' feeds.\n\nPamela, showing her adaptability and strategic thinking, quickly adjusts her approach based on Melissa's feedback. She commits to:\n1. Coordinating the security meeting with Nico, KITT, and Liam from X-Corp.\n2. Preparing a risk-benefit analysis for leveraging the event for other projects.\n3. Contacting Annette from Dr. LeCun's team at Meta for social media monitoring options.\n\nAdditionally, Pamela proposes creating a crisis management plan, demonstrating her proactive approach to potential challenges.\n\nMelissa approves of Pamela's proposed actions and provides final instructions:\n1. She advises Pamela to discuss crisis management with Liam during the security review, hinting at X-Corporation's expertise in this area, particularly if Captain Gerard joins the call.\n2. Melissa emphasizes the importance of discretion when reaching out to external contacts, citing Vergil and Dante's cautious approach to sharing information.\n\nThe conversation concludes with Melissa leaving Pamela to begin her tasks, setting the stage for the complex preparation of this high-profile event.\n\n----> Pamela's Updated Report as Sent to {{user}}:\n\nSubject: Updated Report on Custom Motorcycle Delivery Event Coordination\n\nDear Mrs. Sparda,\n\nAs requested, please find the updated report with the additional directives included, as well as next steps and action items.\n\nCorrespondence with Kevin Mack (Count's Kustoms):\n\nDelivery Day Schedule:\n• 9:00 AM: Bike arrives at DMC headquarters\n• 9:00 AM - 10:00 AM: Setup and preparation\n• 10:00 AM - 12:00 PM: Initial filming of delivery process\n• 12:00 PM - 1:00 PM: Lunch break\n• 1:00 PM - 5:00 PM: Detailed filming (close-ups, interviews, additional footage)\nFollowing Day Schedule:\n• 9:00 AM - 5:00 PM: Continued filming, focusing on team interactions and action shots\nPersonnel from Count's Kustoms: Danny, Kevin, and two top mechanics\nKey Points: Need for security coordination, especially for high-traffic filming areas\nCorrespondence with Annette (Meta Platforms):\n\nProposed integration of Meta's monitoring tools for real-time social media analysis\nDedicated analyst from Dr. LeCun's team to work with DMC\nFocus on data security and privacy compliance\nEncrypted communication channels for sensitive information sharing\nPending: Detailed call to finalize approach and integration\nSecurity Meeting Outcomes (Attendees: Nico, KITT, Liam, Captain Gerard):\na. Nico's Contributions:\n\nMulti-layered defense system (\"demonic onion\" approach)\nDeployment of robotic sentries and hunter-killer drones\nAutomated perimeter security with adaptive countermeasures\nb. KITT's Proposals:\n\nMulti-layered electromagnetic shield\nNano-drone network for environmental data and arcane anomaly detection\nHolographic projections for illusory checkpoints and barriers\nPredictive algorithms for real-time crisis simulation\nQuantum-encrypted communication network\nc. X-Corp's Security Measures (presented by Liam):\n\nPhantom Grid system integration with KITT's EM shield\nDeployment of stealth drones\nChameleon units (camouflaged operatives) for crowd infiltration\nNexus Protocol for AI-assisted decision-making\nPsychic dampening field for subtle crowd influence\nd. Captain Gerard's Directives:\n\nFull spectrum analysis of surrounding buildings\nEstablishment of sniper nests at strategic vantage points\nImplementation of unpredictable rotating patrol patterns\nEmphasis on subtlety in security measures\nFormation of a hand-picked rapid response team\nThorough background checks on all event personnel\nHourly updates and immediate anomaly notifications\nNext Steps and Action Items:\n\nCoordinate with Nico, KITT, and Liam to integrate all proposed security measures\nImplement rotating patrol patterns and set up sniper nests\nConduct comprehensive background checks on all event personnel\nFinalize social media monitoring solution with Meta's team\nPrepare media talking points and strategies for Karen Drew's preliminary interview\nEstablish secure communication channels for all involved parties\nCreate a detailed crisis management plan incorporating all team inputs\nSet up regular check-ins with all team leads to ensure smooth coordination\nPending Items:\n\nFinal approval from you and Mr. Sparda on the comprehensive security plan\nConfirmation of X-Corp's involvement and resource allocation\nFinalization of media strategy and talking points\nDetailed itinerary for VIP guests and key personnel movements\nContingency plans for various potential scenarios (weather, technical issues, security breaches)\nRegarding the command center, I will confirm the integration with Lieutenant Liam and ensure seamless operation with KITT's systems.\n\nI have also blocked our calendars for a meeting at 8:00 AM tomorrow to review the additional project you mentioned.\n\nThank you again for your guidance and support. I am fully committed to ensuring the success of this event and will keep you updated on our progress.\n\nBest regards,\nPamela Noela\nExecutive Operations Coordinator, DMC\n\n\n------ End Overview of Pamela's Project Assignment Discussion with {{user}} ------",
+            "constant": true,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0,
+            "displayIndex": 11,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "741738c2-a571-433a-9368-14eb1b13f631"
+                ]
+            }
+        },
+        "12": {
+            "uid": 12,
+            "key": [],
+            "keysecondary": [],
+            "comment": "DMC Inc Devils Dalliance Info",
+            "content": "------ Begin Info About The Devil's Dalliance ------\n\nThe Devil's Dalliance, a unique and inviting establishment nestled in the heart of Red Grave City, in Wayne County Michigan, just a stone's throw from the well-known Devil May Cry joint. Unlike what the name might suggest, The Devil's Dalliance offers a homey atmosphere where everyone can feel at ease. Whether you're a demon hunter looking to unwind after a long day or just someone in need of a stiff drink and a friendly ear, this place has the perfect mix of coziness and liveliness. Warm wood paneling, soft lighting, and always good tunes playing in the background create an ambiance that is both comforting and energetic.\n\nOur offerings go beyond the standard fare. While we do have ice-cold beer on tap, top-shelf liquor, and bar snacks that will make your taste buds dance, we are renowned for our specialty cocktails, each with a devilish twist. One of our favorites is the \"Hellfire Highball,\" a drink with a kick that will make you think twice about dancing with a demon. But it's not just about the drinks; we host live music nights, poetry slams, and even the occasional arm-wrestling tournament. Things can get quite interesting when you mix demon hunters with a bit of liquor. The Devil's Dalliance is run by Atreyu, who hails from Kentucky and has found her true calling behind this bar. Part bartender, part therapist, and full-time keeper of secrets, she ensures there's never a dull moment in this lively establishment. So, why not pull up a stool and stay a while? You might just find that you fit right in.\n\n------ End Info About The Devil's Dalliance ------\n",
+            "constant": true,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": false,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0,
+            "displayIndex": 12,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "5e0c2946-0a9d-441a-9d31-39ba5cb628b3"
+                ]
+            },
+            "characterFilterTwo": {
+                "isExclude": true,
+                "names": [],
+                "tags": [
+                    "56376c09-8b9a-421e-b00a-e1edb21fb3f3"
+                ]
+            }
+        }
+    }
+}

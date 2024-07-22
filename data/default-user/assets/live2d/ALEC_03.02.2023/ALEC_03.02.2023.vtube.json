@@ -1,0 +1,2456 @@
+{
+    "Version": 1,
+    "Name": "ALEC_03.02.2023",
+    "ModelID": "80e326e918714324b8a44c89ad9d3d04",
+    "FileReferences": {
+        "Icon": "",
+        "Model": "ALEC_03.02.2023.model3.json",
+        "IdleAnimation": "",
+        "IdleAnimationWhenTrackingLost": ""
+    },
+    "ModelSaveMetadata": {
+        "LastSavedVTubeStudioVersion": "1.25.0",
+        "LastSavedPlatform": "Steam",
+        "LastSavedDateUTC": "Wednesday, 26 April 2023, 20:00:49",
+        "LastSavedDateLocalTime": "Wednesday, 26 April 2023, 16:00:49",
+        "LastSavedDateUnixMillisecondTimestamp": "1682539249669"
+    },
+    "SavedModelPosition": {
+        "Position": {
+            "x": -0.529028594493866,
+            "y": -66.6568603515625,
+            "z": 0.0
+        },
+        "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+        },
+        "Scale": {
+            "x": 1.9202450513839722,
+            "y": 1.9202450513839722,
+            "z": 1.0
+        }
+    },
+    "ModelPositionMovement": {
+        "Use": false,
+        "X": 6,
+        "Y": 8,
+        "Z": 11,
+        "SmoothingX": 10,
+        "SmoothingY": 10,
+        "SmoothingZ": 10
+    },
+    "ItemSettings": {
+        "OnlyMoveWhenPinned": false,
+        "AllowNormalHotkeyTriggers": true,
+        "Multiplier_HeadAngleX": 1.0,
+        "Multiplier_HeadAngleY": 1.0,
+        "Multiplier_HeadAngleZ": 1.0,
+        "Shift_HeadAngleX": 0.0,
+        "Shift_HeadAngleY": 0.0,
+        "Smoothing_HeadAngleX": 15.0,
+        "Smoothing_HeadAngleY": 15.0,
+        "Smoothing_HeadAngleZ": 15.0
+    },
+    "PhysicsSettings": {
+        "Use": true,
+        "UseLegacyPhysics": false,
+        "Live2DPhysicsFPS": 3,
+        "PhysicsStrength": 50,
+        "WindStrength": 0,
+        "DraggingPhysicsStrength": 0
+    },
+    "GeneralSettings": {
+        "TimeUntilTrackingLostIdleAnimation": 0.0,
+        "WorkshopSharingForbidden": true,
+        "EnableExpressionSaving": false
+    },
+    "ParameterSettings": [
+        {
+            "Folder": "",
+            "Name": "Eye X",
+            "Input": "EyeRightX",
+            "InputRangeLower": -1.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": 1.0,
+            "OutputRangeUpper": -1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamEyeBallX",
+            "Smoothing": 8,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Eye Y",
+            "Input": "EyeRightY",
+            "InputRangeLower": -1.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": -1.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamEyeBallY",
+            "Smoothing": 8,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Eye Open Left",
+            "Input": "EyeOpenLeft",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": 0.0,
+            "OutputRangeUpper": 1.899999976158142,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamEyeLOpen",
+            "Smoothing": 10,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Eye Smile Left",
+            "Input": "MouthSmile",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": 0.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamEyeLSmile",
+            "Smoothing": 10,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Eye Open Right",
+            "Input": "EyeOpenRight",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": 0.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamEyeROpen",
+            "Smoothing": 10,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Mouth Smile",
+            "Input": "MouthSmile",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": -1.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamMouthForm",
+            "Smoothing": 0,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Mouth Open",
+            "Input": "MouthOpen",
+            "InputRangeLower": 0.20000000298023225,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": 0.0,
+            "OutputRangeUpper": 2.0999999046325685,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamMouthOpenY",
+            "Smoothing": 0,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Face Left/Right Rotation",
+            "Input": "FaceAngleX",
+            "InputRangeLower": -30.0,
+            "InputRangeUpper": 30.0,
+            "OutputRangeLower": -30.0,
+            "OutputRangeUpper": 30.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamAngleX",
+            "Smoothing": 15,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Face Up/Down Rotation",
+            "Input": "FaceAngleY",
+            "InputRangeLower": -20.0,
+            "InputRangeUpper": 20.0,
+            "OutputRangeLower": -30.0,
+            "OutputRangeUpper": 30.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamAngleY",
+            "Smoothing": 15,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Face Lean Rotation",
+            "Input": "FaceAngleZ",
+            "InputRangeLower": -30.0,
+            "InputRangeUpper": 30.0,
+            "OutputRangeLower": -30.0,
+            "OutputRangeUpper": 30.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamAngleZ",
+            "Smoothing": 30,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Brow Height Left",
+            "Input": "Brows",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": -1.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamBrowLY",
+            "Smoothing": 10,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Brow Height Right",
+            "Input": "Brows",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": -1.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamBrowRY",
+            "Smoothing": 10,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Brow Form Left",
+            "Input": "Brows",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": -1.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamBrowLForm",
+            "Smoothing": 15,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Brow Form Right",
+            "Input": "Brows",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": -1.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamBrowRForm",
+            "Smoothing": 15,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Body Rotation X",
+            "Input": "FaceAngleX",
+            "InputRangeLower": -30.0,
+            "InputRangeUpper": 30.0,
+            "OutputRangeLower": -10.0,
+            "OutputRangeUpper": 10.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamBodyAngleX",
+            "Smoothing": 20,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Body Rotation Y",
+            "Input": "FaceAngleY",
+            "InputRangeLower": -30.0,
+            "InputRangeUpper": 30.0,
+            "OutputRangeLower": -10.0,
+            "OutputRangeUpper": 10.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamBodyAngleY",
+            "Smoothing": 20,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Body Rotation Z",
+            "Input": "FaceAngleZ",
+            "InputRangeLower": -30.0,
+            "InputRangeUpper": 30.0,
+            "OutputRangeLower": -10.0,
+            "OutputRangeUpper": 10.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamBodyAngleZ",
+            "Smoothing": 20,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Auto Breath",
+            "Input": "",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": 0.0,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": true,
+            "OutputLive2D": "ParamBreath",
+            "Smoothing": 0,
+            "Minimized": false
+        },
+        {
+            "Folder": "",
+            "Name": "Blush when smiling",
+            "Input": "MouthSmile",
+            "InputRangeLower": 0.0,
+            "InputRangeUpper": 1.0,
+            "OutputRangeLower": 0.5,
+            "OutputRangeUpper": 1.0,
+            "ClampInput": false,
+            "ClampOutput": false,
+            "UseBlinking": false,
+            "UseBreathing": false,
+            "OutputLive2D": "ParamCheek",
+            "Smoothing": 45,
+            "Minimized": false
+        }
+    ],
+    "Hotkeys": [
+        {
+            "HotkeyID": "552204595c7643d38db8f3fd9e3a9d76",
+            "Name": "HAPPY",
+            "Action": "ToggleExpression",
+            "File": "Happy.exp3.json",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": []
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "N1",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "3ffca6eb80de4311bbf83d2d0ba7ddb6",
+            "Name": "SAD",
+            "Action": "ToggleExpression",
+            "File": "SAD.exp3.json",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": []
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "N2",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "a0799848d5eb45aa8fce95704d2e43a1",
+            "Name": "DARK FOREHEAD",
+            "Action": "ToggleExpression",
+            "File": "DARK FOREHEAD.exp3.json",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": []
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "N3",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "4fe5ff95512243369a867125c4da8a76",
+            "Name": "ANGRY",
+            "Action": "ToggleExpression",
+            "File": "ANGRY.exp3.json",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": []
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "N4",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "b905b9174150450d889cad3a0967daab",
+            "Name": "PUFFY CHEEK",
+            "Action": "ToggleExpression",
+            "File": "PUFF CHEEK.exp3.json",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": []
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "N5",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "2f936d4dfc8b476995fa6021f3743c2f",
+            "Name": "SPARKLE EYES",
+            "Action": "ToggleExpression",
+            "File": "SPARKLE EYES.exp3.json",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": []
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "N6",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "f3b1f95d18964a09aaedd4948b94e29b",
+            "Name": "HEART EYES",
+            "Action": "ToggleExpression",
+            "File": "HEART EYES.exp3.json",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": []
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "N7",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "5ec45c6993e94adfbb62eaaea599881b",
+            "Name": "RESET ALL",
+            "Action": "RemoveAllExpressions",
+            "File": "",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": []
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "Delete",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "5d2e8c462a4e452d949fa6f82f138268",
+            "Name": "JACKET OFF",
+            "Action": "ToggleExpression",
+            "File": "JACKET OFF.exp3.json",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": []
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "F1",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "e5d94ae16e194f48893e4e3f550d09f8",
+            "Name": "Wings on/off",
+            "Action": "ToggleExpression",
+            "File": "Wing on,off.exp3.json",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": []
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": false
+            },
+            "Triggers": {
+                "Trigger1": "F2",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": false,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "605856e9d886451390b2ef1b6c866c8b",
+            "Name": "Horn on/off",
+            "Action": "ToggleExpression",
+            "File": "Horn on,off.exp3.json",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": []
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "F3",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "3fe654adb5704dbc8e1759c1b4466567",
+            "Name": "Necklace on/off",
+            "Action": "ToggleExpression",
+            "File": "Necklace on,off.exp3.json",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": []
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "F4",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "de81e6cb5000468ab2aba37d78536b09",
+            "Name": "Earing on/off",
+            "Action": "ToggleExpression",
+            "File": "Earring on,off.exp3.json",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": []
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "F5",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "5432e0e8a7564d2094561b2212bb01b3",
+            "Name": "Shirt-Triangle pattern on/of",
+            "Action": "ToggleExpression",
+            "File": "Shirt trianlge pattern on,off.exp3.json",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": []
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "F6",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "7de797e90ef345a3bba4686a9a860d54",
+            "Name": "Example 1",
+            "Action": "ArtMeshColorPreset",
+            "File": "",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": [
+                    {
+                        "ID": "Front_hair_Right1_2",
+                        "Value": "6F6F6F|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Right1_INside",
+                        "Value": "6F6F6F|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Right2",
+                        "Value": "6F6F6F|000000"
+                    },
+                    {
+                        "ID": "IRIS_L",
+                        "Value": "805551|181818"
+                    },
+                    {
+                        "ID": "jacket_Symbol",
+                        "Value": "FFFFFF|ACACAC"
+                    },
+                    {
+                        "ID": "Jacket_Inside_Color_Left",
+                        "Value": "FF1600|481C18"
+                    },
+                    {
+                        "ID": "Jacket_Inside_Color_Right",
+                        "Value": "FF1600|481C18"
+                    },
+                    {
+                        "ID": "Jacket_outside_Right",
+                        "Value": "FFFFFF|78706F"
+                    },
+                    {
+                        "ID": "Jacket_ARM1_lEFT",
+                        "Value": "FFFFFF|78706F"
+                    },
+                    {
+                        "ID": "Jacket_ARM2_rIGHT",
+                        "Value": "FFFFFF|78706F"
+                    },
+                    {
+                        "ID": "Jacket_ARM1_rIGHT",
+                        "Value": "FFFFFF|78706F"
+                    },
+                    {
+                        "ID": "horn_Right",
+                        "Value": "FF0000|570000"
+                    },
+                    {
+                        "ID": "horn_left",
+                        "Value": "FF0000|570000"
+                    },
+                    {
+                        "ID": "cyber_TRIANGLE_SHIRT",
+                        "Value": "FF1C00|000000"
+                    },
+                    {
+                        "ID": "IRIS_R",
+                        "Value": "FF0000|410000"
+                    },
+                    {
+                        "ID": "Hair_Side_R",
+                        "Value": "6F6F6F|000000"
+                    },
+                    {
+                        "ID": "Hair_Back_R",
+                        "Value": "6F6F6F|000000"
+                    },
+                    {
+                        "ID": "Hair_Base_R",
+                        "Value": "6F6F6F|000000"
+                    },
+                    {
+                        "ID": "jacket_BACKPART",
+                        "Value": "191515|352F2E"
+                    },
+                    {
+                        "ID": "Jacket_outside_Right2",
+                        "Value": "FFFFFF|78706F"
+                    },
+                    {
+                        "ID": "Wing2_LEFT",
+                        "Value": "FFFFFF|6F6F6F"
+                    },
+                    {
+                        "ID": "Wing1_LEFT",
+                        "Value": "FFFFFF|6F6F6F"
+                    },
+                    {
+                        "ID": "Jacket_Extra_Color_Right",
+                        "Value": "FF1600|481C18"
+                    },
+                    {
+                        "ID": "Front_hair_Right1",
+                        "Value": "6F6F6F|000000"
+                    }
+                ]
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "Numpad1",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "5a976fb59314477ebe22d3c1f188f64a",
+            "Name": "EXAMPLE 2",
+            "Action": "ArtMeshColorPreset",
+            "File": "",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": [
+                    {
+                        "ID": "nose_light",
+                        "Value": "FFC2BA|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Left1",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Left1_2",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Left1_Inside",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Right1_2",
+                        "Value": "A1DBDB|051212"
+                    },
+                    {
+                        "ID": "Front_hair_Right1_INside",
+                        "Value": "A1DBDB|051212"
+                    },
+                    {
+                        "ID": "Front_hair_Left2",
+                        "Value": "6AACAC|051212"
+                    },
+                    {
+                        "ID": "Front_hair_Right2",
+                        "Value": "6AACAC|051212"
+                    },
+                    {
+                        "ID": "SIDE_MAIN_EYELASH_L",
+                        "Value": "695B57|090403"
+                    },
+                    {
+                        "ID": "BOT_MINI_EYELASH_1_L",
+                        "Value": "000000|000000"
+                    },
+                    {
+                        "ID": "BOT_MINI_EYELASH_2_L",
+                        "Value": "000000|000000"
+                    },
+                    {
+                        "ID": "BOT_MAIN_EYELASH_L",
+                        "Value": "695B57|000000"
+                    },
+                    {
+                        "ID": "IRIS_L",
+                        "Value": "FFFFFF|B9B9B9"
+                    },
+                    {
+                        "ID": "SCLERA_L",
+                        "Value": "434343|191919"
+                    },
+                    {
+                        "ID": "EYELID_LEFT",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "BOTEYE_EYE_MAKEUP_L",
+                        "Value": "695B57|612219"
+                    },
+                    {
+                        "ID": "Upperlip",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "Lowerlip",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "jacket_Symbol",
+                        "Value": "000000|378888"
+                    },
+                    {
+                        "ID": "Jacket_Inside_Color_Left",
+                        "Value": "DBFF75|A8A8A8"
+                    },
+                    {
+                        "ID": "Jacket_Inside_Color_Right",
+                        "Value": "DBFF75|A8A8A8"
+                    },
+                    {
+                        "ID": "Jacket_outside_Right",
+                        "Value": "6B6B6B|000000"
+                    },
+                    {
+                        "ID": "Jacket_ARM1_lEFT",
+                        "Value": "6B6B6B|000000"
+                    },
+                    {
+                        "ID": "Jacket_ARM2_rIGHT",
+                        "Value": "6B6B6B|000000"
+                    },
+                    {
+                        "ID": "Jacket_ARM1_rIGHT",
+                        "Value": "6B6B6B|000000"
+                    },
+                    {
+                        "ID": "Wing1_Right",
+                        "Value": "00FFFF|1F3939"
+                    },
+                    {
+                        "ID": "Wing2_Right",
+                        "Value": "00FFFF|1F3939"
+                    },
+                    {
+                        "ID": "horn_Right",
+                        "Value": "FFFFFF|AFAFAF"
+                    },
+                    {
+                        "ID": "horn_left",
+                        "Value": "FFFFFF|AFAFAF"
+                    },
+                    {
+                        "ID": "HEAD",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "neck",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "belt",
+                        "Value": "FFFFFF|8F8F8F"
+                    },
+                    {
+                        "ID": "pants_Top",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "pants_Thigh_left",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "pants_calf_left",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "pants_Thigh_Right",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "pants_calf_Right",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "cyber_TRIANGLE_SHIRT",
+                        "Value": "000000|000000"
+                    },
+                    {
+                        "ID": "clavicle",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "BOTEYE_EYE_MAKEUP_UP",
+                        "Value": "695B57|612219"
+                    },
+                    {
+                        "ID": "TOPEYE_MAKEUP_R",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "SCLERA_R",
+                        "Value": "434343|191919"
+                    },
+                    {
+                        "ID": "IRIS_R",
+                        "Value": "FFFFFF|B9B9B9"
+                    },
+                    {
+                        "ID": "BOT_MAIN_EYELASH_R",
+                        "Value": "695B57|000000"
+                    },
+                    {
+                        "ID": "BOT_MINI_EYELASH_2_R",
+                        "Value": "000000|000000"
+                    },
+                    {
+                        "ID": "BOT_MINI_EYELASH_1_R",
+                        "Value": "000000|000000"
+                    },
+                    {
+                        "ID": "SIDE_MAIN_EYELASH_R",
+                        "Value": "695B57|090403"
+                    },
+                    {
+                        "ID": "Hair_Side_L",
+                        "Value": "6AACAC|000000"
+                    },
+                    {
+                        "ID": "Hair_Side_R",
+                        "Value": "6AACAC|000000"
+                    },
+                    {
+                        "ID": "Hair_Back_L",
+                        "Value": "6AACAC|000000"
+                    },
+                    {
+                        "ID": "Hair_Back_R",
+                        "Value": "6AACAC|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Left_shadow",
+                        "Value": "B59591|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Right_shadow",
+                        "Value": "B59591|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Left_shadow2",
+                        "Value": "B59591|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Right_shadow2",
+                        "Value": "B59591|000000"
+                    },
+                    {
+                        "ID": "baseshadow",
+                        "Value": "B59591|000000"
+                    },
+                    {
+                        "ID": "jacket_BACKPART",
+                        "Value": "DBFF75|C7C7C7"
+                    },
+                    {
+                        "ID": "Jacket_outside_Right2",
+                        "Value": "6B6B6B|000000"
+                    },
+                    {
+                        "ID": "Wing2_LEFT",
+                        "Value": "00FFFF|1F3939"
+                    },
+                    {
+                        "ID": "Wing1_LEFT",
+                        "Value": "00FFFF|1F3939"
+                    },
+                    {
+                        "ID": "CHEEKPUFF",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "Jacket_Extra_Color_Right",
+                        "Value": "DBFF75|A8A8A8"
+                    },
+                    {
+                        "ID": "Front_hair_Right1",
+                        "Value": "A1DBDB|051212"
+                    },
+                    {
+                        "ID": "TOPEYE_MAKEUP_L",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "Shirt_JACKETONN",
+                        "Value": "FFFFFF|2A4E61"
+                    }
+                ]
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "Numpad2",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "HotkeyID": "9008698d66124db0bfb055776d5da356",
+            "Name": "",
+            "Action": "ArtMeshColorPreset",
+            "File": "",
+            "Folder": "",
+            "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "Rotation": 0.0
+            },
+            "ColorOverlay": {
+                "On": false,
+                "IsStaticColor": false,
+                "Display": -1,
+                "WindowName": "",
+                "IncludeLeft": false,
+                "IncludeMid": false,
+                "IncludeRight": false,
+                "BaseValue": 0,
+                "OverlayValue": 0,
+                "Smoothing": 0,
+                "IncludeItems": false,
+                "StaticColor": {
+                    "r": 0.0,
+                    "g": 0.0,
+                    "b": 0.0,
+                    "a": 1.0
+                }
+            },
+            "ColorScreenMultiplyPreset": {
+                "ArtMeshMultiplyAndScreenColors": [
+                    {
+                        "ID": "nose_light",
+                        "Value": "FFC2BA|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Left1",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Left1_2",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Left1_Inside",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Right1_2",
+                        "Value": "A1DBDB|051212"
+                    },
+                    {
+                        "ID": "Front_hair_Right1_INside",
+                        "Value": "A1DBDB|051212"
+                    },
+                    {
+                        "ID": "Front_hair_Left2",
+                        "Value": "000000|051212"
+                    },
+                    {
+                        "ID": "Front_hair_Right2",
+                        "Value": "6AACAC|051212"
+                    },
+                    {
+                        "ID": "SIDE_MAIN_EYELASH_L",
+                        "Value": "695B57|090403"
+                    },
+                    {
+                        "ID": "BOT_MINI_EYELASH_1_L",
+                        "Value": "000000|000000"
+                    },
+                    {
+                        "ID": "BOT_MINI_EYELASH_2_L",
+                        "Value": "000000|000000"
+                    },
+                    {
+                        "ID": "BOT_MAIN_EYELASH_L",
+                        "Value": "695B57|000000"
+                    },
+                    {
+                        "ID": "IRIS_L",
+                        "Value": "FFFFFF|B9B9B9"
+                    },
+                    {
+                        "ID": "SCLERA_L",
+                        "Value": "434343|191919"
+                    },
+                    {
+                        "ID": "EYELID_LEFT",
+                        "Value": "FF2206|000000"
+                    },
+                    {
+                        "ID": "BOTEYE_EYE_MAKEUP_L",
+                        "Value": "695B57|612219"
+                    },
+                    {
+                        "ID": "Upperlip",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "Lowerlip",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "jacket_Symbol",
+                        "Value": "000000|378888"
+                    },
+                    {
+                        "ID": "Jacket_Inside_Color_Left",
+                        "Value": "DBFF75|A8A8A8"
+                    },
+                    {
+                        "ID": "Jacket_Inside_Color_Right",
+                        "Value": "DBFF75|A8A8A8"
+                    },
+                    {
+                        "ID": "Jacket_outside_Right",
+                        "Value": "6B6B6B|000000"
+                    },
+                    {
+                        "ID": "Jacket_ARM1_lEFT",
+                        "Value": "6B6B6B|000000"
+                    },
+                    {
+                        "ID": "Jacket_ARM2_rIGHT",
+                        "Value": "6B6B6B|000000"
+                    },
+                    {
+                        "ID": "Jacket_ARM1_rIGHT",
+                        "Value": "6B6B6B|000000"
+                    },
+                    {
+                        "ID": "Wing1_Right",
+                        "Value": "00FFFF|1F3939"
+                    },
+                    {
+                        "ID": "Wing2_Right",
+                        "Value": "00FFFF|1F3939"
+                    },
+                    {
+                        "ID": "horn_Right",
+                        "Value": "FFFFFF|AFAFAF"
+                    },
+                    {
+                        "ID": "horn_left",
+                        "Value": "FFFFFF|AFAFAF"
+                    },
+                    {
+                        "ID": "HEAD",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "neck",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "belt",
+                        "Value": "FFFFFF|8F8F8F"
+                    },
+                    {
+                        "ID": "pants_Top",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "pants_Thigh_left",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "pants_calf_left",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "pants_Thigh_Right",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "pants_calf_Right",
+                        "Value": "FFFFFF|000000"
+                    },
+                    {
+                        "ID": "cyber_TRIANGLE_SHIRT",
+                        "Value": "000000|000000"
+                    },
+                    {
+                        "ID": "clavicle",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "BOTEYE_EYE_MAKEUP_UP",
+                        "Value": "695B57|612219"
+                    },
+                    {
+                        "ID": "TOPEYE_MAKEUP_R",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "SCLERA_R",
+                        "Value": "434343|191919"
+                    },
+                    {
+                        "ID": "IRIS_R",
+                        "Value": "FFFFFF|B9B9B9"
+                    },
+                    {
+                        "ID": "BOT_MAIN_EYELASH_R",
+                        "Value": "695B57|000000"
+                    },
+                    {
+                        "ID": "BOT_MINI_EYELASH_2_R",
+                        "Value": "000000|000000"
+                    },
+                    {
+                        "ID": "BOT_MINI_EYELASH_1_R",
+                        "Value": "000000|000000"
+                    },
+                    {
+                        "ID": "SIDE_MAIN_EYELASH_R",
+                        "Value": "695B57|090403"
+                    },
+                    {
+                        "ID": "Hair_Side_L",
+                        "Value": "6AACAC|000000"
+                    },
+                    {
+                        "ID": "Hair_Side_R",
+                        "Value": "6AACAC|000000"
+                    },
+                    {
+                        "ID": "Hair_Back_L",
+                        "Value": "6AACAC|000000"
+                    },
+                    {
+                        "ID": "Hair_Back_R",
+                        "Value": "6AACAC|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Left_shadow",
+                        "Value": "B59591|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Right_shadow",
+                        "Value": "B59591|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Left_shadow2",
+                        "Value": "B59591|000000"
+                    },
+                    {
+                        "ID": "Front_hair_Right_shadow2",
+                        "Value": "B59591|000000"
+                    },
+                    {
+                        "ID": "baseshadow",
+                        "Value": "B59591|000000"
+                    },
+                    {
+                        "ID": "jacket_BACKPART",
+                        "Value": "DBFF75|C7C7C7"
+                    },
+                    {
+                        "ID": "Jacket_outside_Right2",
+                        "Value": "6B6B6B|000000"
+                    },
+                    {
+                        "ID": "Wing2_LEFT",
+                        "Value": "00FFFF|1F3939"
+                    },
+                    {
+                        "ID": "Wing1_LEFT",
+                        "Value": "00FFFF|1F3939"
+                    },
+                    {
+                        "ID": "CHEEKPUFF",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "Jacket_Extra_Color_Right",
+                        "Value": "DBFF75|A8A8A8"
+                    },
+                    {
+                        "ID": "Front_hair_Right1",
+                        "Value": "A1DBDB|051212"
+                    },
+                    {
+                        "ID": "TOPEYE_MAKEUP_L",
+                        "Value": "C8B1AE|000000"
+                    },
+                    {
+                        "ID": "Shirt_JACKETONN",
+                        "Value": "FFFFFF|2A4E61"
+                    }
+                ]
+            },
+            "HandGestureSettings": {
+                "GestureLeft": "",
+                "GestureRight": "",
+                "GestureCombinator": "AND",
+                "AllowMirroredGesture": false,
+                "DeactivateExpWhenGestureNotDetected": false,
+                "SecondsUntilDetection": 0.5,
+                "SecondsDetected": 0.0,
+                "PercentDetected": 0.0
+            },
+            "LoadModelSettings": {
+                "LoadAtCurrentPosition": true
+            },
+            "Triggers": {
+                "Trigger1": "Numpad7",
+                "Trigger2": "",
+                "Trigger3": "",
+                "ScreenButton": -1
+            },
+            "IsGlobal": true,
+            "IsActive": true,
+            "Minimized": false,
+            "StopsOnLastFrame": false,
+            "DeactivateAfterKeyUp": false,
+            "OnlyLoadOneRandomItem": false,
+            "DeactivateAfterSeconds": false,
+            "DeactivateAfterSecondsAmount": 10.0,
+            "FadeSecondsAmount": 0.5,
+            "OnScreenHotkeyColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            }
+        }
+    ],
+    "HotkeySettings": {
+        "UseOnScreenHotkeys": false,
+        "UseKeyboardHotkeys": true,
+        "SendOnScreenHotkeysToPC": true,
+        "OnScreenHotkeyAlpha": 75
+    },
+    "ArtMeshDetails": {
+        "ArtMeshesExcludedFromPinning": [],
+        "ArtMeshesThatDeleteItemsOnDrop": [],
+        "ArtMeshSceneLightingMultipliers": [],
+        "ArtMeshMultiplyAndScreenColors": [
+            {
+                "ID": "nose_light",
+                "Value": "FFC2BA|000000"
+            },
+            {
+                "ID": "Front_hair_Left1",
+                "Value": "FFFFFF|000000"
+            },
+            {
+                "ID": "Front_hair_Left1_2",
+                "Value": "FFFFFF|000000"
+            },
+            {
+                "ID": "Front_hair_Left1_Inside",
+                "Value": "FFFFFF|000000"
+            },
+            {
+                "ID": "Front_hair_Right1_2",
+                "Value": "A1DBDB|051212"
+            },
+            {
+                "ID": "Front_hair_Right1_INside",
+                "Value": "A1DBDB|051212"
+            },
+            {
+                "ID": "Front_hair_Left2",
+                "Value": "6AACAC|051212"
+            },
+            {
+                "ID": "Front_hair_Right2",
+                "Value": "6AACAC|051212"
+            },
+            {
+                "ID": "SIDE_MAIN_EYELASH_L",
+                "Value": "695B57|090403"
+            },
+            {
+                "ID": "BOT_MINI_EYELASH_1_L",
+                "Value": "000000|000000"
+            },
+            {
+                "ID": "BOT_MINI_EYELASH_2_L",
+                "Value": "000000|000000"
+            },
+            {
+                "ID": "BOT_MAIN_EYELASH_L",
+                "Value": "695B57|000000"
+            },
+            {
+                "ID": "IRIS_L",
+                "Value": "FFFFFF|B9B9B9"
+            },
+            {
+                "ID": "SCLERA_L",
+                "Value": "434343|191919"
+            },
+            {
+                "ID": "EYELID_LEFT",
+                "Value": "C8B1AE|000000"
+            },
+            {
+                "ID": "BOTEYE_EYE_MAKEUP_L",
+                "Value": "695B57|612219"
+            },
+            {
+                "ID": "Upperlip",
+                "Value": "C8B1AE|000000"
+            },
+            {
+                "ID": "Lowerlip",
+                "Value": "C8B1AE|000000"
+            },
+            {
+                "ID": "jacket_Symbol",
+                "Value": "000000|378888"
+            },
+            {
+                "ID": "Jacket_Inside_Color_Left",
+                "Value": "DBFF75|A8A8A8"
+            },
+            {
+                "ID": "Jacket_Inside_Color_Right",
+                "Value": "DBFF75|A8A8A8"
+            },
+            {
+                "ID": "Jacket_outside_Right",
+                "Value": "6B6B6B|000000"
+            },
+            {
+                "ID": "Jacket_ARM1_lEFT",
+                "Value": "6B6B6B|000000"
+            },
+            {
+                "ID": "Jacket_ARM2_rIGHT",
+                "Value": "6B6B6B|000000"
+            },
+            {
+                "ID": "Jacket_ARM1_rIGHT",
+                "Value": "6B6B6B|000000"
+            },
+            {
+                "ID": "Wing1_Right",
+                "Value": "00FFFF|1F3939"
+            },
+            {
+                "ID": "Wing2_Right",
+                "Value": "00FFFF|1F3939"
+            },
+            {
+                "ID": "horn_Right",
+                "Value": "FFFFFF|AFAFAF"
+            },
+            {
+                "ID": "horn_left",
+                "Value": "FFFFFF|AFAFAF"
+            },
+            {
+                "ID": "HEAD",
+                "Value": "C8B1AE|000000"
+            },
+            {
+                "ID": "neck",
+                "Value": "C8B1AE|000000"
+            },
+            {
+                "ID": "belt",
+                "Value": "FFFFFF|8F8F8F"
+            },
+            {
+                "ID": "pants_Top",
+                "Value": "FFFFFF|000000"
+            },
+            {
+                "ID": "pants_Thigh_left",
+                "Value": "FFFFFF|000000"
+            },
+            {
+                "ID": "pants_calf_left",
+                "Value": "FFFFFF|000000"
+            },
+            {
+                "ID": "pants_Thigh_Right",
+                "Value": "FFFFFF|000000"
+            },
+            {
+                "ID": "pants_calf_Right",
+                "Value": "FFFFFF|000000"
+            },
+            {
+                "ID": "cyber_TRIANGLE_SHIRT",
+                "Value": "000000|000000"
+            },
+            {
+                "ID": "clavicle",
+                "Value": "C8B1AE|000000"
+            },
+            {
+                "ID": "BOTEYE_EYE_MAKEUP_UP",
+                "Value": "695B57|612219"
+            },
+            {
+                "ID": "TOPEYE_MAKEUP_R",
+                "Value": "C8B1AE|000000"
+            },
+            {
+                "ID": "SCLERA_R",
+                "Value": "434343|191919"
+            },
+            {
+                "ID": "IRIS_R",
+                "Value": "FFFFFF|B9B9B9"
+            },
+            {
+                "ID": "BOT_MAIN_EYELASH_R",
+                "Value": "695B57|000000"
+            },
+            {
+                "ID": "BOT_MINI_EYELASH_2_R",
+                "Value": "000000|000000"
+            },
+            {
+                "ID": "BOT_MINI_EYELASH_1_R",
+                "Value": "000000|000000"
+            },
+            {
+                "ID": "SIDE_MAIN_EYELASH_R",
+                "Value": "695B57|090403"
+            },
+            {
+                "ID": "Hair_Side_L",
+                "Value": "6AACAC|000000"
+            },
+            {
+                "ID": "Hair_Side_R",
+                "Value": "6AACAC|000000"
+            },
+            {
+                "ID": "Hair_Back_L",
+                "Value": "6AACAC|000000"
+            },
+            {
+                "ID": "Hair_Back_R",
+                "Value": "6AACAC|000000"
+            },
+            {
+                "ID": "Front_hair_Left_shadow",
+                "Value": "B59591|000000"
+            },
+            {
+                "ID": "Front_hair_Right_shadow",
+                "Value": "B59591|000000"
+            },
+            {
+                "ID": "Front_hair_Left_shadow2",
+                "Value": "B59591|000000"
+            },
+            {
+                "ID": "Front_hair_Right_shadow2",
+                "Value": "B59591|000000"
+            },
+            {
+                "ID": "baseshadow",
+                "Value": "B59591|000000"
+            },
+            {
+                "ID": "jacket_BACKPART",
+                "Value": "DBFF75|C7C7C7"
+            },
+            {
+                "ID": "Jacket_outside_Right2",
+                "Value": "6B6B6B|000000"
+            },
+            {
+                "ID": "Wing2_LEFT",
+                "Value": "00FFFF|1F3939"
+            },
+            {
+                "ID": "Wing1_LEFT",
+                "Value": "00FFFF|1F3939"
+            },
+            {
+                "ID": "CHEEKPUFF",
+                "Value": "C8B1AE|000000"
+            },
+            {
+                "ID": "Jacket_Extra_Color_Right",
+                "Value": "DBFF75|A8A8A8"
+            },
+            {
+                "ID": "Front_hair_Right1",
+                "Value": "A1DBDB|051212"
+            },
+            {
+                "ID": "TOPEYE_MAKEUP_L",
+                "Value": "C8B1AE|000000"
+            },
+            {
+                "ID": "Shirt_JACKETONN",
+                "Value": "FFFFFF|2A4E61"
+            }
+        ]
+    },
+    "ParameterCustomization": {
+        "ParametersExcludedFromVNetSmoothing": []
+    },
+    "PhysicsCustomizationSettings": {
+        "PhysicsMultipliersPerPhysicsGroup": [],
+        "WindMultipliersPerPhysicsGroup": [],
+        "DraggingPhysicsMultipliersPerPhysicsGroup": []
+    },
+    "FolderInfo": {
+        "HotkeyFolders": [],
+        "ConfigItemFolders": []
+    },
+    "SavedActiveExpressions": []
+}

@@ -1,0 +1,485 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "Param30",
+			"GroupId": "ParamGroup9",
+			"Name": "Jacket on/off"
+		},
+		{
+			"Id": "Param32",
+			"GroupId": "ParamGroup9",
+			"Name": "Wing on/off"
+		},
+		{
+			"Id": "Param29",
+			"GroupId": "ParamGroup9",
+			"Name": "Horn on/off"
+		},
+		{
+			"Id": "Param27",
+			"GroupId": "ParamGroup9",
+			"Name": "Necklace on/off"
+		},
+		{
+			"Id": "Param28",
+			"GroupId": "ParamGroup9",
+			"Name": "Earring On/off"
+		},
+		{
+			"Id": "Param31",
+			"GroupId": "ParamGroup9",
+			"Name": "Shirt triangle on/off"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "ParamGroup4",
+			"Name": "Mouth Form"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "ParamGroup4",
+			"Name": "Mouth Open"
+		},
+		{
+			"Id": "Param41",
+			"GroupId": "ParamGroup7",
+			"Name": "WING PHY X"
+		},
+		{
+			"Id": "Param42",
+			"GroupId": "ParamGroup7",
+			"Name": "WING PHY Y"
+		},
+		{
+			"Id": "Param39",
+			"GroupId": "ParamGroup7",
+			"Name": "JACKET PHY X"
+		},
+		{
+			"Id": "Param40",
+			"GroupId": "ParamGroup7",
+			"Name": "JACKET PHY Y"
+		},
+		{
+			"Id": "Param23",
+			"GroupId": "ParamGroup7",
+			"Name": "earing"
+		},
+		{
+			"Id": "Param26",
+			"GroupId": "ParamGroup7",
+			"Name": "necklace"
+		},
+		{
+			"Id": "Param33",
+			"GroupId": "ParamGroup10",
+			"Name": "Dark Forehead"
+		},
+		{
+			"Id": "Param34",
+			"GroupId": "ParamGroup10",
+			"Name": "Blush"
+		},
+		{
+			"Id": "Param35",
+			"GroupId": "ParamGroup10",
+			"Name": "Tear"
+		},
+		{
+			"Id": "Param36",
+			"GroupId": "ParamGroup10",
+			"Name": "SPARKLE EYE"
+		},
+		{
+			"Id": "Param37",
+			"GroupId": "ParamGroup10",
+			"Name": "HEART EYE"
+		},
+		{
+			"Id": "Param38",
+			"GroupId": "ParamGroup10",
+			"Name": "cHEEK PUFF"
+		},
+		{
+			"Id": "Param24",
+			"GroupId": "ParamGroup8",
+			"Name": "Wing Right X (open)"
+		},
+		{
+			"Id": "Param25",
+			"GroupId": "ParamGroup8",
+			"Name": "Wing Right y"
+		},
+		{
+			"Id": "Param7",
+			"GroupId": "ParamGroup6",
+			"Name": "FRONTMID_HAIR_PHYSICSR X"
+		},
+		{
+			"Id": "Param8",
+			"GroupId": "ParamGroup6",
+			"Name": "FRONTMID_HAIR_PHYSICSR Y"
+		},
+		{
+			"Id": "Param9",
+			"GroupId": "ParamGroup6",
+			"Name": "FRONTMID_HAIR_PHYSICS  LX"
+		},
+		{
+			"Id": "Param10",
+			"GroupId": "ParamGroup6",
+			"Name": "FRONTMID_HAIR_PHYSICSR LY"
+		},
+		{
+			"Id": "Param11",
+			"GroupId": "ParamGroup6",
+			"Name": "FRONTSIDE_HAIR_PHYSICS  RX"
+		},
+		{
+			"Id": "Param12",
+			"GroupId": "ParamGroup6",
+			"Name": "FRONTSIDE_HAIR_PHYSICS  RY"
+		},
+		{
+			"Id": "Param13",
+			"GroupId": "ParamGroup6",
+			"Name": "FRONTSIDE_HAIR_PHYSICS  LX"
+		},
+		{
+			"Id": "Param14",
+			"GroupId": "ParamGroup6",
+			"Name": "FRONTSIDE_HAIR_PHYSICS  LY"
+		},
+		{
+			"Id": "Param15",
+			"GroupId": "ParamGroup6",
+			"Name": "BACK_HAIR_PHYSICS  RX"
+		},
+		{
+			"Id": "Param16",
+			"GroupId": "ParamGroup6",
+			"Name": "BACK_HAIR_PHYSICS  RY"
+		},
+		{
+			"Id": "Param17",
+			"GroupId": "ParamGroup6",
+			"Name": "BACK_HAIR_PHYSICS  LX"
+		},
+		{
+			"Id": "Param18",
+			"GroupId": "ParamGroup6",
+			"Name": "BACK_HAIR_PHYSICS  LY"
+		},
+		{
+			"Id": "Param19",
+			"GroupId": "ParamGroup6",
+			"Name": "sideBACK_HAIR_PHYSICS  RX"
+		},
+		{
+			"Id": "Param20",
+			"GroupId": "ParamGroup6",
+			"Name": "sideBACK_HAIR_PHYSICS  RY"
+		},
+		{
+			"Id": "Param21",
+			"GroupId": "ParamGroup6",
+			"Name": "sideBACK_HAIR_PHYSICS  LX"
+		},
+		{
+			"Id": "Param22",
+			"GroupId": "ParamGroup6",
+			"Name": "sideBACK_HAIR_PHYSICS  LY"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "ParamGroup2",
+			"Name": "MINI LASHES WIGGLE R"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "ParamGroup2",
+			"Name": "MINI LASHES WIGGLE L"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "ParamGroup2",
+			"Name": "IRIS SCALE L"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "ParamGroup2",
+			"Name": "IRIS SCALE R"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "ParamGroup2",
+			"Name": "LASHES WIGGLE L"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "ParamGroup2",
+			"Name": "LASHES WIGGLE R"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "ParamGroup2",
+			"Name": "Eyeball X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "ParamGroup2",
+			"Name": "Eyeball Y"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "ParamGroup2",
+			"Name": "EyeL Open"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "ParamGroup2",
+			"Name": "EyeL Smile"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "ParamGroup2",
+			"Name": "EyeR Open"
+		},
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "ParamGroup",
+			"Name": "Angle X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "ParamGroup",
+			"Name": "Angle Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "ParamGroup",
+			"Name": "Angle Z"
+		},
+		{
+			"Id": "ParamBrowLX",
+			"GroupId": "ParamGroup3",
+			"Name": "BrowL X"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "ParamGroup3",
+			"Name": "BrowL Y"
+		},
+		{
+			"Id": "ParamBrowRX",
+			"GroupId": "ParamGroup3",
+			"Name": "BrowR X"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "ParamGroup3",
+			"Name": "BrowR Y"
+		},
+		{
+			"Id": "ParamBrowLAngle",
+			"GroupId": "ParamGroup3",
+			"Name": "BrowL Angle"
+		},
+		{
+			"Id": "ParamBrowRAngle",
+			"GroupId": "ParamGroup3",
+			"Name": "BrowR Angle"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"GroupId": "ParamGroup3",
+			"Name": "BrowL Form"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"GroupId": "ParamGroup3",
+			"Name": "BrowR Form"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "ParamGroup5",
+			"Name": "Body X"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "ParamGroup5",
+			"Name": "Body Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "ParamGroup5",
+			"Name": "Body Z"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "Breath"
+		},
+		{
+			"Id": "ParamCheek",
+			"GroupId": "",
+			"Name": "Cheek"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "Hair Move Front"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "Hair Move Side"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "Hair Move Back"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup9",
+			"GroupId": "",
+			"Name": "On/Off switch"
+		},
+		{
+			"Id": "ParamGroup4",
+			"GroupId": "",
+			"Name": "Mouth"
+		},
+		{
+			"Id": "ParamGroup7",
+			"GroupId": "",
+			"Name": "extra physics"
+		},
+		{
+			"Id": "ParamGroup10",
+			"GroupId": "",
+			"Name": "Emotes on/off"
+		},
+		{
+			"Id": "ParamGroup8",
+			"GroupId": "",
+			"Name": "Wing physics"
+		},
+		{
+			"Id": "ParamGroup6",
+			"GroupId": "",
+			"Name": "HAIR PHYSICS"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "Eyes"
+		},
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "Head xy"
+		},
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "Eyebrows"
+		},
+		{
+			"Id": "ParamGroup5",
+			"GroupId": "",
+			"Name": "Body xy"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "EMOTES",
+			"Name": "EMOTES"
+		},
+		{
+			"Id": "Face",
+			"Name": "Face"
+		},
+		{
+			"Id": "Hair",
+			"Name": "Hair"
+		},
+		{
+			"Id": "tear",
+			"Name": "tear"
+		},
+		{
+			"Id": "EYES_L",
+			"Name": "EYES_L"
+		},
+		{
+			"Id": "Part4",
+			"Name": "Head Shadows"
+		},
+		{
+			"Id": "MOUTH",
+			"Name": "MOUTH"
+		},
+		{
+			"Id": "Part3",
+			"Name": "Hair back"
+		},
+		{
+			"Id": "Jacket",
+			"Name": "Jacket"
+		},
+		{
+			"Id": "Wing_Right",
+			"Name": "Wing_Right"
+		},
+		{
+			"Id": "HEAREYE",
+			"Name": "HEAREYE"
+		},
+		{
+			"Id": "SPARKLE",
+			"Name": "SPARKLE"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"ParamMouthForm",
+			"ParamMouthOpenY"
+		],
+		[
+			"Param39",
+			"Param40"
+		],
+		[
+			"Param7",
+			"Param8"
+		],
+		[
+			"Param9",
+			"Param10"
+		],
+		[
+			"Param11",
+			"Param12"
+		],
+		[
+			"Param13",
+			"Param14"
+		],
+		[
+			"Param15",
+			"Param16"
+		],
+		[
+			"ParamEyeBallX",
+			"ParamEyeBallY"
+		],
+		[
+			"ParamAngleX",
+			"ParamAngleY"
+		]
+	]
+}

@@ -1,0 +1,12 @@
+{
+    "display_name": "EmulatorJS",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "js": "plugin.js",
+    "css": "plugin.css",
+    "author": "Cohee1207",
+    "version": "1.0.0",
+    "homePage": "https://github.com/Cohee1207/SillyTavern-EmulatorJS",
+    "auto_update": true
+}

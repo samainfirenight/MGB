@@ -1,0 +1,116 @@
+{
+    "id": "1712097519548",
+    "name": "ZzGroup: Vergil Gets A Body",
+    "members": [
+        "Vergil3_1.png",
+        "Vergil.png",
+        "Elon Musk.png",
+        "Melissa_1.png",
+        "Narrator1_1.png"
+    ],
+    "avatar_url": "/thumbnail?type=avatar&file=Vergil.png",
+    "allow_self_responses": false,
+    "activation_strategy": false,
+    "generation_mode": 0,
+    "disabled_members": [
+        "Elon Musk.png",
+        "Narrator1_1.png",
+        "Liam.png",
+        "Captain Gerard1.png",
+        "Psychotic Jealous Fan.png",
+        "Emily.png",
+        "Tōshūsai Hiro Takahashi.png",
+        "Reuben Langdon.png",
+        "Dan Southworth.png",
+        "Candy.png",
+        "Candy.png",
+        "Nichole.png",
+        "Lisa Cuddy.png",
+        "Dr. Gregory House.png",
+        "Christi McVie.png",
+        "Lindsay Buckingham.png",
+        "Melissa_1.png",
+        "Vergil.png",
+        "Vergil3_1.png"
+    ],
+    "chat_metadata": {
+        "note_prompt": "",
+        "note_interval": 1,
+        "note_position": 1,
+        "note_depth": 4,
+        "tainted": true,
+        "main_chat": "Current_Story_Vergil_Gets_A_Body",
+        "note_role": 0,
+        "chat_id_hash": 2408425758165822,
+        "objective": {
+            "currentObjectiveId": null,
+            "taskTree": null,
+            "chatDepth": 2,
+            "checkFrequency": 3,
+            "hideTasks": false,
+            "prompts": {
+                "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+            }
+        }
+    },
+    "fav": false,
+    "chat_id": "Vergil_Gets_Body_BranchTwo_Alt - 2024-6-17@12h21m21s",
+    "chats": [
+        "Current_Story_Vergil_Gets_A_Body",
+        "Vergil_Gets_Body_BranchTwo_Alt - 2024-6-17@12h21m21s"
+    ],
+    "auto_mode_delay": 5,
+    "date_added": 1721442385058.0347,
+    "create_date": "2024-7-19 @22h 26m 25s 58ms",
+    "date_last_chat": 1720544310604.3518,
+    "chat_size": 7305747,
+    "past_metadata": {
+        "Current_Story_Vergil_Gets_A_Body": {
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "tainted": true,
+            "main_chat": "Vergil_Gets_A_Body",
+            "note_role": 0,
+            "chat_id_hash": 2408425758165822,
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            }
+        },
+        "": {},
+        "Vergil_Gets_Body_BranchTwo_Alt - 2024-6-17@12h21m21s": {
+            "note_prompt": "",
+            "note_interval": 1,
+            "note_position": 1,
+            "note_depth": 4,
+            "tainted": true,
+            "main_chat": "Current_Story_Vergil_Gets_A_Body",
+            "note_role": 0,
+            "chat_id_hash": 2408425758165822,
+            "objective": {
+                "currentObjectiveId": null,
+                "taskTree": null,
+                "chatDepth": 2,
+                "checkFrequency": 3,
+                "hideTasks": false,
+                "prompts": {
+                    "createTask": "Pause your roleplay. Please generate a numbered list of plain text tasks to complete an objective. The objective that you must make a numbered task list for is: \"{{objective}}\". The tasks created should take into account the character traits of {{char}}. These tasks may or may not involve {{user}} directly. Include the objective as the final task.",
+                    "checkTaskCompleted": "Pause your roleplay. Determine if this task is completed: [{{task}}]. To do this, examine the most recent messages. Your response must only contain either true or false, and nothing else. Example output: true",
+                    "currentTask": "Your current task is [{{task}}]. Balance existing roleplay with completing this task."
+                }
+            }
+        }
+    }
+}

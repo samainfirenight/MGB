@@ -1,0 +1,86 @@
+{
+    "entries": {
+        "0": {
+            "uid": 0,
+            "key": [],
+            "keysecondary": [],
+            "comment": "Dr Wills Patient Info",
+            "content": "------ Begin Patient Info for {{user}} ------\n\nPatient Name: {{user}}\nAge: 45\nSex: Female\nEthnicity: Caucasian\nMarital Status: Married\nOccupation: Sales Administrator\nCurrent Diagnosis: Bi-Polar Manic Depressive\nCurrent Prescriptions: Vyvanse (daily), Xanax (as needed)\n\nInitial Assessment: {{user}}, in her initial session, articulated feelings of being overwhelmed and struggling with daily responsibilities, potentially due to low energy and motivation. She expressed a significant challenge with potential avoidance, impacting her work and personal life. \n\nSecondary Assessment: {{user}} has expressed suspicion that she is in the spectrum. Review of her online self-testing scores (see Appendix A) and preliminary questioning showcase a high potential of probability. Further evaluation is necessary to conclusively diagnose ASD.\n\nTreatment Plan: Under evaluation for treatment and therapeutic options that do not include pharmaceutical administrations, outside of the two that she is currently taking.\n\nCurrent Evaluation Process Outline:\n\n1. Developmental History:\nThis initial phase involves an in-depth interview about your early development, family history, and life experiences. We'll discuss your childhood, education, relationships, and any challenges you've faced. This helps us understand your developmental trajectory and identify any early indicators of autism or other conditions.\n\n2. Cognitive Assessment:\nWe'll conduct standardized tests to evaluate your cognitive abilities, including memory, attention, problem-solving, and language skills. This helps us understand your cognitive strengths and weaknesses, which can be important in diagnosing autism and differentiating it from other conditions.\n\n3. Autism-Specific Assessments:\nWe'll use specialized tools designed to assess autism traits in adults. These might include:\n\n- The Autism Diagnostic Observation Schedule (ADOS-2)\n- The Autism Diagnostic Interview-Revised (ADI-R)\n\nThese assessments involve structured activities and interviews to evaluate social interaction, communication, and repetitive behaviors.\n\n4. Sensory Processing Evaluation:\nGiven your reported sensory sensitivities, we'll conduct specific assessments to understand your sensory processing patterns. This might involve questionnaires and practical tasks to evaluate your responses to various sensory stimuli.\n\n5. Executive Functioning Assessment:\nWe'll evaluate skills like planning, organization, impulse control, and flexibility. This is important because difficulties in these areas are common in both autism and bipolar disorder.\n\n6. Mood and Anxiety Assessment:\nGiven your current bipolar diagnosis, we'll include assessments to evaluate your mood patterns and anxiety levels. This helps us understand how these symptoms might interact with potential autism traits.\n\n7. Adaptive Functioning Assessment:\nThis involves evaluating how you manage daily living skills, work responsibilities, and social relationships. We might ask for input from family members or close friends if you're comfortable with that.\n\n8. Observational Assessment:\nThroughout these sessions, I'll be observing your communication style, social interactions, and behavioral patterns. This informal observation is a crucial part of the diagnostic process.\n\nAfter completing these assessments, Dr. Wills to analyze the results and provide {{user}} with a detailed report during a feedback session to discuss the findings, potential diagnoses, and recommendations for support or treatment.\n\n------ End Patient Info for {{user}} ------\n",
+            "constant": false,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": true,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "displayIndex": 0,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "50f56d4f-a2a9-4b04-ad19-cb397ff8134f"
+                ]
+            },
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0
+        },
+        "1": {
+            "uid": 1,
+            "key": [],
+            "keysecondary": [],
+            "comment": "Dr Wills Patient Info Appendix A",
+            "content": "------ Begin Patient Info Appendix A for {{user}} ------\n\nPatient Name: {{user}}\nDocument Description: Patient Self-Test scores for suspected ASD\n\nAdult Autism Spectrum Test:\nTotal Score = 36\nWeb Address: https://embrace-autism.com/autism-spectrum-quotient/\n\nCat-Q Test:\nTotal Score = 109\nCompensation = 28\nMasking = 41\nAssimilation = 40\nWeb Address: https://embrace-autism.com/cat-q/\n\nRAADS-R Test:\nTotal Score = 119\nLanguage = 4\nSocial Relatedness = 49\nSensory/Motor = 34\nCircumscribed Interests = 32\nWeb Address: https://embrace-autism.com/raads-r/\n\nThe Aspie Quiz:\nTotal Score = 109\nWeb Address: https://embrace-autism.com/aspie-quiz/ ==> https://rdos.net/eng/Aspie-quiz.php\n\n------ End Patient Info Appendix A for {{user}} ------\n",
+            "constant": false,
+            "vectorized": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 1,
+            "disable": true,
+            "excludeRecursion": true,
+            "preventRecursion": true,
+            "delayUntilRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "groupOverride": false,
+            "groupWeight": 100,
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "useGroupScoring": null,
+            "automationId": "",
+            "role": null,
+            "displayIndex": 0,
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": [
+                    "7ba2f5c9-4693-4495-a6d6-2aef5a8af6c1"
+                ]
+            },
+            "sticky": 0,
+            "cooldown": 0,
+            "delay": 0
+        }
+    }
+}
