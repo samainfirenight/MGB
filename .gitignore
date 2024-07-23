@@ -4,3 +4,6 @@
 /data/_uploads/
 /.github/
 /data/default-user/backups/
+/data/default-user/settings.json
+/data/default-user/secrets.json
+/data/default-user/stats.json
