@@ -10,18 +10,29 @@
                     <input type="checkbox" id="mgbfunctioncall_enabled" />
                     <span>Enabled</span>
                 </label>
-                <h4>Source</h4>
-                <select id="mgbfunctioncall_source">
+                <!-- <h4>Source</h4> -->
+                <select id="mgbfunctioncall_source" style="display: none;">
                     <option value="openaiapi">SerpApi</option>
                     <option value="extras">Extras API</option>
                     <option value="plugin">Selenium Plugin</option>
                 </select>
+				<!--
+                <h4>Select Function Call for Trigger Phrase</h4>
+                <select id="mgbfunctioncall_fcTriggerSelect">
+                    <option value="retrieveEvents">Retrieve Events</option>
+                    <option value="scheduleEvent">Schedule Event</option>
+                    <option value="workTasks">Work Tasks</option>
+					<option value="personalTasks">Personal Tasks</option>
+                </select>	
+				-->	
                 <div id="openaiapi_settings">
                     <div class="flex-container alignItemsBaseline">
+					<!--
                         <h4 for="openaiapi_key" class="flex1 margin0">
                             <a href="https://openaiapi.com/" target="_blank">SerpApi Key</a>
                         </h4>
-                        <div id="openaiapi_key" class="menu_button menu_button_icon">
+					-->	
+                        <div id="openaiapi_key" class="menu_button menu_button_icon" style="display: none;">
                             <i class="fa-solid fa-key"></i>
                             <span>Click to set</span>
                         </div>
@@ -34,8 +45,8 @@
                         <option value="duckduckgo">DuckDuckGo</option>
                     </select>
                 </div>
-                <label for="mgbfunctioncall_cache_lifetime">Cache Lifetime <small>(seconds)</small></label>
-                <input type="number" class="text_pole" id="mgbfunctioncall_cache_lifetime" value="">
+                <label for="mgbfunctioncall_cache_lifetime" style="display: none;">Cache Lifetime <small>(seconds)</small></label>
+                <input type="number" class="text_pole" id="mgbfunctioncall_cache_lifetime" value="" style="display: none;">
                 <hr>
                 <h4>Prompt Settings</h4>
                 <label for="mgbfunctioncall_budget">Prompt Budget <small>(text characters)</small></label>
@@ -67,47 +78,96 @@
                     <input type="checkbox" id="mgbfunctioncall_use_trigger_phrases" />
                     <span>Use Trigger Phrases</span>
                 </label>
-                <label for="mgbfunctioncall_trigger_phrases_events">Trigger Phrases Events <small>(one per line)</small></label>
-                <small>If a message starts with a period, it will be ignored.</small>
-                <textarea id="mgbfunctioncall_trigger_phrases_events" class="text_pole textarea_compact" rows="4"></textarea>
-				<label for="mgbfunctioncall_trigger_phrases_scheduleevent">Trigger Phrases Schedule Event <small>(one per line)</small></label>
-                <small>If a message starts with a period, it will be ignored.</small>
-                <textarea id="mgbfunctioncall_trigger_phrases_scheduleevent" class="text_pole textarea_compact" rows="4"></textarea>
-				<label for="mgbfunctioncall_trigger_phrases_worktasks">Trigger Phrases Work Tasks<small>(one per line)</small></label>
-                <small>If a message starts with a period, it will be ignored.</small>
-                <textarea id="mgbfunctioncall_trigger_phrases_worktasks" class="text_pole textarea_compact" rows="4"></textarea>
-				<label for="mgbfunctioncall_trigger_phrases_personaltasks">Trigger Phrases Personal Tasks<small>(one per line)</small></label>
-                <small>If a message starts with a period, it will be ignored.</small>
-                <textarea id="mgbfunctioncall_trigger_phrases_personaltasks" class="text_pole textarea_compact" rows="4"></textarea>
+				<hr>
+				<label for="mgbfunctioncall_fcTriggerSelect">
+				<h4>Select Function Call To Edit Trigger Phrase:</h4>
+				</label>
+                <select id="mgbfunctioncall_fcTriggerSelect">
+                    <option value="retrieveEvents">Retrieve Events</option>
+                    <option value="scheduleEvent">Schedule Event</option>
+                    <option value="workTasks">Work Tasks</option>
+					<option value="personalTasks">Personal Tasks</option>
+                </select>
+				<small>If a message starts with a period, it will be ignored. (one per line)</small>
+				<!-- <label for="mgbfunctioncall_trigger_phrases_events" style="display: none;">Trigger Phrases Events <small>(one per line)</small></label> -->
+				<!-- <small>If a message starts with a period, it will be ignored.</small> -->
+                <textarea id="mgbfunctioncall_trigger_phrases_events" class="text_pole textarea_compact" rows="4" style="display: none;"></textarea>
+				<!-- <label for="mgbfunctioncall_trigger_phrases_scheduleevent" style="display: none;">Trigger Phrases Schedule Event <small>(one per line)</small></label> -->
+                <!-- <small>If a message starts with a period, it will be ignored.</small> -->
+                <textarea id="mgbfunctioncall_trigger_phrases_scheduleevent" class="text_pole textarea_compact" rows="4" style="display: none;"></textarea>
+				<!-- <label for="mgbfunctioncall_trigger_phrases_worktasks"style="display: none;">Trigger Phrases Work Tasks<small>(one per line)</small></label> -->
+                <!-- <small>If a message starts with a period, it will be ignored.</small> -->
+                <textarea id="mgbfunctioncall_trigger_phrases_worktasks" class="text_pole textarea_compact" rows="4" style="display: none;"></textarea>
+				<!-- <label for="mgbfunctioncall_trigger_phrases_personaltasks" style="display: none;">Trigger Phrases Personal Tasks<small>(one per line)</small></label> -->
+                <!-- <small>If a message starts with a period, it will be ignored.</small> -->
+                <textarea id="mgbfunctioncall_trigger_phrases_personaltasks" class="text_pole textarea_compact" rows="4"style="display: none;"></textarea>
+				<hr>
                 <label for="mgbfunctioncall_max_words">Max Words <small>(per query)</small></label>
                 <input type="number" class="text_pole" id="mgbfunctioncall_max_words" value="" min="1" max="32" step="1">
                 <hr>
-                <h4>Page Scraping</h4>
-                <label class="checkbox_label" for="mgbfunctioncall_visit_enabled">
-                    <input type="checkbox" id="mgbfunctioncall_visit_enabled" />
-                    <span>Visit Links</span>
+               <!-- <h4>Page Scraping</h4> -->
+                <label class="checkbox_label" for="mgbfunctioncall_visit_enabled" style="display: none;">
+                    <input type="checkbox" id="mgbfunctioncall_visit_enabled" style="display: none;" />
+                 <!-- <span>Visit Links</span> -->
                 </label>
+				<!--
                 <div class="marginTopBot5">
                     Text will be extracted from the visited search result pages and saved to:
                 </div>
-                <label for="mgbfunctioncall_visit_target_message" class="checkbox_label">
-                    <input id="mgbfunctioncall_visit_target_message" type="radio" name="mgbfunctioncall_visit_target" value="0" />
-                    <span>Message attachment</span>
+				-->
+                <label for="mgbfunctioncall_visit_target_message" class="checkbox_label" style="display: none;">
+                    <input id="mgbfunctioncall_visit_target_message" type="radio" name="mgbfunctioncall_visit_target" value="0" style="display: none;"/>
+                  <!--  <span>Message attachment</span> -->
                 </label>
-                <label for="mgbfunctioncall_visit_target_databank" class="checkbox_label">
-                    <input id="mgbfunctioncall_visit_target_databank" type="radio" name="mgbfunctioncall_visit_target" value="1" />
-                    <span>Data Bank (chat)</span>
+                <label for="mgbfunctioncall_visit_target_databank" class="checkbox_label" style="display: none;">
+                    <input id="mgbfunctioncall_visit_target_databank" type="radio" name="mgbfunctioncall_visit_target" value="1" style="display: none;" />
+                    <!-- <span>Data Bank (chat)</span> -->
                 </label>
-                <label for="mgbfunctioncall_visit_count">Visit Count <small>(max per query)</small></label>
-                <input type="number" class="text_pole" id="mgbfunctioncall_visit_count" value="" min="0" max="10" step="1">
-                <label for="mgbfunctioncall_visit_blacklist">Visit Domain Blacklist <small>(one per line)</small></label>
-                <textarea id="mgbfunctioncall_visit_blacklist" class="text_pole textarea_compact" rows="4"></textarea>
-                <label for="mgbfunctioncall_file_header">File Header</label>
-                <textarea id="mgbfunctioncall_file_header" class="text_pole textarea_compact autoSetHeight" rows="2" placeholder="Use &lcub;&lcub;query&rcub;&rcub; macro."></textarea>
-                <label for="mgbfunctioncall_block_header">Block Header</label>
-                <textarea id="mgbfunctioncall_block_header" class="text_pole textarea_compact autoSetHeight" rows="2" placeholder="Use &lcub;&lcub;link&rcub;&rcub; and &lcub;&lcub;text&rcub;&rcub; macros."></textarea>
+                <label for="mgbfunctioncall_visit_count" style="display: none;">Visit Count <small>(max per query)</small></label>
+                <input type="number" class="text_pole" id="mgbfunctioncall_visit_count" value="" min="0" max="10" step="1" style="display: none;">
+                <label for="mgbfunctioncall_visit_blacklist" style="display: none;">Visit Domain Blacklist <small>(one per line)</small></label>
+                <textarea id="mgbfunctioncall_visit_blacklist" class="text_pole textarea_compact" rows="4" style="display: none;"></textarea>
+                <label for="mgbfunctioncall_file_header" style="display: none;">File Header</label>
+                <textarea id="mgbfunctioncall_file_header" class="text_pole textarea_compact autoSetHeight" rows="2" placeholder="Use &lcub;&lcub;query&rcub;&rcub; macro." style="display: none;"></textarea>
+                <label for="mgbfunctioncall_block_header" style="display: none;">Block Header</label>
+                <textarea id="mgbfunctioncall_block_header" class="text_pole textarea_compact autoSetHeight" rows="2" placeholder="Use &lcub;&lcub;link&rcub;&rcub; and &lcub;&lcub;text&rcub;&rcub; macros." style="display: none;"></textarea>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!--
+<script type="text/javascript">
+$(document).ready(function () {
+        $('#mgbfunctioncall_fcTriggerSelect').change(function () {
+            if ($('#mgbfunctioncall_fcTriggerSelect').val() == 'retrieveEvents') {
+                $('#mgbfunctioncall_trigger_phrases_events').show();
+				$('#mgbfunctioncall_trigger_phrases_scheduleevent').hide();
+				$('#mgbfunctioncall_trigger_phrases_worktasks').hide();
+				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();         
+            } else if ($('#mgbfunctioncall_fcTriggerSelect').val() == 'scheduleEvent') {
+                $('#mgbfunctioncall_trigger_phrases_events').hide();
+				$('#mgbfunctioncall_trigger_phrases_scheduleevent').show();
+				$('#mgbfunctioncall_trigger_phrases_worktasks').hide();
+				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();			
+			} else if ($('#mgbfunctioncall_fcTriggerSelect').val() == 'workTasks') {
+                $('#mgbfunctioncall_trigger_phrases_events').hide();
+				$('#mgbfunctioncall_trigger_phrases_scheduleevent').hide();
+				$('#mgbfunctioncall_trigger_phrases_worktasks').show();
+				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();			
+			} else if ($('#mgbfunctioncall_fcTriggerSelect').val() == 'personalTasks') {
+                $('#mgbfunctioncall_trigger_phrases_events').hide();
+				$('#mgbfunctioncall_trigger_phrases_scheduleevent').hide();
+				$('#mgbfunctioncall_trigger_phrases_worktasks').hide();
+				$('#mgbfunctioncall_trigger_phrases_personaltasks').show();
+			} else {
+				console.log('No Data Chosen in MGB Function Trigger Phrase Menu Select. Restoring Default.');
+				$('#mgbfunctioncall_trigger_phrases_events').show();
+				$('#mgbfunctioncall_trigger_phrases_scheduleevent').hide();
+				$('#mgbfunctioncall_trigger_phrases_worktasks').hide();
+				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();
+			}
+        });
+    });
+</script>
+-->

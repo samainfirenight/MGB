@@ -1259,4 +1259,37 @@ console.debug('MGBFunctionCall: JQuery end save settings section');
 		console.debug('MGBFunctionCall: JQuery type of Context = registerDataBankScraper');
         context.registerDataBankScraper(new MGBFunctionCallScraper());
     }
+	
+	$(document).ready(function () {
+        $('#mgbfunctioncall_fcTriggerSelect').change(function () {
+            if ($('#mgbfunctioncall_fcTriggerSelect').val() == 'retrieveEvents') {
+                $('#mgbfunctioncall_trigger_phrases_events').show();
+				$('#mgbfunctioncall_trigger_phrases_scheduleevent').hide();
+				$('#mgbfunctioncall_trigger_phrases_worktasks').hide();
+				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();         
+            } else if ($('#mgbfunctioncall_fcTriggerSelect').val() == 'scheduleEvent') {
+                $('#mgbfunctioncall_trigger_phrases_events').hide();
+				$('#mgbfunctioncall_trigger_phrases_scheduleevent').show();
+				$('#mgbfunctioncall_trigger_phrases_worktasks').hide();
+				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();			
+			} else if ($('#mgbfunctioncall_fcTriggerSelect').val() == 'workTasks') {
+                $('#mgbfunctioncall_trigger_phrases_events').hide();
+				$('#mgbfunctioncall_trigger_phrases_scheduleevent').hide();
+				$('#mgbfunctioncall_trigger_phrases_worktasks').show();
+				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();			
+			} else if ($('#mgbfunctioncall_fcTriggerSelect').val() == 'personalTasks') {
+                $('#mgbfunctioncall_trigger_phrases_events').hide();
+				$('#mgbfunctioncall_trigger_phrases_scheduleevent').hide();
+				$('#mgbfunctioncall_trigger_phrases_worktasks').hide();
+				$('#mgbfunctioncall_trigger_phrases_personaltasks').show();
+			} else {
+				console.log('No Data Chosen in MGB Function Trigger Phrase Menu Select. Restoring Default.');
+				$('#mgbfunctioncall_trigger_phrases_events').show();
+				$('#mgbfunctioncall_trigger_phrases_scheduleevent').hide();
+				$('#mgbfunctioncall_trigger_phrases_worktasks').hide();
+				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();
+			}
+        });
+    });
+	
 });
