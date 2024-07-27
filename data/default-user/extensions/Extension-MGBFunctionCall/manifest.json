@@ -1,0 +1,15 @@
+{
+    "display_name": "MGB Function Call",
+    "loading_order": 50,
+    "requires": [],
+    "optional": [
+        "mgbfunctioncall"
+    ],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Cohee1207",
+    "generate_interceptor": "MGBFunctionCall_Intercept",
+    "version": "1.2.0",
+    "homePage": "https://github.com/SillyTavern/Extension-WebSearch",
+    "auto_update": true
+}
