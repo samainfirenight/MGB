@@ -46,6 +46,10 @@ const defaultSettings = {
 		'check my personal tasks',
 		'check my personal task list',
     ],
+	    triggerPhrasesCurrentWeather: [
+		'current weather for',
+        'the weather for',
+    ],
     insertionTemplate: '***\nRelevant information from the query ({{query}}):\n{{text}}\n***',
     cacheLifetime: 60 * 60 * 24 * 7, // 1 week
     position: extension_prompt_types.IN_PROMPT,
@@ -299,8 +303,25 @@ function extractSearchQuery(message) {
 					}
 					
 					if (triggerPhraseIndex === -1) {
-						console.debug('No trigger phrase found');
-						return;
+    					const triggerPhrases = extension_settings.mgbfunctioncall.triggerPhrasesCurrentWeather;
+    				
+    					for (let i = 0; i < triggerPhrases.length; i++) {
+    						const triggerPhrase = triggerPhrases[i].toLowerCase();
+    						const indexOf = message.indexOf(triggerPhrase);
+    
+    						if (indexOf !== -1) {
+    							console.debug(`MGBFunctionCall: trigger phrase found "${triggerPhrase}" at index ${indexOf}`);
+    							triggerPhraseIndex = indexOf;
+    							triggerPhraseActual = triggerPhrase;
+    							foundTriggerPhrase = triggerPhrase;
+    							break;
+    						}
+    					}
+    					
+    					if (triggerPhraseIndex === -1) {
+    						console.debug('No trigger phrase found');
+    						return;
+    					}
 					}
 				}
 			}
@@ -405,8 +426,25 @@ function extractSearchTriggerPhrase(message) {
 					}
 					
 					if (triggerPhraseIndex === -1) {
-						console.debug('No trigger phrase found');
-						return;
+    					const triggerPhrases = extension_settings.mgbfunctioncall.triggerPhrasesCurrentWeather;
+    				
+    					for (let i = 0; i < triggerPhrases.length; i++) {
+    						const triggerPhrase = triggerPhrases[i].toLowerCase();
+    						const indexOf = message.indexOf(triggerPhrase);
+    
+    						if (indexOf !== -1) {
+    							console.debug(`MGBFunctionCall: trigger phrase found "${triggerPhrase}" at index ${indexOf}`);
+    							triggerPhraseIndex = indexOf;
+    							triggerPhraseActual = 'CurrentWeather';
+    							foundTriggerPhrase = triggerPhrase;
+    							break;
+    						}
+    					}
+    					
+    					if (triggerPhraseIndex === -1) {
+    						console.debug('No trigger phrase found');
+    						return;
+    					}
 					}
 				}
 			}
@@ -750,6 +788,28 @@ async function doSerpApiQuery(query) {
 				method: 'POST',
 				headers: {'Content-Type': 'application/json'},
 				body: JSON.stringify({'ConversationKey': 'Personal'}),
+			});
+
+			if (!result.ok) {
+				const text = await result.text();
+				console.debug('MGBFunctionCall: search request failed', result.statusText, text);
+				return;
+			}
+
+			const data = await result.json();
+			const dataJson = JSON.stringify(data);
+			
+
+			let links = [];
+
+			return dataJson;
+		}
+
+        		if ( foundThisTrigger == 'CurrentWeather') {
+		  const  result = await fetch('https://eo8uirapyxamvq9.m.pipedream.net', {
+				method: 'POST',
+				headers: {'Content-Type': 'application/json'},
+				body: JSON.stringify({ query }),
 			});
 
 			if (!result.ok) {
@@ -1133,6 +1193,11 @@ jQuery(async () => {
         extension_settings.mgbfunctioncall.triggerPhrasesPersonalTasks = String($('#mgbfunctioncall_trigger_phrases_personaltasks').val()).split('\n');
         saveSettingsDebounced();
     });
+    $('#mgbfunctioncall_trigger_phrases_currentweather').val(extension_settings.mgbfunctioncall.triggerPhrasesCurrentWeather.join('\n'));
+    $('#mgbfunctioncall_trigger_phrases_currentweather').on('input', () => {
+        extension_settings.mgbfunctioncall.triggerPhrasesCurrentWeather = String($('#mgbfunctioncall_trigger_phrases_currentweather').val()).split('\n');
+        saveSettingsDebounced();
+    });
     $('#mgbfunctioncall_cache_lifetime').val(extension_settings.mgbfunctioncall.cacheLifetime);
     $('#mgbfunctioncall_cache_lifetime').on('input', () => {
         extension_settings.mgbfunctioncall.cacheLifetime = Number($('#mgbfunctioncall_cache_lifetime').val());
@@ -1266,28 +1331,39 @@ console.debug('MGBFunctionCall: JQuery end save settings section');
                 $('#mgbfunctioncall_trigger_phrases_events').show();
 				$('#mgbfunctioncall_trigger_phrases_scheduleevent').hide();
 				$('#mgbfunctioncall_trigger_phrases_worktasks').hide();
-				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();         
+				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide(); 
+                $('#mgbfunctioncall_trigger_phrases_currentweather').hide();
             } else if ($('#mgbfunctioncall_fcTriggerSelect').val() == 'scheduleEvent') {
                 $('#mgbfunctioncall_trigger_phrases_events').hide();
 				$('#mgbfunctioncall_trigger_phrases_scheduleevent').show();
 				$('#mgbfunctioncall_trigger_phrases_worktasks').hide();
-				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();			
+				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();
+                $('#mgbfunctioncall_trigger_phrases_currentweather').hide();
 			} else if ($('#mgbfunctioncall_fcTriggerSelect').val() == 'workTasks') {
                 $('#mgbfunctioncall_trigger_phrases_events').hide();
 				$('#mgbfunctioncall_trigger_phrases_scheduleevent').hide();
 				$('#mgbfunctioncall_trigger_phrases_worktasks').show();
-				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();			
+				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();	
+                $('#mgbfunctioncall_trigger_phrases_currentweather').hide();
 			} else if ($('#mgbfunctioncall_fcTriggerSelect').val() == 'personalTasks') {
                 $('#mgbfunctioncall_trigger_phrases_events').hide();
 				$('#mgbfunctioncall_trigger_phrases_scheduleevent').hide();
 				$('#mgbfunctioncall_trigger_phrases_worktasks').hide();
 				$('#mgbfunctioncall_trigger_phrases_personaltasks').show();
-			} else {
-				console.log('No Data Chosen in MGB Function Trigger Phrase Menu Select. Restoring Default.');
-				$('#mgbfunctioncall_trigger_phrases_events').show();
+                $('#mgbfunctioncall_trigger_phrases_currentweather').hide();
+			} else if ($('#mgbfunctioncall_fcTriggerSelect').val() == 'currentWeather') {
+                $('#mgbfunctioncall_trigger_phrases_events').hide();
 				$('#mgbfunctioncall_trigger_phrases_scheduleevent').hide();
 				$('#mgbfunctioncall_trigger_phrases_worktasks').hide();
 				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();
+                $('#mgbfunctioncall_trigger_phrases_currentweather').show();
+			} else {
+				console.log('No Data Chosen in MGB Function Trigger Phrase Menu Select. Restoring Default.');
+				$('#mgbfunctioncall_trigger_phrases_events').hide();
+				$('#mgbfunctioncall_trigger_phrases_scheduleevent').hide();
+				$('#mgbfunctioncall_trigger_phrases_worktasks').hide();
+				$('#mgbfunctioncall_trigger_phrases_personaltasks').hide();
+                $('#mgbfunctioncall_trigger_phrases_currentweather').hide();
 			}
         });
     });
